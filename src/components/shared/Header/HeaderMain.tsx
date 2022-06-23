@@ -1,9 +1,9 @@
-import logo from "@assets/logo/big_logo.png"
+import logo from "@assets/logo/big_logo.svg"
 const HeaderMain = () => {
   const navItems = ["Home", "About Us", "Contact Us"]
   return (
-    <div className="hidden xl:flex flex-row items-center font-bold text-2xl m-10">
-      <img className="" src={logo}></img>
+    <div className="hidden md:flex flex-row items-center font-bold text-2xl m-10">
+      <img alt="logo" src={logo}></img>
       <div className="flex mx-20 ">
         {navItems.map((t, index) => {
           return (

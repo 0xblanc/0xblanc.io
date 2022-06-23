@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import Header from "@components/shared/Header/HeaderMain"
+import Header from "@components/shared/Header/Header"
 import Footer from "@components/shared/Footer"
 
 type DesktopFrameProps = {

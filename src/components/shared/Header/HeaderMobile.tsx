@@ -1,14 +1,16 @@
-import TelegramImage from "@assets/buttons/telegram.png"
-import TwitterImage from "@assets/buttons/twitter.png"
-import SpeakerImage from "@assets/buttons/speaker.png"
-import GitbookImage from "@assets/buttons/gitbook.png"
-import MediumImage from "@assets/buttons/medium.png"
-import MuteImage from "@assets/buttons/mute.png"
-import UnmuteImage from "@assets/buttons/unmute.png"
+// import TelegramImage from "@assets/buttons/telegram.png"
+// import TwitterImage from "@assets/buttons/twitter.png"
+// import SpeakerImage from "@assets/buttons/speaker.png"
+// import GitbookImage from "@assets/buttons/gitbook.png"
+// import MediumImage from "@assets/buttons/medium.png"
+// import MuteImage from "@assets/buttons/mute.png"
+// import UnmuteImage from "@assets/buttons/unmute.png"
 // import Logo from "@assets/header/DDP Logo.png"
 import Logo from "@assets/logo/big_logo.png"
-import MenuImage from "@assets/buttons/menu.png"
-import CloseImage from "@assets/buttons/close.png"
+import Burger from "@assets/nav/burger.svg"
+import Cross from "@assets/nav/cross.svg"
+// import MenuImage from "@assets/buttons/menu.png"
+// import CloseImage from "@assets/buttons/close.png"
 import React from "react"
 
 import { useState } from "react"
@@ -33,23 +35,13 @@ const HeaderMobile = () => {
   }
 
   return (
-    <div className="xl:hidden md:flex py-1 w-full justify-between bg-black bg-opacity-40 backdrop-blur">
-      123
-      <div className="w-1/2 py-2 pl-6">
-        <img src={Logo} alt="logo" />
-      </div>
-      <div className="flex pr-6 py-5 w-1/2 justify-end">
+    <div className="md:hidden flex py-1 w-full justify-between bg-black bg-opacity-40 backdrop-blur">
+      <div className="flex pr-6 py-5 w-1/2 justify-start">
         <img
-          className="h-full mr-4"
-          src={MenuImage}
+          className="h-20 mr-4"
+          src={Burger}
           alt=""
           onClick={menuToggleHandler}
-        />
-
-        <img
-          src={muted ? MuteImage : UnmuteImage}
-          onClick={() => muteHandler()}
-          alt="music"
         />
       </div>
       {menuOpen && (
@@ -58,13 +50,10 @@ const HeaderMobile = () => {
           style={{ backgroundSize: "100% 100%" }}
         >
           <div className="flex my-12 w-full">
-            <div className="w-1/2 py-2 pl-6">
-              <img src={Logo} alt="logo" />
-            </div>
             <div className="flex pr-6 py-5 w-1/2 justify-end">
               <img
-                className="h-full mr-4"
-                src={CloseImage}
+                className="h-20 mr-4"
+                src={Cross}
                 alt=""
                 onClick={menuToggleHandler}
               />
@@ -97,48 +86,7 @@ const HeaderMobile = () => {
               FAQ
             </a>
           </div>
-          <div className="flex justify-center">
-            <a
-              href="https://t.me/DegenDogPound"
-              className="mx-1 flex items-center cursor-paw"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={TelegramImage} alt="telegram" />
-            </a>
-            <a
-              href="https://t.me/DegenDogPoundAnn"
-              className="mx-1 flex items-center cursor-paw"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={SpeakerImage} alt="speaker" />
-            </a>
-            <a
-              href="https://twitter.com/DegenDogPound"
-              className="mx-1 flex items-center cursor-paw"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={TwitterImage} alt="twitter" />
-            </a>
-            <a
-              href="https://degendogpound.gitbook.io/degen-dog-pound/"
-              className="mx-1 flex items-center cursor-paw"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={GitbookImage} alt="gitbook" />
-            </a>
-            <a
-              className="mx-1 flex items-center cursor-paw"
-              href="https://medium.com/@DegenDogPound"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={MediumImage} alt="medium" />
-            </a>
-          </div>
+          <div className="flex justify-center"></div>
         </div>
       )}
     </div>
