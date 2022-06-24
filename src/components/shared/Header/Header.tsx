@@ -3,11 +3,23 @@ import { useState } from "react"
 import HeaderMobile from "./HeaderMobile"
 
 const Header = () => {
-  const navitems = [
-    "ABOUT US",
-    "SERVICE WE PROVIDE",
-    "PAST PROJECT",
-    "CONTACT US",
+  const navItems = [
+    {
+      text: 'About Us',
+      href: '#about-us',
+    },
+    {
+      text: 'Service We Provide',
+      href: '#service-we-provide',
+    },
+    {
+      text: 'Past Projects',
+      href: '#past-projects',
+    },
+    {
+      text: 'Contact Us',
+      href: '#contact-us',
+    }
   ]
   const socialItems = {
     email: "xxxx@xxxx.com",
@@ -17,9 +29,9 @@ const Header = () => {
   }
 
   return (
-    <div className="flex-col w-full absolute flex top-0 z-50">
-      <HeaderMain />
-      <HeaderMobile navitems={navitems} socialItems={socialItems} />
+    <div className="flex-col w-full sticky flex top-0 z-50">
+      <HeaderMain navItems={navItems} />
+      <HeaderMobile navItems={navItems} socialItems={socialItems} />
     </div>
   )
 }

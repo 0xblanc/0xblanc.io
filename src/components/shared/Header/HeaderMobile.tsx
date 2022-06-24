@@ -6,7 +6,7 @@
 // import MuteImage from "@assets/buttons/mute.png"
 // import UnmuteImage from "@assets/buttons/unmute.png"
 // import Logo from "@assets/header/DDP Logo.png"
-import Logo from "@assets/logo/big_logo.svg"
+import Logo from "@assets/logo/text_logo.svg"
 import Burger from "@assets/nav/burger.svg"
 import Cross from "@assets/nav/cross.svg"
 import { XIcon, MenuIcon } from "@heroicons/react/solid"
@@ -16,15 +16,20 @@ import React from "react"
 
 import { useState } from "react"
 
-const HeaderMobile = (props) => {
+type HeaderMobileProps = {
+  navItems: Array<{ text: string, href: string }>
+  socialItems: {}
+}
+
+const HeaderMobile = (props:HeaderMobileProps) => {
+  const { navItems, socialItems } = props
+
   const [muted, setMuted] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   const muteHandler = React.useCallback(() => {
     setMuted((prev) => !prev)
   }, [])
-  const navItems = props.navitems
-  const socialItems = props.socialItems
 
   const menuToggleHandler = () => {
     const body = document.body as any
@@ -38,7 +43,7 @@ const HeaderMobile = (props) => {
   }
 
   return (
-    <div className="md:hidden flex py-1 w-full justify-between bg-black bg-opacity-40 backdrop-blur">
+    <div className="lg:hidden flex py-1 w-full justify-between bg-white shadow-md h-20">
       {!menuOpen && (
         <div className="flex px-6 py-5 w-full items-center  justify-start">
           <MenuIcon
@@ -70,7 +75,7 @@ const HeaderMobile = (props) => {
           </div>
           <div className="flex flex-col flex-1 px-6 font-thin">
             {navItems.map((item, index) => {
-              return <a className="text-3xl mt-5 text-darkBlue">{item}</a>
+              return <a href={item.href} className="text-3xl mt-5 text-darkBlue">{item.text}</a>
             })}
             {Object.keys(socialItems).map((item, index) => {
               return (

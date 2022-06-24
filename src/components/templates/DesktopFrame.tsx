@@ -13,7 +13,8 @@ const DesktopFrame = (props: DesktopFrameProps) => {
   return (
     <div className="h-full">
       <Hero />
-      <div className="main">
+      <div className="main relative">
+        <Header />
         <div>{children}</div>
       </div>
       <Footer />

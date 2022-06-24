@@ -1,6 +1,6 @@
 import Logo from '@assets/logo/text_logo_gold.svg'
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div id='hero' className="h-full min-h-full w-full bg-hero bg-cover bg-right">
       <div className='h-full w-full bg-gradient-to-r from-heroBlue to-transparent flex pl-32 py-16 flex-col'>
