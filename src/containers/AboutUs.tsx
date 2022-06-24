@@ -2,7 +2,7 @@ import Title from '@components/shared/Title'
 
 const AboutUs = () => {
   return (
-    <div id='#about-us' className='bg-aliceBlue py-16'>
+    <div id='about-us' className='bg-aliceBlue py-16'>
       <div className='container mx-auto w-full'>
         <div className="flex flex-col">
           <Title text={'About Us'} />
