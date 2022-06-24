@@ -17,15 +17,20 @@ import React from "react"
 
 import { useState } from "react"
 
-const HeaderMobile = (props) => {
+type HeaderMobileProps = {
+  navItems: Array<{ text: string; href: string }>
+  socialItems: {}
+}
+
+const HeaderMobile = (props: HeaderMobileProps) => {
+  const { navItems, socialItems } = props
+
   const [muted, setMuted] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   const muteHandler = React.useCallback(() => {
     setMuted((prev) => !prev)
   }, [])
-  const navItems = props.navitems
-  const socialItems = props.socialItems
 
   const menuToggleHandler = () => {
     const body = document.body as any
@@ -39,7 +44,7 @@ const HeaderMobile = (props) => {
   }
 
   return (
-    <div className="md:hidden flex py-1 w-full justify-between bg-black bg-opacity-40 backdrop-blur">
+    <div className="lg:hidden flex py-1 w-full justify-between bg-white shadow-md h-20">
       {!menuOpen && (
         <div className="flex px-6 py-5 w-full items-center  justify-start">
           <MenuIcon
@@ -73,7 +78,7 @@ const HeaderMobile = (props) => {
             {navItems.map((item, index) => {
               return (
                 <a href="/" className="text-3xl mt-5 text-darkBlue">
-                  {item}
+                  {item.text}
                 </a>
               )
             })}

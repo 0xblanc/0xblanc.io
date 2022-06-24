@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect } from "react"
 import FAQ from "@containers/home/FAQ"
-import Hero from "@containers/Hero"
 import AboutUs from "@containers/AboutUs"
 import ContactUs from "@containers/ContactUs"
 import ProjectShowcase from "@containers/ProjectShowcase"
@@ -17,8 +16,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
-      <Hero />
+    <div className='flex flex-col'>
       <AboutUs />
       <Service />
       <ImageShowcase />

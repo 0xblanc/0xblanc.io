@@ -2,7 +2,7 @@
 	from {
 		background-position: 0% 0%
 	}
-	to { 
+	to {
 		background-position: 100000% 0%
 	}
 }
@@ -11,33 +11,10 @@
 	from {
 		background-position: 0% 0%
 	}
-	to { 
+	to {
 		background-position: 100000% 0%
 	}
 }
-
-
-@font-face {
-	font-family: 'Quantico';
-	src: url(./fonts/Quantico2/Quantico-Regular.ttf);
-}
-
-@font-face {
-	font-family: 'Quantico';
-	src: url(./fonts/Quantico2/Quantico-Bold.ttf);
-	font-weight: bold;
-}
-/* @font-face {
-	font-family: 'Quantico';
-	src: url(./fonts/Quantico2/Quantico-Italic.ttf);
-	font-weight: italic;
-} */
-
-@font-face {
-	font-family: 'Impact-Font';
-	src: url(./fonts/Impact-Font/impact.ttf);
-}
-
 
 
 .background{
@@ -49,6 +26,10 @@
     -webkit-animation-name: parallaxBackground;
 	-webkit-animation-duration: 300000s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-iteration-count: infinite;
+}
 
+html, body, #root {
+	height: 100%;
+	width: 100%;
 }
