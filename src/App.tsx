@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import "./index.css";
-import DesktopFrame from "@components/templates/DesktopFrame";
-import Routes from "./routes";
-import { BrowserRouter as Router } from "react-router-dom";
-import './App.css'
+import React, { useEffect } from "react"
+import "./index.css"
+import DesktopFrame from "@components/templates/DesktopFrame"
+import Routes from "./routes"
+import { BrowserRouter as Router } from "react-router-dom"
+import "./App.css"
 
 function App() {
-
   return (
     <div className='h-full'>
       <Router>
@@ -15,7 +14,7 @@ function App() {
         </DesktopFrame>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
