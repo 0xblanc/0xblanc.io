@@ -1,22 +1,19 @@
-import React, { useCallback, useEffect } from "react"
-import FAQ from "@containers/home/FAQ"
-import AboutUs from "@containers/AboutUs"
-import ContactUs from "@containers/ContactUs"
-import ProjectShowcase from "@containers/ProjectShowcase"
-import ImageShowcase from "@containers/ImageShowcase"
-import Service from "@containers/Service"
+import React, { useCallback, useEffect } from 'react'
+import FAQ from '@containers/FAQ'
+import AboutUs from '@containers/AboutUs'
+import ContactUs from '@containers/ContactUs'
+import ProjectShowcase from '@containers/ProjectShowcase'
+import ImageShowcase from '@containers/ImageShowcase'
+import Service from '@containers/Service'
 
 const Home = () => {
-  const onFollowBtnClick = useCallback((type) => {
-    let url =
-      type === "twitter"
-        ? "https://twitter.com/PlayMetaGods"
-        : "https://discord.gg/playmetagods"
-    window.open(url, "_blank")
+  const onFollowBtnClick = useCallback(type => {
+    let url = type === 'twitter' ? 'https://twitter.com/PlayMetaGods' : 'https://discord.gg/playmetagods'
+    window.open(url, '_blank')
   }, [])
 
   return (
-    <div className="flex flex-col">
+    <div className='flex flex-col'>
       <AboutUs />
       <Service />
       <ImageShowcase />
