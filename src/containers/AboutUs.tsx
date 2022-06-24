@@ -1,18 +1,19 @@
+import Title from '@components/shared/Title'
+
 const AboutUs = () => {
   return (
-    <div className="h-full bg-aliceBlue">
-      <div className="w-full justify-around flex flex-row pt-36">
-        <h1 className="text-darkBlue text-5xl">About Us</h1>
-        <h1 className="text-darkBlue text-5xl"></h1>
-      </div>
-      <div className="w-full flex justify-center py-48">
-        <div className="w-1/3 text-center">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quidem, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quisquam quidem, quisquam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quisquam quidem, quisquam.
-          </p>
+    <div id='about-us' className='bg-aliceBlue py-16'>
+      <div className='container mx-auto w-full'>
+        <div className="flex flex-col">
+          <Title text={'About Us'} />
+          <div className='flex justify-center w-full py-40'>
+            <p className='text-darkBlue text-lg text-center w-2/3'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quidem, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quisquam quidem, quisquam.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam quidem, quisquam.
+            </p>
+          </div>
         </div>
       </div>
     </div>
