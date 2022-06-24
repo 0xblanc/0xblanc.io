@@ -24,7 +24,6 @@ const Header = () => {
   const socialItems = {
     email: "xxxx@xxxx.com",
     instagram: "instagram.com/xxxx",
-    facebook: "facebook.com/xxxx",
     telegram: "telegram.com/xxxx",
   }
 
