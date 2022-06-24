@@ -7,9 +7,10 @@
 // import UnmuteImage from "@assets/buttons/unmute.png"
 // import Logo from "@assets/header/DDP Logo.png"
 import Logo from "@assets/logo/big_logo.svg"
-import Burger from "@assets/nav/burger.svg"
-import Cross from "@assets/nav/cross.svg"
 import { XIcon, MenuIcon } from "@heroicons/react/solid"
+import EmailLogo from "@assets/media/email.svg"
+import InstagramLogo from "@assets/media/instagram.svg"
+import TelegramLogo from "@assets/media/telegram.svg"
 // import MenuImage from "@assets/buttons/menu.png"
 // import CloseImage from "@assets/buttons/close.png"
 import React from "react"
@@ -54,7 +55,7 @@ const HeaderMobile = (props) => {
         </div>
       )}
       {menuOpen && (
-        <div className=" h-screen bg-white z-20 w-full flex flex-col">
+        <div className=" h-screen bg-white z-1000 w-full flex flex-col">
           <div className="flex px-6 py-5 w-full items-center justify-start shadow-lg">
             {/* <img src={Cross} alt="" /> */}
             <XIcon
@@ -70,13 +71,28 @@ const HeaderMobile = (props) => {
           </div>
           <div className="flex flex-col flex-1 px-6 font-thin">
             {navItems.map((item, index) => {
-              return <a className="text-3xl mt-5 text-darkBlue">{item}</a>
+              return (
+                <a href="/" className="text-3xl mt-5 text-darkBlue">
+                  {item}
+                </a>
+              )
             })}
             {Object.keys(socialItems).map((item, index) => {
               return (
-                <a className="text-3xl mt-5 text-darkBlue">
-                  {socialItems[item]}
-                </a>
+                <div className="flex flex-row items-center text-center mt-5">
+                  {item === "email" && (
+                    <img className="h-8 mr-5" src={EmailLogo} />
+                  )}
+                  {item === "instagram" && (
+                    <img className="h-8 mr-5" src={InstagramLogo} />
+                  )}
+                  {item === "telegram" && (
+                    <img className="h-8 mr-5" src={TelegramLogo} />
+                  )}
+                  <a href="/" className="text-3xl text-darkBlue">
+                    {socialItems[item]}
+                  </a>
+                </div>
               )
             })}
           </div>
