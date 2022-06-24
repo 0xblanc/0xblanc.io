@@ -7,9 +7,14 @@ module.exports = {
       white: '#FFFFFF',
       aliceBlue: '#E7F2FF',
       darkBlue: '#054491',
-      darkElectricBlue: '#4B627D'
+      darkElectricBlue: '#4B627D',
+      DEFAULT: '#054491'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        Raleway: ['Raleway', "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
