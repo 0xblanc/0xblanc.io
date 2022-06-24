@@ -6,12 +6,18 @@ module.exports = {
     colors: {
       white: '#FFFFFF',
       aliceBlue: '#E7F2FF',
+      blue: '#3265A5',
       darkBlue: '#054491',
       darkElectricBlue: '#4B627D',
       heroBlue: '#243447',
+      deepDarkBlue: '#1D2A3A',
       transparent: 'transparent',
       gold: '#E5BF9A',
-      DEFAULT: '#054491'
+      DEFAULT: '#054491',
+      purple: '#7B2DB8',
+      blueLagoon: '#006266',
+      redViolet: '#B53471',
+      orange: '#EE5A24',
     },
     extend: {
       backgroundImage: {
@@ -19,7 +25,7 @@ module.exports = {
       },
       fontFamily: {
         Raleway: ['Raleway', "sans-serif"]
-      }
+      },
     },
   },
   plugins: [],
