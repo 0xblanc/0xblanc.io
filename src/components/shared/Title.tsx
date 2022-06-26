@@ -8,7 +8,7 @@ const Title = (props: TitleProps) => {
   const { text } = props
 
   return (
-    <div className='flex items-center'>
+    <div className='flex items-center' style={{ width: '992px' }}>
       <div className='mr-3'>
         <img src={Logo} alt='Logo' />
       </div>

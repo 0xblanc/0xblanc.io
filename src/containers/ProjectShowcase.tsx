@@ -51,7 +51,7 @@ const ProjectShowcase = () => {
       hsHunger.style.transform = `translateX(${hungerTransition < 0 ? 0 : wantedTransition}px)`
 
       const texts = document.querySelectorAll('.project-container p') as any
-      const textsTransition = 1.25 - 0.25 * frac
+      const textsTransition = 1.5 - 0.5 * frac
       texts.forEach(text => {
         text.style.transform = `scale(${textsTransition <= 1 ? 1 : textsTransition})`
       })
@@ -67,7 +67,7 @@ const ProjectShowcase = () => {
   return (
     <div id='past-projects' className='relative items-center bg-aliceBlue py-28 overflow-hidden'>
       <div className='w-full flex justify-center flex-col h-5/6'>
-        <div className='container w-full mx-auto'>
+        <div className='container w-full mx-auto flex justify-center'>
           <Title text='Past Projects' />
         </div>
         <div className='project-container flex flex-col relative justify-center items-center my-80 py-40'>

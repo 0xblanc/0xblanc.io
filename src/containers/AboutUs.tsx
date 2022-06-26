@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div id='about-us' className='bg-aliceBlue py-28'>
       <div className='container mx-auto w-full'>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <Title text={'About Us'} />
           <div className='flex justify-center w-full pt-40 pb-24'>
             <p className='text-darkBlue text-lg text-center w-2/3'>
