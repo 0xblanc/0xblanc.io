@@ -93,7 +93,7 @@ const ProjectShowcase = () => {
             <div className='relative'>
               <img className='hs-nyc absolute' style={{ width: '350px', top: '-12px', right: '-390px' }} src={HSNyc} alt='HS nyc' />
               <p>
-                Hungry Sausages Lab x <span className='text-6xl font-bold text-redViolet'>CNF</span>
+                <span className='text-6xl font-bold text-redViolet'>Chef Nick Family</span> x Hungry Sausages Lab
               </p>
             </div>
             <div className='relative'>
