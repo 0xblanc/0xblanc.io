@@ -79,32 +79,32 @@ const ProjectShowcase = () => {
         <div className='project-container flex flex-col relative justify-center items-center lg:my-80 lg:py-40'>
           <div className='flex flex-col italic text-xl lg:text-3xl text-center text-deepDarkBlue'>
             <div className='relative'>
-              <img className='hs-banner-desktop absolute hidden lg:block' style={{ width: '700px', top: '-375px', left: '-12px' }} src={HSBanner} alt='HS banner' />
+              <img className='hs-banner-desktop absolute hidden lg:block w-[700px] top-[-375px] left-[-12px]' src={HSBanner} alt='HS banner' />
               <p>
                 Over <span className='text-4xl lg:text-6xl font-bold text-blue'>One Million</span> USD on sell
               </p>
             </div>
             <div className='relative'>
-              <img className='hs-clash absolute hidden lg:block' style={{ width: '335px', top: '-306px', right: '-160px' }} src={HSClash} alt='HS clash' />
+              <img className='hs-clash absolute hidden lg:block w-[335px] top-[-306px] right-[-160px]' src={HSClash} alt='HS clash' />
               <p>
                 <span className='text-4xl lg:text-6xl font-bold text-purple relative'>100 <span className='absolute -right-3 top-2 text-4xl'>+</span></span>&nbsp; ETH trade volume on OpenSea
               </p>
             </div>
             <div className='relative'>
-              <img className='hs-nft absolute hidden lg:block' style={{ width: '300px', top: '-112px', left: '-340px' }} src={HSNft} alt='HS nft' />
+              <img className='hs-nft absolute hidden lg:block w-[300px] top-[-112px] left-[-340px]' src={HSNft} alt='HS nft' />
               <p>
                 Collaborate with <span className='text-4xl lg:text-6xl font-bold text-blueLagoon'>French graffiti artist DEZIO</span>
               </p>
             </div>
             <div className='relative'>
-              <img className='hs-nyc absolute hidden lg:block' style={{ width: '350px', top: '-12px', right: '-390px' }} src={HSNyc} alt='HS nyc' />
+              <img className='hs-nyc absolute hidden lg:block w-[350px] top-[-12px] right-[-390px]' src={HSNyc} alt='HS nyc' />
               <p>
                 <span className='text-4xl lg:text-6xl font-bold text-redViolet'>Chef Nick Family</span> x Hungry Sausages Lab
               </p>
             </div>
             <div className='relative'>
-              <img className='hs-hunger-desktop absolute hidden lg:block' style={{ width: '320px', bottom: '-375px', right: '54px' }} src={HSHunger} alt='HS hunger' />
-              <img className='hs-wanted-desktop absolute hidden lg:block' style={{ width: '340px', bottom: '-432px', left: '100px' }} src={HSWanted} alt='HS wanted' />
+              <img className='hs-hunger-desktop absolute hidden lg:block w-[320px] bottom-[-375px] right-[-54px]' src={HSHunger} alt='HS hunger' />
+              <img className='hs-wanted-desktop absolute hidden lg:block w-[340px] bottom-[-432px] right-[100px]' src={HSWanted} alt='HS wanted' />
               <p>
                 Collaborated event with <span className='text-4xl lg:text-6xl font-bold text-orange'>Grant Hyatt - CLASH</span>!
               </p>

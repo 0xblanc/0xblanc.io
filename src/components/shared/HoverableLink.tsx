@@ -12,19 +12,14 @@ const HoverableLink = (props: HoverableLinkProps) => {
     const text = e.target.querySelector('.actual-text')
     const shadow = e.target.querySelector('.shadow-text')
     text.classList.add('-translate-y-6')
-    shadow.classList.remove('hidden')
     shadow.classList.remove('translate-y-6')
-
-    // shadow.classList.add('flex')
   }
 
   const hoverLeave = e => {
     const text = e.target.querySelector('.actual-text')
     const shadow = e.target.querySelector('.shadow-text')
     text.classList.remove('-translate-y-6')
-    // shadow.classList.remove('flex')
     shadow.classList.add('translate-y-6')
-    shadow.classList.add('hidden')
   }
 
   return (

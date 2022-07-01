@@ -90,7 +90,7 @@ const Service = () => {
   }, [scrollTop])
 
   return (
-    <div id='service-we-provide' className='relative items-center' style={{ height: '250rem' }}>
+    <div id='service-we-provide' className='relative items-center h-[250rem]'>
       <div className='h-screen flex overflow-hidden items-center justify-center sticky flex-col top-0'>
         <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-32'>
           <div className='rotation-container h-4/6 aspect-square relative border-8 border-aliceBlue rounded-full'>

@@ -13,16 +13,16 @@ const Hero = props => {
         </div>
         <div className='flex flex-col px-5 sm:px-0 lg:flex-row'>
           <HoverableLink text={'About Us'} href={'#about-us'} />
-          <div className='flex items-center' style={{ width: '1px' }}>
-            <span className='w-full bg-white h-4'></span>
+          <div className='hidden lg:flex items-center w-[1px]'>
+            <span className='w-full bg-white h-4' />
           </div>
           <HoverableLink text={'Service We Provide'} href={'#service-we-provide'} />
-          <div className='flex items-center' style={{ width: '1px' }}>
-            <span className='w-full bg-white h-4'></span>
+          <div className='hidden lg:flex items-center w-[1px]'>
+            <span className='w-full bg-white h-4' />
           </div>
           <HoverableLink text={'Past Projects'} href={'#past-projects'} />
-          <div className='flex items-center' style={{ width: '1px' }}>
-            <span className='w-full bg-white h-4'></span>
+          <div className='hidden lg:flex items-center w-[1px]'>
+            <span className='w-full bg-white h-4' />
           </div>
           <HoverableLink text={'Contact Us'} href={'#contact-us'} />
         </div>
