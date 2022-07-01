@@ -92,22 +92,20 @@ const Service = () => {
   return (
     <div id='service-we-provide' className='relative items-center' style={{ height: '250rem' }}>
       <div className='h-screen flex overflow-hidden items-center justify-center sticky flex-col top-0'>
-        <div className='h-full flex justify-center items-center -translate-x-32'>
+        <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-32'>
           <div className='rotation-container h-4/6 aspect-square relative border-8 border-aliceBlue rounded-full'>
             {serviceList.map(({ name, icon, position }, index) => (
               <CircledItem key={index} position={position} text={name} icon={icon} />
             ))}
           </div>
         </div>
-        <div className='absolute left-0 top-0 w-3/6 h-full bg-white flex items-center'>
+        <div className='absolute left-0 top-0 w-2/6 sm:w-3/6 h-full sm:bg-white flex items-center'>
           <div className='flex justify-end w-full'>
-            <div className='flex flex-col items-end translate-x-24 sm:w-[575px]'>
+            <div className='flex flex-col items-end translate-x-2 sm:translate-x-24 sm:w-[575px]'>
               <div className='self-start mb-6'>
-                <img width='480px' src={Logo} alt='Logo' />
+                <img src={Logo} alt='Logo' />
               </div>
-              <h2 className='self-start uppercase text-darkBlue font-bold' style={{ fontSize: '5.5rem' }}>
-                Service We Provide
-              </h2>
+              <h2 className='self-start uppercase text-darkBlue font-bold text-2xl sm:text-4xl md:text-7xl'>Service We Provide</h2>
             </div>
           </div>
         </div>
