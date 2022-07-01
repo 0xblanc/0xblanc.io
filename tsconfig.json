@@ -1,19 +1,28 @@
 {
-  "extends": "./tsconfig.paths.json",
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "scripts"
-  ],
   "compilerOptions": {
-    "strict": false,
-    "noEmitOnError": false,
-    "allowSyntheticDefaultImports": true,
-    "noFallthroughCasesInSwitch": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
-    "jsx": "react-jsx",
-    "baseUrl": "src"
-  }
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["pages/components/*"],
+      "@containers/*": ["pages/containers/*"],
+      "@hooks/*": ["pages/hooks/*"],
+      "@assets/*": ["public/assets/*"],
+    
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

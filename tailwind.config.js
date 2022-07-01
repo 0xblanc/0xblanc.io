@@ -1,7 +1,8 @@
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+
   theme: {
     colors: {
       white: '#FFFFFF',
@@ -24,16 +25,15 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: 'url(@assets/home/hero/background.jpg)',
+        hero: 'url(../public/assets/home/hero/background.jpg)',
       },
       fontFamily: {
-        Raleway: ['Raleway', "sans-serif"]
+        Raleway: ['Raleway', 'sans-serif'],
       },
       rotate: {
-        '135': '135deg',
-      }
+        135: '135deg',
+      },
     },
   },
   plugins: [],
 }
-
