@@ -22,7 +22,7 @@ const ContactUs = () => {
       <div className='container mx-auto w-full'>
         <div className="flex flex-col items-center">
           <Title text={'Contact Us'} />
-          <div className='flex flex-col justify-center w-full pt-7 pb-24' style={{ width: '992px', maxWidth:'992px' }}>
+          <div className='flex flex-col justify-center w-full pt-7' style={{ width: '992px', maxWidth:'100%' }}>
             <input className='w-full border-2 border-darkGray px-6 py-4 mb-4' type='text' placeholder='Subject' value={subject} onChange={subjectOnChangeHandler} />
             <textarea className='w-full border-2 border-darkGray px-6 py-4 h-96 mb-4' placeholder='Write your email message here...' cols={15} value={message} onChange={(e) => messageOnChangeHandler(e)} />
             <div className='flex justify-between'>

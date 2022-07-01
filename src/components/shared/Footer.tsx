@@ -1,24 +1,24 @@
-import Logo from "@assets/logo/text_logo.svg"
-import Telegram from "@assets/media/telegram.svg"
-import Instagram from "@assets/media/instagram.svg"
-import Email from "@assets/media/email.svg"
+import Instagram from '@assets/media/instagram_white.svg'
+import Telegram from '@assets/media/telegram_white.svg'
 
 const Footer = () => {
   return (
-    <div className="w-full h-20 bg-darkElectricBlue p-2">
-      <h5 className="text-white text-2xl font-Raleway ">
-        Copyright © 2022 0xBlanc. All rights reserved.
-      </h5>
-      <div className="flex flex-row">
-        <p className="text-white text-2xl font-Raleway">Find us on:</p>
-        {/* <img
-          style={{
-            filter:
-              "invert(99%) sepia(71%) saturate(0%) hue-rotate(9deg) brightness(101%) contrast(102%);",
-          }}
-          src={Email}
-          alt="Email"
-        /> */}
+    <div className="w-full h-20 bg-darkElectricBlue p-2 flex justify-center">
+      <div className='flex justify-between items-center' style={{ width: '992px', maxWidth: '100%' }}>
+        <p className="text-white text-lg">
+          Copyright © 2022 0xBlanc. All rights reserved.
+        </p>
+        <div className='flex items-center'>
+          <p className='text-white text-lg'>
+            Find us on:
+          </p>
+          <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
+            <img src={Instagram} alt="Instagram" />
+          </a>
+          <a className='flex items-center px-2 hover:scale-125 cursor-pointer'>
+            <img src={Telegram} alt="Telegram" />
+          </a>
+        </div>
       </div>
     </div>
   )
