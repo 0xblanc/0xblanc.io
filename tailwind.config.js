@@ -26,6 +26,9 @@ module.exports = {
       fontFamily: {
         Raleway: ['Raleway', "sans-serif"]
       },
+      rotate: {
+        '135': '135deg',
+      }
     },
   },
   plugins: [],
