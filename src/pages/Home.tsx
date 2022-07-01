@@ -7,18 +7,13 @@ import ImageShowcase from '@containers/ImageShowcase'
 import Service from '@containers/Service'
 
 const Home = () => {
-  const onFollowBtnClick = useCallback(type => {
-    let url = type === 'twitter' ? 'https://twitter.com/PlayMetaGods' : 'https://discord.gg/playmetagods'
-    window.open(url, '_blank')
-  }, [])
-
   return (
     <div className='flex flex-col'>
       <AboutUs />
       <Service />
       <ImageShowcase />
       <ProjectShowcase />
-      <FAQ />
+      {/*<FAQ />*/}
       <ContactUs />
     </div>
   )
