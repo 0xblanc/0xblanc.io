@@ -25,8 +25,7 @@ const ContactUs = () => {
             <Title text={'Contact Us'} />
           </div>
           <div
-            className='flex flex-col justify-center w-full pt-7 pb-24 sm:max-w-screen-xl sm:w-screen-lg'
-            // style={{ width: '992px', maxWidth: '992px' }}
+            className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 pb-24 sm:max-w-screen-xl sm:w-screen-lg'
           >
             <input
               className='w-full border-2 border-darkGray px-6 py-4 mb-4'

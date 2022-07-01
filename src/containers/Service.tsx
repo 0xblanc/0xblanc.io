@@ -101,7 +101,7 @@ const Service = () => {
         </div>
         <div className='absolute left-0 top-0 w-2/6 sm:w-3/6 h-full sm:bg-white flex items-center'>
           <div className='flex justify-end w-full'>
-            <div className='flex flex-col items-end translate-x-2 sm:translate-x-24 sm:w-[575px]'>
+            <div className='flex flex-col items-end translate-x-2 sm:translate-x-24 sm:w-[575px] pl-2 md:pl-0'>
               <div className='self-start mb-6'>
                 <img src={Logo} alt='Logo' />
               </div>
