@@ -1,19 +1,44 @@
+import { useState } from 'react'
+
 import Title from '@components/shared/Title'
+import Instagram from '@assets/media/instagram.svg'
+import Telegram from '@assets/media/telegram.svg'
 
 const ContactUs = () => {
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+  const subjectOnChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSubject(e.target.value)
+  }
+
+  const messageOnChangeHandler = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    e.preventDefault()
+    setMessage(e.target.value)
+  }
+
   return (
-    <div className='h-1/2 w-full flex justify-center'>
-      <div className='w-4/5 md:w-3/5 xl:w-2/5 justify-center items-center '>
-        <Title text='Contact Us'></Title>
-        <div className='w-full flex items-center justify-center py-16 space-y-20 flex-col'>
-          <input
-            className='placeholder:italic placeholder:text-gray-500 block bg-white w-full border  rounded-sm py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-xl'
-            placeholder='Subject'
-          ></input>
-          <input
-            className='placeholder:italic placeholder:text-gray-500 block bg-white w-full border h-[300px] rounded-sm pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-xl'
-            placeholder='Write your email message here...'
-          ></input>
+    <div id='about-us' className='py-28'>
+      <div className='container mx-auto w-full'>
+        <div className="flex flex-col items-center">
+          <Title text={'Contact Us'} />
+          <div className='flex flex-col justify-center w-full pt-7 pb-24' style={{ width: '992px', maxWidth:'992px' }}>
+            <input className='w-full border-2 border-darkGray px-6 py-4 mb-4' type='text' placeholder='Subject' value={subject} onChange={subjectOnChangeHandler} />
+            <textarea className='w-full border-2 border-darkGray px-6 py-4 h-96 mb-4' placeholder='Write your email message here...' cols={15} value={message} onChange={(e) => messageOnChangeHandler(e)} />
+            <div className='flex justify-between'>
+              <div className=''>
+                <a className='bg-blue text-white px-4 py-2' href={`mailto:0xblanc.io@proton.me?subject=${subject}&body=${message}`}>Send</a>
+              </div>
+              <div className='flex'>
+                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
+                  <img src={Instagram} alt="Instagram" />
+                </a>
+                <a className='flex items-center px-2 hover:scale-125 cursor-pointer'>
+                  <img src={Telegram} alt="Telegram" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
