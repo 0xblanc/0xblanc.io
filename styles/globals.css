@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes parallaxBackground {
+	from {
+		background-position: 0% 0%
+	}
+	to {
+		background-position: 100000% 0%
+	}
+}
+
+@-webkit-keyframes parallaxBackground {
+	from {
+		background-position: 0% 0%
+	}
+	to {
+		background-position: 100000% 0%
+	}
+}
+
+
+.background{
+    animation-name: parallaxBackground;
+	animation-duration: 300000s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+    -webkit-animation-name: parallaxBackground;
+	-webkit-animation-duration: 300000s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+html, body, #root {
+	height: 100%;
+	width: 100%;
+}
