@@ -103,8 +103,8 @@ const ProjectShowcase = () => {
               </p>
             </div>
             <div className='relative'>
-              <img className='hs-hunger-desktop absolute hidden lg:block w-[320px] bottom-[-375px] right-[-54px]' src={HSHunger} alt='HS hunger' />
-              <img className='hs-wanted-desktop absolute hidden lg:block w-[340px] bottom-[-432px] right-[100px]' src={HSWanted} alt='HS wanted' />
+              <img className='hs-hunger-desktop absolute hidden lg:block w-[320px] bottom-[-375px] right-[54px]' src={HSHunger} alt='HS hunger' />
+              <img className='hs-wanted-desktop absolute hidden lg:block w-[340px] bottom-[-432px] left-[100px]' src={HSWanted} alt='HS wanted' />
               <p>
                 Collaborated event with <span className='text-4xl lg:text-6xl font-bold text-orange'>Grant Hyatt - CLASH</span>!
               </p>
