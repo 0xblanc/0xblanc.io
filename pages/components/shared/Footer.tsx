@@ -2,6 +2,7 @@ import Instagram from '@assets/media/instagram_white.svg'
 import Telegram from '@assets/media/telegram_white.svg'
 import Image from 'next/image'
 import Email from '@assets/media/email_white.svg'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -11,15 +12,15 @@ const Footer = () => {
         <div className='flex flex-row'>
           <p className='text-white text-lg'>Find us on:</p>
           <div className='flex flex-row items-center'>
-            <a href='mailto:0xblanc.io@proton.me' className='flex items-center px-2 hover:scale-125 cursor-pointer'>
+            <Link href='mailto:0xblanc.io@proton.me' className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Image src={Email} alt='Email' />
-            </a>
-            <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
+            </Link>
+            <Link className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
               <Image src={Instagram} alt='Instagram' />
-            </a>
-            <a className='flex items-center px-2 hover:scale-125 cursor-pointer'>
+            </Link>
+            <Link href='' className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Image src={Telegram} alt='Telegram' />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
