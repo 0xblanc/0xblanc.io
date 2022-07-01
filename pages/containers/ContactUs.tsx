@@ -25,7 +25,7 @@ const ContactUs = () => {
           <div className='container w-full mx-auto flex justify-center'>
             <Title text={'Contact Us'} />
           </div>
-          <div className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 pb-24 sm:max-w-screen-xl sm:w-screen-lg'>
+          <div className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 pb-24 w-[992px] max-w-full'>
             <input
               className='w-full border-2 border-darkGray px-6 py-4 mb-4'
               type='text'
