@@ -50,7 +50,7 @@ const ContactUs = () => {
                 <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
                   <Image src={Instagram} alt='Instagram' width={24} height={24} />
                 </a>
-                <a className='flex items-center px-2 hover:scale-125 cursor-pointer'>
+                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc'>
                   <Image src={Telegram} alt='Telegram' width={24} height={24} />
                 </a>
               </div>

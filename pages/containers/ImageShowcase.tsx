@@ -16,14 +16,14 @@ const ImageShowcase = () => {
             <p className='text-xl md:text-2xl lg:text-4xl text-gray'>From</p>
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>Moonbirds #1555</p>
             <p className='text-lightGray text-sm lg:text-base'>
-              Source <a href='https://opensea.io/collection/proof-moonbirds'>Opensea@Moonbirds</a>
+              Source <a className='underline' href='https://opensea.io/collection/proof-moonbirds'>Opensea@Moonbirds</a>
             </p>
           </div>
           <div className='flex flex-col text-center sm:text-start'>
             <p className='text-xl md:text-2xl lg:text-4xl text-gray'>To</p>
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>AINightbirds MBAI#1555</p>
             <p className='text-lightGray text-sm lg:text-base'>
-              Source <a href='https://opensea.io/collection/ainightbirds'>Opensea@AINightbirds</a>
+              Source <a className='underline' href='https://opensea.io/collection/ainightbirds'>Opensea@AINightbirds</a>
             </p>
           </div>
         </div>

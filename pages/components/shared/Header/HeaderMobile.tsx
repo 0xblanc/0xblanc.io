@@ -1,18 +1,8 @@
-// import TelegramImage from "@assets/buttons/telegram.png"
-// import TwitterImage from "@assets/buttons/twitter.png"
-// import SpeakerImage from "@assets/buttons/speaker.png"
-// import GitbookImage from "@assets/buttons/gitbook.png"
-// import MediumImage from "@assets/buttons/medium.png"
-// import MuteImage from "@assets/buttons/mute.png"
-// import UnmuteImage from "@assets/buttons/unmute.png"
-// import Logo from "@assets/header/DDP Logo.png"
 import Logo from '@assets/logo/big_logo.svg'
 import { XIcon, MenuIcon } from '@heroicons/react/solid'
 import EmailLogo from '@assets/media/email.svg'
 import InstagramLogo from '@assets/media/instagram.svg'
 import TelegramLogo from '@assets/media/telegram.svg'
-// import MenuImage from "@assets/buttons/menu.png"
-// import CloseImage from "@assets/buttons/close.png"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'

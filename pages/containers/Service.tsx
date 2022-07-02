@@ -17,31 +17,31 @@ const serviceList = [
     name: 'NFT generic propagation',
     icon: Nft,
     position: 'top',
-    backgroundColor: 'serviceDeepBlue',
+    backgroundColor: 'serviceNft',
   },
   {
     name: 'Custom metadata',
     icon: Meta,
     position: 'top-right',
-    backgroundColor: 'serviceBlue',
+    backgroundColor: 'serviceMeta',
   },
   {
     name: 'IPFS data upload',
     icon: IPFS,
     position: 'right',
-    backgroundColor: 'servicePurple',
+    backgroundColor: 'serviceIpfs',
   },
   {
     name: 'Minting website',
     icon: Minting,
     position: 'bottom-right',
-    backgroundColor: 'serviceLightPurple',
+    backgroundColor: 'serviceMinting',
   },
   {
     name: 'EVM Smart Contract Service',
     icon: SmartContract,
     position: 'bottom',
-    backgroundColor: 'serviceRed',
+    backgroundColor: 'serviceSmartContract',
   },
   {
     name: 'Solana related service',
@@ -53,13 +53,13 @@ const serviceList = [
     name: 'Web 3 integration service',
     icon: Web3,
     position: 'left',
-    backgroundColor: 'serviceLightRed',
+    backgroundColor: 'serviceWeb3',
   },
   {
     name: 'Traditional web service',
     icon: Web,
     position: 'top-left',
-    backgroundColor: 'serviceOrange',
+    backgroundColor: 'serviceWeb',
   },
 ]
 const Service = () => {
@@ -107,8 +107,8 @@ const Service = () => {
   return (
     <div id='service-we-provide' className='relative items-center h-[250rem]'>
       <div className='h-screen flex overflow-hidden items-center justify-center sticky flex-col top-0'>
-        <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-32'>
-          <div className='rotation-container h-4/6 aspect-square relative md:border-8 md:border-aliceBlue rounded-full'>
+        <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-40'>
+          <div className='rotation-container h-4/6 aspect-square relative rounded-full'>
             {serviceList.map(({ name, icon, position, backgroundColor }, index) => (
               <CircledItem key={index} position={position} text={name} icon={icon} backgroundColor={backgroundColor} />
             ))}

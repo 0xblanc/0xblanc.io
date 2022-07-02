@@ -23,7 +23,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-              <Link href=''>
+              <Link href='https://t.me/oxblanc'>
                 <Image src={Telegram} alt='Telegram' width={24} height={24} />
               </Link>
             </div>

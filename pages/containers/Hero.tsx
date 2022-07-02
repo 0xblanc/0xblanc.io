@@ -12,7 +12,7 @@ const Hero = (props: any) => {
           </div>
           <h1 className='text-gold text-4xl font-bold text-center md:text-start'>Unleash the potentiality with Blockchain.</h1>
         </div>
-        <div className='flex flex-col pb-4 md:pb-0 px-5 sm:px-0 lg:flex-row items-center md:items-start'>
+        <div className='flex flex-col pb-4 md:pb-0 px-5 sm:px-0 lg:flex-row items-center'>
           <HoverableLink text={'About Us'} href={'#about-us'} />
           <div className='hidden lg:flex items-center w-[1px]'>
             <span className='w-full bg-white h-4' />

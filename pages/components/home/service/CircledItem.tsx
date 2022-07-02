@@ -41,22 +41,22 @@ const CircledItem = (props: CircledItemProps) => {
       setShellRotateStyle('-rotate-135')
     }
 
-    if (backgroundColor === 'serviceDeepBlue') {
-      setBackgroundColorStyle(' bg-serviceDeepBlue')
-    } else if (backgroundColor === 'serviceBlue') {
-      setBackgroundColorStyle(' bg-serviceBlue')
-    } else if (backgroundColor === 'servicePurple') {
-      setBackgroundColorStyle(' bg-servicePurple')
-    } else if (backgroundColor === 'serviceLightPurple') {
-      setBackgroundColorStyle(' bg-serviceLightPurple')
-    } else if (backgroundColor === 'serviceRed') {
-      setBackgroundColorStyle(' bg-serviceRed')
+    if (backgroundColor === 'serviceNft') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceNftBlue to-serviceNftPurple')
+    } else if (backgroundColor === 'serviceMeta') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceMetaBlue to-serviceMetaLightBlue')
+    } else if (backgroundColor === 'serviceIpfs') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceIpfsPurple to-serviceIpfsBlue')
+    } else if (backgroundColor === 'serviceMinting') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceMintingPink to-serviceMintingPurple')
+    } else if (backgroundColor === 'serviceSmartContract') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceSmartContractPurple to-serviceSmartContractRed')
     } else if (backgroundColor === 'serviceSolana') {
       setBackgroundColorStyle(' bg-gradient-to-tr from-serviceSolanaPurple via-serviceSolanaBlue to-serviceSolanaGreen')
-    } else if (backgroundColor === 'serviceLightRed') {
-      setBackgroundColorStyle(' bg-serviceLightRed')
-    } else if (backgroundColor === 'serviceOrange') {
-      setBackgroundColorStyle(' bg-serviceOrange')
+    } else if (backgroundColor === 'serviceWeb3') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceWeb3Red to-serviceWeb3Orange')
+    } else if (backgroundColor === 'serviceWeb') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceWebOrange to-serviceWebGreen')
     }
 
   }, [position, backgroundColor])
@@ -67,12 +67,12 @@ const CircledItem = (props: CircledItemProps) => {
         <div
           className={
             shellRotateStyle +
-            ' translate-y-64 sm:translate-y-80 -translate-x-1/2 absolute w-40 h-40 md:h-56 md:w-56 rounded-full flex justify-center items-center drop-shadow-xl'
+            ' translate-y-64 sm:translate-y-[32rem] -translate-x-1/2 absolute w-40 h-40 md:h-56 md:w-56 rounded-full flex justify-center items-center drop-shadow-xl'
           }
         >
           <div className={backgroundColorStyle + ' rounded-full circled-item-inner w-full h-full flex flex-col justify-center items-center'}>
-            <div className='flex w-24 h-24 mb-2 md:mb-4'>
-              <Image src={icon} alt={text} width={96} height={96} />
+            <div className='flex w-36 h-24 mb-2 md:mb-4'>
+              <Image src={icon} alt={text} width={198} height={157} />
             </div>
             <p className='px-6 md:px-4 text-white text-center text-xs md:text-xl'>{text}</p>
           </div>
