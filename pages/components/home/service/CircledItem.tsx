@@ -71,10 +71,10 @@ const CircledItem = (props: CircledItemProps) => {
           }
         >
           <div className={backgroundColorStyle + ' rounded-full circled-item-inner w-full h-full flex flex-col justify-center items-center'}>
-            <div className='flex w-24 h-24 mb-4'>
+            <div className='flex w-24 h-24 mb-2 md:mb-4'>
               <Image src={icon} alt={text} width={96} height={96} />
             </div>
-            <p className='px-4 text-white text-center text-xs md:text-xl'>{text}</p>
+            <p className='px-6 md:px-4 text-white text-center text-xs md:text-xl'>{text}</p>
           </div>
         </div>
       </div>
