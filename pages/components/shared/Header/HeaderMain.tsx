@@ -16,7 +16,7 @@ const HeaderMain = (props: HeaderMainProps) => {
     <div className='hidden lg:flex h-20 bg-red shadow-md bg-white'>
       <div className='flex h-full flex-1 pl-6'>
         <a href='https://0xblanc.io' className='flex h-full px-6 py-6'>
-          <Image src={Logo} alt='logo' />
+          <Image src={Logo} alt='logo' width={149} height={32} />
         </a>
         {navItems.map((item, index) => (
           <div className='flex h-full' key={index}>
