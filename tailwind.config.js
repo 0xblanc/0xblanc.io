@@ -25,7 +25,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: 'url(../public/assets/home/hero/background.jpg)',
+        hero: 'url(https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758496/website/background_hxlfos.webp)',
       },
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],
