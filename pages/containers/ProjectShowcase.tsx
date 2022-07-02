@@ -75,13 +75,13 @@ const ProjectShowcase = () => {
           <Title text='Past Projects' />
         </div>
         <div className='flex lg:hidden justify-center mt-20 my-10'>
-          <Image className='hs-banner-mobile w-4/5' src={HSBanner} alt='HS Banner' />
+          <Image className='hs-banner-mobile w-4/5' src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-banner_rbuv7x.webp' alt='HS Banner' width={770} height={344} />
         </div>
         <div className='project-container flex flex-col relative justify-center items-center lg:my-80 lg:py-40'>
           <div className='flex flex-col italic text-xl lg:text-3xl text-center text-deepDarkBlue'>
             <div className='relative'>
               <div className='hs-banner-desktop absolute hidden lg:block w-[700px] top-[-375px] left-[-12px]'>
-                <Image src={HSBanner} alt='HS banner' />
+                <Image src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-banner_rbuv7x.webp' width={770} height={344} alt='HS banner' />
               </div>
               <p>
                 Over <span className='text-4xl lg:text-6xl font-bold text-blue'>One Million</span> USD on sell
@@ -89,7 +89,7 @@ const ProjectShowcase = () => {
             </div>
             <div className='relative'>
               <div className='hs-clash absolute hidden lg:block w-[335px] top-[-306px] right-[-160px]'>
-                <Image src={HSClash} alt='HS clash' />
+                <Image src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-clash_g9a04i.webp' width={335} height={330} alt='HS clash' />
               </div>
               <p>
                 <span className='text-4xl lg:text-6xl font-bold text-purple relative'>
@@ -100,7 +100,7 @@ const ProjectShowcase = () => {
             </div>
             <div className='relative'>
               <div className='hs-nft absolute hidden lg:block w-[300px] top-[-112px] left-[-340px]'>
-                <Image className='hs-nft absolute hidden lg:block w-[300px] top-[-112px] left-[-340px]' src={HSNft} alt='HS nft' />
+                <Image className='hs-nft absolute hidden lg:block w-[300px] top-[-112px] left-[-340px]' src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-nft_us4we2.webp' width={300} height={300} alt='HS nft' />
               </div>
               <p>
                 Collaborate with <span className='text-4xl lg:text-6xl font-bold text-blueLagoon'>French graffiti artist DEZIO</span>
@@ -108,7 +108,7 @@ const ProjectShowcase = () => {
             </div>
             <div className='relative'>
               <div className='hs-nyc absolute hidden lg:block w-[350px] top-[-12px] right-[-390px]'>
-                <Image src={HSNyc} alt='HS nyc' />
+                <Image src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-nyc_dpewwp.webp' width={350} height={350} alt='HS nyc' />
               </div>
               <p>
                 <span className='text-4xl lg:text-6xl font-bold text-redViolet'>Chef Nick Family</span> x Hungry Sausages Lab
@@ -116,10 +116,10 @@ const ProjectShowcase = () => {
             </div>
             <div className='relative'>
               <div className='hs-hunger-desktop absolute hidden lg:block w-[320px] bottom-[-375px] right-[54px]'>
-                <Image src={HSHunger} alt='HS hunger' />
+                <Image src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-hunger_xeyaxu.webp' width={320} height={320} alt='HS hunger' />
               </div>
               <div className='hs-wanted-desktop absolute hidden lg:block w-[340px] bottom-[-432px] left-[100px]'>
-                <Image src={HSWanted} alt='HS wanted' />
+                <Image src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-wanted_sctfre.webp' width={340} height={340} alt='HS wanted' />
               </div>
               <p>
                 Collaborated event with <span className='text-4xl lg:text-6xl font-bold text-orange'>Grant Hyatt - CLASH</span>!

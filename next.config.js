@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    domains: ['res.cloudinary.com'],
     // unoptimized: true,
   },
 }

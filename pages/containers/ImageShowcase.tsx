@@ -30,12 +30,11 @@ const ImageShowcase = () => {
         <div className='flex md:p-12'>
           <div className='flex bg-aliceBlue mx-20 md:mx-0 translate-x-10'>
             <div>
-              {/*<img className='-translate-y-10 -translate-x-10' src={AINightbirds} alt='AINightbirds'/>*/}
               <ReactCompareSlider
                 className='-translate-y-10 -translate-x-10'
                 changePositionOnHover={true}
-                itemOne={<Image alt={'AINightbirds'} src={AINightbirds} />}
-                itemTwo={<Image alt={'Moonbirds'} src={Moonbirds} />}
+                itemOne={<Image alt={'AINightbirds'} width={740} height={740} src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758656/website/AINightbirds_sllfw2.webp' />}
+                itemTwo={<Image alt={'Moonbirds'} width={740} height={740} src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758654/website/Moonbirds_x5nlp8.webp' />}
               />
             </div>
           </div>
