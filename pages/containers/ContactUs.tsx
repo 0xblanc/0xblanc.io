@@ -48,10 +48,10 @@ const ContactUs = () => {
               </div>
               <div className='flex'>
                 <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
-                  <Image src={Instagram} alt='Instagram' />
+                  <Image src={Instagram} alt='Instagram' width={24} height={24} />
                 </a>
                 <a className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                  <Image src={Telegram} alt='Telegram' />
+                  <Image src={Telegram} alt='Telegram' width={24} height={24} />
                 </a>
               </div>
             </div>

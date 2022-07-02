@@ -8,7 +8,7 @@ const Hero = (props: any) => {
       <div className='h-full w-full bg-gradient-to-r from-heroBlue to-transparent flex sm:pl-32 sm:py-16 flex-col'>
         <div className='flex-1 flex flex-col justify-center sm:pl-8 sm:px-0 px-5 '>
           <div>
-            <Image className='mb-4' src={Logo} alt='Logo' />
+            <Image className='mb-4' src={Logo} alt='Logo' width={392} height={82} />
           </div>
           <h1 className='text-gold text-4xl font-bold'>Unleash the potentiality with Blockchain.</h1>
         </div>

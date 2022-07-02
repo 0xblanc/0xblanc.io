@@ -4,13 +4,15 @@ type CircledItemProps = {
   position: string
   text: string
   icon: string
+  backgroundColor: string
 }
 
 const CircledItem = (props: CircledItemProps) => {
-  const { position, text, icon } = props
+  const { position, text, icon, backgroundColor } = props
 
   const [positionStyle, setPositionStyle] = useState<string>('')
   const [shellRotateStyle, setShellRotateStyle] = useState<string>('')
+  const [backgroundColorStyle, setBackgroundColorStyle] = useState<string>('')
 
   useEffect(() => {
     if (position === 'top') {
@@ -38,7 +40,26 @@ const CircledItem = (props: CircledItemProps) => {
       setPositionStyle('rotate-135')
       setShellRotateStyle('-rotate-135')
     }
-  }, [position])
+
+    if (backgroundColor === 'serviceDeepBlue') {
+      setBackgroundColorStyle(' bg-serviceDeepBlue')
+    } else if (backgroundColor === 'serviceBlue') {
+      setBackgroundColorStyle(' bg-serviceBlue')
+    } else if (backgroundColor === 'servicePurple') {
+      setBackgroundColorStyle(' bg-servicePurple')
+    } else if (backgroundColor === 'serviceLightPurple') {
+      setBackgroundColorStyle(' bg-serviceLightPurple')
+    } else if (backgroundColor === 'serviceRed') {
+      setBackgroundColorStyle(' bg-serviceRed')
+    } else if (backgroundColor === 'serviceSolana') {
+      setBackgroundColorStyle(' bg-gradient-to-tr from-serviceSolanaPurple via-serviceSolanaBlue to-serviceSolanaGreen')
+    } else if (backgroundColor === 'serviceLightRed') {
+      setBackgroundColorStyle(' bg-serviceLightRed')
+    } else if (backgroundColor === 'serviceOrange') {
+      setBackgroundColorStyle(' bg-serviceOrange')
+    }
+
+  }, [position, backgroundColor])
 
   return (
     <div className=' left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute flex justify-center items-center'>
@@ -46,14 +67,14 @@ const CircledItem = (props: CircledItemProps) => {
         <div
           className={
             shellRotateStyle +
-            ' translate-y-64 sm:translate-y-80  -translate-x-1/2 absolute w-40 h-40 md:h-56 md:w-56 bg-aliceBlue rounded-full flex justify-center items-center'
+            ' translate-y-64 sm:translate-y-80 -translate-x-1/2 absolute w-40 h-40 md:h-56 md:w-56 rounded-full flex justify-center items-center drop-shadow-xl'
           }
         >
-          <div className='circled-item-inner w-full h-full flex flex-col justify-center items-center'>
-            <div className='w-24 mb-4'>
-              <Image src={icon} alt={text} />
+          <div className={backgroundColorStyle + ' rounded-full circled-item-inner w-full h-full flex flex-col justify-center items-center'}>
+            <div className='flex w-24 h-24 mb-4'>
+              <Image src={icon} alt={text} width={96} height={96} />
             </div>
-            <p className='px-4 font-bold text-darkBlue text-center text-xs md:text-xl'>{text}</p>
+            <p className='px-4 text-white text-center text-xs md:text-xl'>{text}</p>
           </div>
         </div>
       </div>

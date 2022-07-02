@@ -22,6 +22,16 @@ module.exports = {
       blueLagoon: '#006266',
       redViolet: '#B53471',
       orange: '#EE5A24',
+      serviceDeepBlue: '#195084',
+      serviceBlue: '#253F9B',
+      servicePurple: '#672997',
+      serviceLightPurple: '#985689',
+      serviceRed: '#9B3C53',
+      serviceSolanaPurple: '#D12CFB',
+      serviceSolanaBlue: '#718DD3',
+      serviceSolanaGreen: '#0EF2A9',
+      serviceLightRed: '#F66767',
+      serviceOrange: '#FF8A00',
     },
     extend: {
       backgroundImage: {

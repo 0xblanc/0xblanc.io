@@ -26,13 +26,13 @@ const HeaderMain = (props: HeaderMainProps) => {
       </div>
       <div className='flex h-full justify-end pr-8'>
         <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer'>
-          <Image src={Email} alt='Email' />
+          <Image src={Email} alt='Email' width={24} height={24} />
         </a>
         <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
-          <Image src={Instagram} alt='Instagram' />
+          <Image src={Instagram} alt='Instagram' width={24} height={24} />
         </a>
         <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer'>
-          <Image src={Telegram} alt='Telegram' />
+          <Image src={Telegram} alt='Telegram' width={24} height={24} />
         </a>
       </div>
     </div>

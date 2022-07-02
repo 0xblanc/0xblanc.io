@@ -14,17 +14,17 @@ const Footer = () => {
           <div className='flex flex-row items-center'>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Link href='mailto:0xblanc.io@proton.me'>
-                <Image src={Email} alt='Email' />
+                <Image src={Email} alt='Email' width={24} height={24} />
               </Link>
             </div>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Link href='https://instagram.com/0xblanc.io'>
-                <Image src={Instagram} alt='Instagram' />
+                <Image src={Instagram} alt='Instagram' width={24} height={24} />
               </Link>
             </div>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Link href=''>
-                <Image src={Telegram} alt='Telegram' />
+                <Image src={Telegram} alt='Telegram' width={24} height={24} />
               </Link>
             </div>
           </div>

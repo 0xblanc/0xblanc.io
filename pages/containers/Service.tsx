@@ -2,49 +2,64 @@ import { useEffect, useState } from 'react'
 
 import CircledItem from '@components/home/service/CircledItem'
 import Logo from '@assets/logo/text_logo.svg'
-import Icon from '@assets/home/service-we-provide/nft-generic-propagation.svg'
+import Nft from '@assets/home/service-we-provide/nft-generic-propagation.svg'
+import Meta from '@assets/home/service-we-provide/meta.svg'
+import IPFS from '@assets/home/service-we-provide/ipfs.svg'
+import Minting from '@assets/home/service-we-provide/minting.svg'
+import SmartContract from '@assets/home/service-we-provide/smart-contract.svg'
+import Solana from '@assets/home/service-we-provide/solana.svg'
+import Web3 from '@assets/home/service-we-provide/web3.svg'
+import Web from '@assets/home/service-we-provide/web.svg'
 import useWindowDimensions from '@hooks/useWindowDimensions'
 import Image from 'next/image'
 const serviceList = [
   {
     name: 'NFT generic propagation',
-    icon: Icon,
+    icon: Nft,
     position: 'top',
+    backgroundColor: 'serviceDeepBlue',
   },
   {
     name: 'Custom metadata',
-    icon: Icon,
+    icon: Meta,
     position: 'top-right',
+    backgroundColor: 'serviceBlue',
   },
   {
     name: 'IPFS data upload',
-    icon: Icon,
+    icon: IPFS,
     position: 'right',
+    backgroundColor: 'servicePurple',
   },
   {
     name: 'Minting website',
-    icon: Icon,
+    icon: Minting,
     position: 'bottom-right',
+    backgroundColor: 'serviceLightPurple',
   },
   {
     name: 'EVM Smart Contract Service',
-    icon: Icon,
+    icon: SmartContract,
     position: 'bottom',
+    backgroundColor: 'serviceRed',
   },
   {
     name: 'Solana related service',
-    icon: Icon,
+    icon: Solana,
     position: 'bottom-left',
+    backgroundColor: 'serviceSolana',
   },
   {
     name: 'Web 3 integration service',
-    icon: Icon,
+    icon: Web3,
     position: 'left',
+    backgroundColor: 'serviceLightRed',
   },
   {
     name: 'Traditional web service',
-    icon: Icon,
+    icon: Web,
     position: 'top-left',
+    backgroundColor: 'serviceOrange',
   },
 ]
 const Service = () => {
@@ -94,8 +109,8 @@ const Service = () => {
       <div className='h-screen flex overflow-hidden items-center justify-center sticky flex-col top-0'>
         <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-32'>
           <div className='rotation-container h-4/6 aspect-square relative border-8 border-aliceBlue rounded-full'>
-            {serviceList.map(({ name, icon, position }, index) => (
-              <CircledItem key={index} position={position} text={name} icon={icon} />
+            {serviceList.map(({ name, icon, position, backgroundColor }, index) => (
+              <CircledItem key={index} position={position} text={name} icon={icon} backgroundColor={backgroundColor} />
             ))}
           </div>
         </div>
@@ -103,7 +118,7 @@ const Service = () => {
           <div className='flex justify-end w-full'>
             <div className='flex flex-col items-end translate-x-2 sm:translate-x-24 sm:w-[575px] pl-2 md:pl-0'>
               <div className='self-start mb-6'>
-                <Image src={Logo} alt='Logo' />
+                <Image src={Logo} alt='Logo' width={340} height={70} />
               </div>
               <h2 className='self-start uppercase text-darkBlue font-bold text-2xl sm:text-4xl md:text-7xl'>Service We Provide</h2>
             </div>
