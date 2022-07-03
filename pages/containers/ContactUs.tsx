@@ -1,10 +1,6 @@
 import { useState } from 'react'
 
-// import Title from '@components/shared/Title'
 import Title from '@components/shared/Title'
-import Instagram from '@assets/media/instagram.svg'
-import Telegram from '@assets/media/telegram.svg'
-import Image from 'next/image'
 const ContactUs = () => {
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
@@ -48,10 +44,10 @@ const ContactUs = () => {
               </div>
               <div className='flex'>
                 <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
-                  <Image src={Instagram} alt='Instagram' width={24} height={24} />
+                  <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg' alt='Instagram' width={24} height={24} />
                 </a>
                 <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc'>
-                  <Image src={Telegram} alt='Telegram' width={24} height={24} />
+                  <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg' alt='Telegram' width={24} height={24} />
                 </a>
               </div>
             </div>

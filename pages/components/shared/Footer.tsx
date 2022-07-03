@@ -1,6 +1,5 @@
 import Instagram from '@assets/media/instagram_white.svg'
 import Telegram from '@assets/media/telegram_white.svg'
-import Image from 'next/image'
 import Email from '@assets/media/email_white.svg'
 import Link from 'next/link'
 
@@ -14,17 +13,17 @@ const Footer = () => {
           <div className='flex flex-row items-center'>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Link href='mailto:0xblanc.io@proton.me'>
-                <Image src={Email} alt='Email' width={24} height={24} />
+                <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/email_white_okqc5z.svg' alt='Email' width={24} height={24} />
               </Link>
             </div>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Link href='https://instagram.com/0xblanc.io'>
-                <Image src={Instagram} alt='Instagram' width={24} height={24} />
+                <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_white_gq2wrr.svg' alt='Instagram' width={24} height={24} />
               </Link>
             </div>
             <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
               <Link href='https://t.me/oxblanc'>
-                <Image src={Telegram} alt='Telegram' width={24} height={24} />
+                <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/telegram_white_zhib7w.svg' alt='Telegram' width={24} height={24} />
               </Link>
             </div>
           </div>

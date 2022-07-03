@@ -2,7 +2,6 @@ import { ReactCompareSlider, ReactCompareSliderHandle, ReactCompareSliderImage }
 
 import AINightbirds from '@assets/home/image-showcase/AINightbirds.png'
 import Moonbirds from '@assets/home/image-showcase/Moonbirds.png'
-import Image from 'next/image'
 const ImageShowcase = () => {
   return (
     <div className='container mx-auto py-28 xl:px-10'>
@@ -33,8 +32,8 @@ const ImageShowcase = () => {
               <ReactCompareSlider
                 className='-translate-y-10 -translate-x-10'
                 changePositionOnHover={true}
-                itemOne={<Image alt={'AINightbirds'} width={740} height={740} src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758656/website/AINightbirds_sllfw2.webp' />}
-                itemTwo={<Image alt={'Moonbirds'} width={740} height={740} src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758654/website/Moonbirds_x5nlp8.webp' />}
+                itemOne={<img alt={'AINightbirds'} width={740} height={740} src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758656/website/AINightbirds_sllfw2.webp' />}
+                itemTwo={<img alt={'Moonbirds'} width={740} height={740} src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758654/website/Moonbirds_x5nlp8.webp' />}
               />
             </div>
           </div>

@@ -1,14 +1,13 @@
 import Logo from '@assets/logo/text_logo_gold.svg'
 import HoverableLink from '@components/shared/HoverableLink'
 
-import Image from 'next/image'
 const Hero = (props: any) => {
   return (
     <div id='hero' className='h-screen min-h-full w-full bg-hero bg-cover bg-right'>
       <div className='h-full w-full bg-gradient-to-t lg:bg-gradient-to-r from-heroBlue to-transparent flex lg:pl-32 md:py-16 flex-col'>
         <div className='flex-1 flex flex-col justify-center sm:pl-8 sm:px-0 px-5 '>
           <div className='mx-auto lg:mx-0'>
-            <Image className='mb-4' src={Logo} alt='Logo' width={392} height={82} />
+            <img className='mb-4' src='https://res.cloudinary.com/blanc-io/image/upload/v1656857424/website/text_logo_gold_no01vb.svg' alt='Logo' width={392} height={82} />
           </div>
           <h1 className='text-gold text-4xl font-bold text-center lg:text-start'>Unleash the potentiality with Blockchain.</h1>
         </div>

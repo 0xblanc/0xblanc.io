@@ -1,63 +1,53 @@
 import { useEffect, useState } from 'react'
 
 import CircledItem from '@components/home/service/CircledItem'
-import Logo from '@assets/logo/text_logo.svg'
-import Nft from '@assets/home/service-we-provide/nft-generic-propagation.svg'
-import Meta from '@assets/home/service-we-provide/meta.svg'
-import IPFS from '@assets/home/service-we-provide/ipfs.svg'
-import Minting from '@assets/home/service-we-provide/minting.svg'
-import SmartContract from '@assets/home/service-we-provide/smart-contract.svg'
-import Solana from '@assets/home/service-we-provide/solana.svg'
-import Web3 from '@assets/home/service-we-provide/web3.svg'
-import Web from '@assets/home/service-we-provide/web.svg'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
-import Image from 'next/image'
 const serviceList = [
   {
     name: 'NFT generic propagation',
-    icon: Nft,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/nft-generic-propagation_cbm15f.svg',
     position: 'top',
     backgroundColor: 'serviceNft',
   },
   {
     name: 'Custom metadata',
-    icon: Meta,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/meta_oavy25.svg',
     position: 'top-right',
     backgroundColor: 'serviceMeta',
   },
   {
     name: 'IPFS data upload',
-    icon: IPFS,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/ipfs_dwm3ei.svg',
     position: 'right',
     backgroundColor: 'serviceIpfs',
   },
   {
     name: 'Minting website',
-    icon: Minting,
+    icon:'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/minting_blgiih.svg',
     position: 'bottom-right',
     backgroundColor: 'serviceMinting',
   },
   {
     name: 'EVM Smart Contract Service',
-    icon: SmartContract,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/smart-contract_h6rezu.svg',
     position: 'bottom',
     backgroundColor: 'serviceSmartContract',
   },
   {
     name: 'Solana related service',
-    icon: Solana,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/solana_ikjezd.svg',
     position: 'bottom-left',
     backgroundColor: 'serviceSolana',
   },
   {
     name: 'Web 3 integration service',
-    icon: Web3,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858228/website/services/web3_aq7mir.svg',
     position: 'left',
     backgroundColor: 'serviceWeb3',
   },
   {
     name: 'Traditional web service',
-    icon: Web,
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858228/website/services/web_daqg6x.svg',
     position: 'top-left',
     backgroundColor: 'serviceWeb',
   },
@@ -119,7 +109,7 @@ const Service = () => {
           <div className='flex justify-end w-full'>
             <div className='flex flex-col items-end translate-x-2 sm:translate-x-24 w-[200px] sm:w-[450px] pl-2 md:pl-0'>
               <div className='self-start mb-6'>
-                <Image src={Logo} alt='Logo' width={340} height={70} />
+                <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg' alt='Logo' width={340} height={70} />
               </div>
               <h2 className='self-start uppercase text-darkBlue font-bold text-2xl sm:text-4xl md:text-7xl'>Service We Provide</h2>
             </div>
