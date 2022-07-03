@@ -8,13 +8,31 @@ import Telegram from '@assets/media/telegram.svg'
 import React, { useEffect } from 'react'
 
 type MobileMenuProps = {
-  navItems: Array<{ text: string; href: string }>
   menuOpen: boolean
   menuToggleHandler: () => void
 }
 
+const navItems = [
+  {
+    text: 'About Us',
+    href: '#about-us',
+  },
+  {
+    text: 'Service We Provide',
+    href: '#service-we-provide',
+  },
+  {
+    text: 'Past Projects',
+    href: '#past-projects',
+  },
+  {
+    text: 'Contact Us',
+    href: '#contact-us',
+  },
+]
+
 const MobileMenu = (props: MobileMenuProps) => {
-  const { navItems, menuOpen, menuToggleHandler } = props
+  const { menuOpen, menuToggleHandler } = props
   const [top ,setTop] = React.useState(0)
 
   useEffect(() => {

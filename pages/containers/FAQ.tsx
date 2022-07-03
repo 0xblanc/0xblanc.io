@@ -31,7 +31,7 @@ const faq_boxes = [
   },
 ]
 
-const FAQ = props => {
+const FAQ = () => {
   return (
     <div className='h-screen'>
       <div className='w-full justify-around flex flex-row pt-36'>

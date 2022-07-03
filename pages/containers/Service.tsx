@@ -10,7 +10,7 @@ import SmartContract from '@assets/home/service-we-provide/smart-contract.svg'
 import Solana from '@assets/home/service-we-provide/solana.svg'
 import Web3 from '@assets/home/service-we-provide/web3.svg'
 import Web from '@assets/home/service-we-provide/web.svg'
-import useWindowDimensions from '@hooks/useWindowDimensions'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import Image from 'next/image'
 const serviceList = [
   {
@@ -87,6 +87,7 @@ const Service = () => {
 
       rotationContainer.style.transform = `rotate(${rotation}deg)`
 
+      // @ts-ignore
       for (const circle of circlesInner) {
         circle.style.transform = `rotate(${-rotation}deg)`
       }

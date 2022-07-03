@@ -8,7 +8,7 @@ import HSNyc from '@assets/home/past-projects/hs-nyc.png'
 import HSWanted from '@assets/home/past-projects/hs-wanted.png'
 
 import { useEffect, useState } from 'react'
-import useWindowDimensions from '@hooks/useWindowDimensions'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import Image from 'next/image'
 
 const ProjectShowcase = () => {
@@ -21,7 +21,7 @@ const ProjectShowcase = () => {
     const onScroll = () => {
       let currentPosition = window.pageYOffset // or use document.documentElement.scrollTop;
       const main = document.querySelector('.main') as any
-      const pastProject = document.getElementById('past-projects')
+      const pastProject = document.getElementById('past-projects') as any
       const start = main.offsetTop + pastProject.offsetTop - height / 2
       const end = main.offsetTop + pastProject.offsetTop
 
@@ -56,7 +56,7 @@ const ProjectShowcase = () => {
 
       const texts = document.querySelectorAll('.project-container p') as any
       const textsTransition = 1.5 - 0.5 * frac
-      texts.forEach(text => {
+      texts.forEach((text: { style: { transform: string } })=> {
         text.style.transform = `scale(${textsTransition <= 1 ? 1 : textsTransition})`
       })
 

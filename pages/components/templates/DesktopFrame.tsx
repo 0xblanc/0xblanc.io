@@ -7,24 +7,6 @@ import MobileMenu from '@components/shared/Header/MobileMenu'
 type DesktopFrameProps = {
   children: React.ReactNode
 }
-const navItems = [
-  {
-    text: 'About Us',
-    href: '#about-us',
-  },
-  {
-    text: 'Service We Provide',
-    href: '#service-we-provide',
-  },
-  {
-    text: 'Past Projects',
-    href: '#past-projects',
-  },
-  {
-    text: 'Contact Us',
-    href: '#contact-us',
-  },
-]
 
 const DesktopFrame = (props: DesktopFrameProps) => {
   const { children } = props
@@ -47,11 +29,11 @@ const DesktopFrame = (props: DesktopFrameProps) => {
     <div className='h-full'>
       <Hero />
       <div className='main relative'>
-        <Header navItems={navItems} menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
+        <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
         <div>{children}</div>
       </div>
       <Footer />
-      <MobileMenu navItems={navItems} menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
+      <MobileMenu menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
     </div>
   )
 }
