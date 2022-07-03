@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: 'https://raw.githubusercontent.com/0xblanc/0xblanc.io/main/docs/',
+  // assetPrefix: '/0xblanc.io/',
   reactStrictMode: false,
   jsconfigPaths: true,
   tsconfigPath: true,
