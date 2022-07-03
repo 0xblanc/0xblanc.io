@@ -33,7 +33,7 @@ const HeaderMain = () => {
         ))}
       </div>
       <div className='flex h-full justify-end pr-8'>
-        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer'>
+        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='mailto:0xblanc.io@proton.me'>
           <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/email_toxyaj.svg' alt='Email' width={24} height={24} />
         </a>
         <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
