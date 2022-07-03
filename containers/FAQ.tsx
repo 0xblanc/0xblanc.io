@@ -1,4 +1,4 @@
-import Title from '@components/shared/Title'
+import Title from '../components/shared/Title'
 
 const faq_boxes = [
   {

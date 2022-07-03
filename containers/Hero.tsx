@@ -1,5 +1,5 @@
 import Logo from '@assets/logo/text_logo_gold.svg'
-import HoverableLink from '@components/shared/HoverableLink'
+import HoverableLink from '../components/shared/HoverableLink'
 
 const Hero = (props: any) => {
   return (

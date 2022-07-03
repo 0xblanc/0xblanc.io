@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import CircledItem from '@components/home/service/CircledItem'
-import useWindowDimensions from '../../hooks/useWindowDimensions'
+import CircledItem from '../components/home/service/CircledItem'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 const serviceList = [
   {
     name: 'NFT generic propagation',

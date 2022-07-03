@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import Title from '@components/shared/Title'
+import Title from '../components/shared/Title'
 const ContactUs = () => {
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')

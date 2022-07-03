@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import AboutUs from './containers/AboutUs'
-import ContactUs from './containers/ContactUs'
-import ProjectShowcase from './containers/ProjectShowcase'
-import ImageShowcase from './containers/ImageShowcase'
-import Service from './containers/Service'
-import DesktopFrame from '@components/templates/DesktopFrame'
+import AboutUs from '../containers/AboutUs'
+import ContactUs from '../containers/ContactUs'
+import ProjectShowcase from '../containers/ProjectShowcase'
+import ImageShowcase from '../containers/ImageShowcase'
+import Service from '../containers/Service'
+import DesktopFrame from '../components/templates/DesktopFrame'
 
 const Home: NextPage = () => {
   return (

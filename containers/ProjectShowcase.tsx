@@ -1,4 +1,4 @@
-import Title from '@components/shared/Title'
+import Title from '../components/shared/Title'
 
 import HSBanner from '@assets/home/past-projects/hs-banner.png'
 import HSClash from '@assets/home/past-projects/hs-clash.png'
@@ -6,7 +6,7 @@ import HSHunger from '@assets/home/past-projects/hs-hunger.png'
 import HSWanted from '@assets/home/past-projects/hs-wanted.png'
 
 import { useEffect, useState } from 'react'
-import useWindowDimensions from '../../hooks/useWindowDimensions'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 const ProjectShowcase = () => {
   const { width, height } = useWindowDimensions()

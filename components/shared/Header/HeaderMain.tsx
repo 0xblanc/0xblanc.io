@@ -1,4 +1,4 @@
-import HoverableLink from '@components/shared/HoverableLink'
+import HoverableLink from '../HoverableLink'
 
 const navItems = [
   {

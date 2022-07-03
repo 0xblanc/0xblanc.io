@@ -1,4 +1,4 @@
-import HeaderMain from '@components/shared/Header/HeaderMain'
+import HeaderMain from './HeaderMain'
 import HeaderMobile from './HeaderMobile'
 
 type HeaderProps = {
