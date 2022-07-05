@@ -23,8 +23,8 @@ const HeaderMobile = (props: HeaderMobileProps) => {
           onClick={menuToggleHandler}
         />
         <div className='text-3xl justify-end text-darkBlue'>
-          {query && query.lang === 'zhHK' && <LanguageSwitcher lang='en'>En</LanguageSwitcher>}
-          {query && query.lang === 'en' && <LanguageSwitcher lang='zhHK'>繁中</LanguageSwitcher>}
+          {query && query.lang === 'zh-HK' && <LanguageSwitcher lang='en'>En</LanguageSwitcher>}
+          {query && query.lang === 'en' && <LanguageSwitcher lang='zh-HK'>繁中</LanguageSwitcher>}
         </div>
       </div>
     </div>

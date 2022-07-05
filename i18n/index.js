@@ -1,12 +1,12 @@
-var en = require('./translations.en.json')
-var zhHK = require('./translations.zhHK.json')
+const en = require('./translations.en.json')
+const zhHK = require('./translations.zhHK.json')
 const i18n = {
     translations: {
-        zhHK,
+        'zh-HK': zhHK,
         en,
     },
-    defaultLang: "zhHK",
+    defaultLang: 'zh-HK',
     useBrowserDefault: false,
-};
+}
 
-module.exports = i18n;
+module.exports = i18n

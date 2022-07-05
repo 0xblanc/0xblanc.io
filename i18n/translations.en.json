@@ -1,10 +1,16 @@
 {
+    "meta": {
+        "locale": "en",
+        "title": "0xBlanc - Hong Kong based Web3 & Blockchain Solution Provider",
+        "description": "Hong Kong based web3 and blockchain solution provider. Want to integrate web3 into your business? Need blockchain-related technical services or consultations like launching NFT projects? Then 0xBlanc.io is the place to be.",
+        "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"
+    },
     "Hero": {
         "title": "Unleash the potentiality with Blockchain."
     },
     "AboutUs": {
         "title": "About Us",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, quisquam."
+        "content": "0xBlanc was founded by a group of young blood passionate about web3 and blockchain technologies. We brought the talents of technicians and designers to provide blockchain-related consultations and services for projects. If you want to launch an NFT project, integrate web3 into an existing business, develop custom logic smart contracts or even host traditional websites, this is the right place to be. Please don't hesitate and feel free to contact us!"
     },
     "ContactUs": {
         "title": "Contact Us"
@@ -13,9 +19,8 @@
         "title": "FAQ"
     },
     "ImageShowcase": {
-        "title": "Image Showcase",
         "WantSomethingSpecial": "Want something special?",
-        "AIImageProcessedNFTgeneration": "AI image processed NFT generation"
+        "AIImageProcessedNftGeneration": "AI image processed NFT generation"
     },
     "ProjectShowcase": {
         "title": "PAST PROJECTS"

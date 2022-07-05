@@ -42,8 +42,8 @@ const HeaderMain = () => {
       </div>
       <div className='flex h-full justify-end pr-8'>
         <div className='flex flex-row space-x-3 items-center text-darkBlue font-bold text-xl mx-5'>
-          {query && query.lang === 'zhHK' && <LanguageSwitcher lang='en'>En</LanguageSwitcher>}
-          {query && query.lang === 'en' && <LanguageSwitcher lang='zhHK'>繁中</LanguageSwitcher>}
+          {query && query.lang === 'zh-HK' && <LanguageSwitcher lang='en'>En</LanguageSwitcher>}
+          {query && query.lang === 'en' && <LanguageSwitcher lang='zh-HK'>繁中</LanguageSwitcher>}
         </div>
         <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='mailto:0xblanc.io@proton.me'>
           <img

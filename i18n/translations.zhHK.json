@@ -1,4 +1,10 @@
 {
+    "meta": {
+        "locale": "zh-HK",
+        "title": "0xBlanc - 香港的Web3&區塊鏈解決方案供應商",
+        "description": "",
+        "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft launching, nft generation, 區塊鏈, 以太坊",
+    },
     "Hero": {
         "title": "釋放區塊鏈的潛力"
     },
@@ -13,9 +19,8 @@
         "title": "常見問題"
     },
     "ImageShowcase": {
-        "title": "圖片展示",
         "WantSomethingSpecial": "更多想要的東西？",
-        "AIImageProcessedNFTgeneration": "AI圖片合成 + NFT生成器"
+        "AIImageProcessedNftGeneration": "AI圖片合成 + NFT生成器"
     },
     "ProjectShowcase": {
         "title": "過往項目"

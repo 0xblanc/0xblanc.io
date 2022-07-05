@@ -16,24 +16,24 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>0xBlanc.io - HK Web3 Solution Provider</title>
-        <link rel='icon' href='/assets/logo/text_logo.svg' />
+        <title>{t('meta.title')}</title>
+        <link rel='icon' href='/logo512.png' />
         <meta
           name='description'
-          content={`Hong Kong based web3 and blockchain solution provider. Want to integrate web3 into your business? Need blockchain related technical services or consultation like launching NFT projects? Then 0xBlanc.io is the place to be.`}
+          content={t('meta.description')}
         />
-        <meta name='keywords' content='web3, blockchain, solana, ethereum, nft, technical service' />
+        <meta name='keywords' content={t('meta.keywords')} />
 
-        <meta property='og:title' content='0xBlanc.io - HK Web3 Solution Provider' />
+        <meta property='og:title' content={t('meta.title')} />
         <meta property='og:image' content='/assets/logo/text_logo.svg' />
-        <meta property='og:site_name' content='CBTWines' />
+        <meta property='og:site_name' content='0xBlanc' />
         <meta
           property='og:description'
-          content={`Hong Kong based web3 and blockchain solution provider. Want to integrate web3 into your business? Need blockchain related technical services or consultation like launching NFT projects? Then 0xBlanc.io is the place to be.`}
+          content={t('meta.description')}
         />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://0xblanc.io' />
-        <meta property='og:locale' content='en_US' />
+        <meta property='og:locale' content={t('meta.locale')} />
 
         <meta name='googlebot' content='noindex,nofollow' />
       </Head>

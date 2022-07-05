@@ -9,7 +9,7 @@ const ImageShowcase = () => {
     <div className='container mx-auto py-28 xl:px-10'>
       <div className='w-full justify-center items-center flex flex-col text-center'>
         <h1 className='md:text-3xl text-darkBlue mb-2'>{t('ImageShowcase.WantSomethingSpecial')} </h1>
-        <h1 className='text-3xl md:text-6xl text-darkBlue font-bold mb-8'>{t('ImageShowcase.AIImageProcessedNFTgeneration')}</h1>
+        <h1 className='text-3xl md:text-6xl text-darkBlue font-bold mb-8'>{t('ImageShowcase.AIImageProcessedNftGeneration')}</h1>
       </div>
       <div className='flex flex-col-reverse md:flex-row mx-auto pt-16'>
         <div className='flex md:flex-col flex-1 pt-8 lg:pt-24 xl:pl-16 justify-evenly  md:justify-start'>
