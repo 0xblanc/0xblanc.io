@@ -1,0 +1,24 @@
+{
+    "AboutUs": {
+        "title": "About Us",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, quisquam."
+    },
+    "ContactUs": {
+        "title": "Contact Us"
+    },
+    "FAQ": {
+        "title": "FAQ"
+    },
+    "ImageShowcase": {
+        "title": "Image Showcase",
+        "WantSomethingSpecial": "Want something special?",
+        "AIImageProcessedNFTgeneration": "AI image processed NFT generation"
+    },
+    "ProjectShowcase": {
+        "title": "PAST PROJECTS"
+    },
+    "Services": {
+        "title": "Services",
+        "ServiceWeProvide": "Service We Provide"
+    }
+}

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 
 import CircledItem from '../components/home/service/CircledItem'
 import useWindowDimensions from '../hooks/useWindowDimensions'
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
+
 const serviceList = [
   {
     name: 'NFT generic propagation',
@@ -23,7 +25,7 @@ const serviceList = [
   },
   {
     name: 'Minting website',
-    icon:'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/minting_blgiih.svg',
+    icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/minting_blgiih.svg',
     position: 'bottom-right',
     backgroundColor: 'serviceMinting',
   },
@@ -55,6 +57,7 @@ const serviceList = [
 const Service = () => {
   const [scrolling, setScrolling] = useState(false)
   const [scrollTop, setScrollTop] = useState(0)
+  const { t } = useTranslation()
 
   const { height } = useWindowDimensions()
 
@@ -109,9 +112,16 @@ const Service = () => {
           <div className='flex justify-end w-full'>
             <div className='flex flex-col items-end translate-x-2 sm:translate-x-24 w-[200px] sm:w-[450px] pl-2 md:pl-0'>
               <div className='self-start mb-6'>
-                <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg' alt='Logo' width={340} height={70} />
+                <img
+                  src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg'
+                  alt='Logo'
+                  width={340}
+                  height={70}
+                />
               </div>
-              <h2 className='self-start uppercase text-darkBlue font-bold text-2xl sm:text-4xl md:text-7xl'>Service We Provide</h2>
+              <h2 className='self-start uppercase text-darkBlue font-bold text-2xl sm:text-4xl md:text-7xl'>
+                {t('Services.ServiceWeProvide')}
+              </h2>
             </div>
           </div>
         </div>

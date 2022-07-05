@@ -1,0 +1,24 @@
+{
+    "AboutUs": {
+        "title": "關於我們",
+        "content": "asd"
+    },
+    "ContactUs": {
+        "title": "聯絡我們"
+    },
+    "FAQ": {
+        "title": "常見問題"
+    },
+    "ImageShowcase": {
+        "title": "圖片展示",
+        "WantSomethingSpecial": "更多想要的東西？",
+        "AIImageProcessedNFTgeneration": "AI圖片合成 + NFT生成器"
+    },
+    "ProjectShowcase": {
+        "title": "過往項目"
+    },
+    "Services": {
+        "title": "服務",
+        "ServiceWeProvide": "我們提供的服務"
+    }
+}

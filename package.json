@@ -14,6 +14,7 @@
     "@heroicons/react": "^1.0.6",
     "craco": "^0.0.3",
     "next": "12.2.0",
+    "next-export-i18n": "^2.0.3",
     "react": "18.2.0",
     "react-compare-slider": "^2.2.0",
     "react-dom": "18.2.0",
