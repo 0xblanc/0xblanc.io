@@ -79,7 +79,7 @@ const ProjectShowcase = () => {
             src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-banner_rbuv7x.webp'
             alt='HS Banner'
             width={770}
-            height={344}
+            height={379}
           />
         </div>
         <div className='project-container flex flex-col relative justify-center items-center lg:my-80 lg:py-40'>
@@ -89,7 +89,7 @@ const ProjectShowcase = () => {
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-banner_rbuv7x.webp'
                   width={770}
-                  height={344}
+                  height={379}
                   alt='HS banner'
                 />
               </div>
