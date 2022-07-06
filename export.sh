@@ -9,7 +9,7 @@ node deployment-add-lang-tag.js en
 cp ./i18n/index.js.zh ./i18n/index.js
 npm run export
 node deployment-scripts-replace.js
-node deployment-add-lang-tag.js zh-HK
+node deployment-add-lang-tag.js zh-hk
 mkdir ./docs/zh-hk
 cp ./out/index.html ./docs/zh-hk/index.html
 cp -rn ./out/_next/* ./docs/_next

@@ -14,6 +14,6 @@ if (args[0] === 'en') {
 
   fs.writeFileSync(`./out/index.html`, html)
 } else {
-  console.log('Please input en or zh-HK')
+  console.log('Please input en or zh-hk')
   process.exit(1)
 }

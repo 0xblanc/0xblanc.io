@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: 'https://0xblanc.io/',
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://0xblanc.io' : '',
   reactStrictMode: false,
   jsconfigPaths: true,
   tsconfigPath: true,

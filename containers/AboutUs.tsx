@@ -5,7 +5,6 @@ const AboutUs = () => {
   const { t } = useTranslation()
   const [query] = useLanguageQuery()
 
-  console.log('query', query)
   return (
     <div id='about-us' className='bg-aliceBlue py-28 block'>
       <div className='flex flex-col items-center'>
