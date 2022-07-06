@@ -1,6 +1,8 @@
 {
     "meta": {
         "locale": "en",
+        "hreflang": "zh-HK",
+        "alternate": "https://0xblanc.com/zh-HK",
         "title": "0xBlanc - Hong Kong based Web3 & Blockchain Solution Provider",
         "description": "Hong Kong based web3 and blockchain solution provider. Want to integrate web3 into your business? Need blockchain-related technical services or consultations like launching NFT projects? Then 0xBlanc.io is the place to be.",
         "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"

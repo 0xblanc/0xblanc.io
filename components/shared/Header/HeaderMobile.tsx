@@ -21,6 +21,8 @@ const HeaderMobile = (props: HeaderMobileProps) => {
           src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg'
           alt='Logo'
           onClick={menuToggleHandler}
+          width={153}
+          height={32}
         />
         <div className='text-3xl justify-end text-darkBlue'>
           {query && query.lang === 'zh-HK' && <LanguageSwitcher lang='en'>En</LanguageSwitcher>}

@@ -168,6 +168,8 @@ const ProjectShowcase = () => {
               className='hs-wanted-mobile'
               src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-wanted_sctfre.webp'
               alt='HS wanted'
+              width={290}
+              height={290}
             />
           </div>
           <div className='w-1/2 flex pt-2 pb-10 px-2'>
@@ -175,6 +177,8 @@ const ProjectShowcase = () => {
               className='hs-hunger-mobile'
               src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-hunger_xeyaxu.webp'
               alt='HS hunger'
+              width={290}
+              height={290}
             />
           </div>
         </div>

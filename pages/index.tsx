@@ -19,6 +19,7 @@ const Home: NextPage = () => {
         <title>{t('meta.title')}</title>
         <link rel='icon' href='/logo512.png' />
         <link rel='canonical' href='https://0xblanc.io' />
+        <link rel='alternate' href={t('meta.alternate')} hrefLang={t('meta.hreflang')} />
         <meta
           name='description'
           content={t('meta.description')}

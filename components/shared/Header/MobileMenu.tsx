@@ -46,6 +46,8 @@ const MobileMenu = (props: MobileMenuProps) => {
               src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg'
               alt='Logo'
               onClick={menuToggleHandler}
+              width={153}
+              height={32}
             />
           </div>
           <div className='flex flex-col flex-1 px-6 py-12'>
