@@ -10,6 +10,7 @@ npm run export
 node deployment-scripts-replace.js
 mkdir ./docs/zh-hk
 cp ./out/index.html ./docs/zh-hk/index.html
+cp -rn ./out/_next/* ./docs/_next
 cp ./i18n/index.js.bak ./i18n/index.js
 rm -rf ./out
 cp ./temp/CNAME ./docs/CNAME
