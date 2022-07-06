@@ -11,7 +11,7 @@ const rxs = [
   /\/_next\/static\/css\/(.*?).css/,
 ]
 
-const getHtml = source => fs.readFileSync(`./${source}/index.html`, 'utf8');
+const getHtml = source => fs.readFileSync(`./${source}/index.html`, 'utf8').toString();
 
 const getDirCode = source => {
   const directories = fs.readdirSync(`${source}/_next/static`, {withFileTypes: true})
@@ -38,16 +38,19 @@ const getScripts = source => {
 
 const renameFiles = (source, files) => {
   for (const file of files) {
-    fs.renameSync(`${source}${file}`, `${source}${file.replace('.js', '-zh.js')}`)
+    if (file.endsWith('.js')) {
+      fs.renameSync(`${source}${file}`, `${source}${file.replace('.js', '-zh.js')}`)
+    } else {
+      fs.renameSync(`${source}${file}`, `${source}${file.replace('.css', '-zh.css')}`)
+    }
   }
 }
 
-let newHtml
-const html = getHtml('out');
+let html = getHtml('out');
 const newScripts = getScripts('out')
 
 for (let i = 0; i < newScripts.length; i++) {
-  newHtml = html.replaceAll(newScripts[i], `${newScripts[i]}-zh`)
+  html = html.replaceAll(newScripts[i], `${newScripts[i]}-zh`)
 }
 
 const chunkScripts = getfiles('out', '/chunks')
@@ -60,5 +63,5 @@ renameFiles('out/_next/static/css/', cssScripts)
 
 
 
-fs.writeFileSync(`./out/index.html`, newHtml)
+fs.writeFileSync(`./out/index.html`, html)
 
