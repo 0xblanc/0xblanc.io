@@ -5,11 +5,13 @@ cp ./i18n/index.js.en ./i18n/index.js
 npm run export
 rm -rf ./docs
 cp -rf ./out ./docs
+node deployment-add-lang-tag.js en
 cp ./i18n/index.js.zh ./i18n/index.js
 npm run export
 node deployment-scripts-replace.js
-mkdir ./docs/zh-hk
-cp ./out/index.html ./docs/zh-hk/index.html
+node deployment-add-lang-tag.js zh-HK
+mkdir ./docs/zh-HK
+cp ./out/index.html ./docs/zh-HK/index.html
 cp -rn ./out/_next/* ./docs/_next
 cp ./i18n/index.js.bak ./i18n/index.js
 rm -rf ./out
