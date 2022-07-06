@@ -8,7 +8,7 @@ if (args[0] === 'en') {
   html = html.replaceAll('<html', '<html lang="en"')
 
   fs.writeFileSync(`./docs/index.html`, html)
-} else if (args[0] === 'zh-HK') {
+} else if (args[0] === 'zh-hk') {
   let html = getHtml('out')
   html = html.replaceAll('<html', '<html lang="zh-HK"')
 
