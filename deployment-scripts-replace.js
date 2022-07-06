@@ -45,10 +45,8 @@ const renameFiles = (source, files) => {
 let newHtml
 const html = getHtml('out');
 const newScripts = getScripts('out')
-console.log(newScripts)
 
 for (let i = 0; i < newScripts.length; i++) {
-  console.log(newScripts[i], ' ', `${newScripts[i]}-zh`)
   newHtml = html.replaceAll(newScripts[i], `${newScripts[i]}-zh`)
 }
 
