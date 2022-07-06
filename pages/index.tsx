@@ -20,8 +20,8 @@ const Home: NextPage = () => {
         <link rel='icon' href='/logo512.png' />
         <link rel='canonical' href='https://0xblanc.io' />
         <link rel='alternate' href='https://0xblanc.io' hrefLang='en' />
-        <link rel='alternate' href='https://0xblanc.io/zh-hk' hrefLang='zh' />
-        <link rel='alternate' href='https://0xblanc.io/zh-hk' hrefLang='zh-HK' />
+        <link rel='alternate' href='https://0xblanc.io/zh-hk/' hrefLang='zh' />
+        <link rel='alternate' href='https://0xblanc.io/zh-hk/' hrefLang='zh-HK' />
         <link rel="alternate" href="https://0xblanc.io" hrefLang="x-default"/>
         <meta
           name='description'
