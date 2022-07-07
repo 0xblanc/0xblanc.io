@@ -39,16 +39,19 @@ const MobileMenu = (props: MobileMenuProps) => {
     <>
       {menuOpen && (
         <div id='mobile-menu' className='h-screen bg-white z-1000 w-full flex flex-col absolute' style={{ top: `${top}px` }}>
-          <div className='flex px-6 py-5 w-full items-center justify-start shadow-lg'>
-            <XIcon className='h-12 mr-4 text-darkBlue' onClick={menuToggleHandler}></XIcon>
-            <img
-              className='h-8 mr-4'
-              src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg'
-              alt='Logo'
-              onClick={menuToggleHandler}
-              width={153}
-              height={32}
-            />
+          <div className='flex px-6 py-5 w-full items-center justify-start shadow-lg h-20'>
+            <div className='flex flex-1'>
+              <img
+                src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857424/website/text_logo_kahw7o.svg'
+                alt='Logo'
+                onClick={menuToggleHandler}
+                width={153}
+                height={32}
+              />
+            </div>
+            <div className='flex'>
+              <XIcon className='h-8 text-darkBlue' onClick={menuToggleHandler}></XIcon>
+            </div>
           </div>
           <div className='flex flex-col flex-1 px-6 py-12'>
             <div className='flex-1 flex flex-col font-thin'>
@@ -91,9 +94,12 @@ const MobileMenu = (props: MobileMenuProps) => {
                   />
                 </Link>
               </div>
+              <div className='flex flex-row space-x-3 items-center text-darkBlue font-bold text-lg'>
+                {query && query.lang === 'zh-HK' && <a className='flex items-center px-2 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io'>EN</a>}
+                {query && query.lang === 'en' && <a className='flex items-center px-2 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io/zh-hk'>繁中</a>}
+              </div>
             </div>
           </div>
-          <div className='flex justify-center'></div>
         </div>
       )}
     </>

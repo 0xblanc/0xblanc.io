@@ -41,7 +41,7 @@ const HeaderMain = () => {
         ))}
       </div>
       <div className='flex h-full justify-end pr-8'>
-        <div className='flex flex-row space-x-3 items-center text-darkBlue font-bold text-xl mx-5'>
+        <div className='flex flex-row space-x-3 items-center text-darkBlue font-bold text-lg'>
           {query && query.lang === 'zh-HK' && <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io'>EN</a>}
           {query && query.lang === 'en' && <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io/zh-hk'>繁中</a>}
         </div>
