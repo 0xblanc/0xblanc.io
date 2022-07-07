@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div className='flex bg-darkElectricBlue p-2 justify-center'>
-      <div className='flex flex-col md:flex-row items-center bg-darkElectricBlue justify-between max-w-full' style={{ width: 992 }}>
+      <div className='flex flex-col md:flex-row items-center bg-darkElectricBlue justify-between w-full max-w-[992px]'>
         <p className='text-white text-base sm:text-lg mb-2 md:mb-0'>Copyright © 2022 0xBlanc. All rights reserved.</p>
         <div className='flex flex-row'>
           <p className='text-white text-lg mr-2 hidden md:block'>Find us on:</p>
