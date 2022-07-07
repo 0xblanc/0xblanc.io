@@ -6,49 +6,41 @@ import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-
 
 const serviceList = [
   {
-    name: 'NFT generic propagation',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/nft-generic-propagation_cbm15f.svg',
     position: 'top',
     backgroundColor: 'serviceNft',
   },
   {
-    name: 'Custom metadata',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/meta_oavy25.svg',
     position: 'top-right',
     backgroundColor: 'serviceMeta',
   },
   {
-    name: 'IPFS data upload',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/ipfs_dwm3ei.svg',
     position: 'right',
     backgroundColor: 'serviceIpfs',
   },
   {
-    name: 'Minting website',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/minting_blgiih.svg',
     position: 'bottom-right',
     backgroundColor: 'serviceMinting',
   },
   {
-    name: 'EVM Smart Contract Service',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/smart-contract_h6rezu.svg',
     position: 'bottom',
     backgroundColor: 'serviceSmartContract',
   },
   {
-    name: 'Solana related service',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858226/website/services/solana_ikjezd.svg',
     position: 'bottom-left',
     backgroundColor: 'serviceSolana',
   },
   {
-    name: 'Web 3 integration service',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858228/website/services/web3_aq7mir.svg',
     position: 'left',
     backgroundColor: 'serviceWeb3',
   },
   {
-    name: 'Traditional web service',
     icon: 'https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656858228/website/services/web_daqg6x.svg',
     position: 'top-left',
     backgroundColor: 'serviceWeb',
@@ -103,8 +95,8 @@ const Service = () => {
       <div className='h-screen flex overflow-hidden items-center justify-center sticky flex-col top-0'>
         <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-40'>
           <div className='rotation-container h-4/6 aspect-square relative rounded-full'>
-            {serviceList.map(({ name, icon, position, backgroundColor }, index) => (
-              <CircledItem key={index} position={position} text={name} icon={icon} backgroundColor={backgroundColor} />
+            {serviceList.map(({ icon, position, backgroundColor }, index) => (
+              <CircledItem key={index} position={position} text={t('Services.items')[index]} icon={icon} backgroundColor={backgroundColor} />
             ))}
           </div>
         </div>

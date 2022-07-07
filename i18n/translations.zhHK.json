@@ -13,21 +13,40 @@
         "title": "關於我們",
         "content": "asd"
     },
-    "ContactUs": {
-        "title": "聯絡我們"
-    },
-    "FAQ": {
-        "title": "常見問題"
+    "Services": {
+        "title": "服務",
+        "ServiceWeProvide": "我們提供的服務",
+        "items": [
+            "NFT生成",
+            "元數據自定義",
+            "IPFS數據上傳",
+            "NFT鑄造網站",
+            "EVM智能合約服務",
+            "Solana鏈技術服務",
+            "Web3整合服務",
+            "傳統網站服務"
+        ]
     },
     "ImageShowcase": {
         "WantSomethingSpecial": "更多想要的東西？",
-        "AIImageProcessedNftGeneration": "AI圖片合成 + NFT生成器"
+        "AIImageProcessedNftGeneration": "AI圖片合成 + NFT生成器",
+        "from": "從",
+        "to": "到",
+        "source": "來源"
     },
     "ProjectShowcase": {
         "title": "過往項目"
     },
-    "Services": {
-        "title": "服務",
-        "ServiceWeProvide": "我們提供的服務"
+    "ContactUs": {
+        "title": "聯絡我們",
+        "placeholder-subject": "主題",
+        "placeholder-message": "在這裡寫下你的信息...",
+        "button-send": "發送"
+    },
+    "FAQ": {
+        "title": "常見問題"
+    },
+    "footer": {
+        "find-us-on": "尋找我們： "
     }
 }

@@ -28,13 +28,13 @@ const ContactUs = () => {
             <input
               className='w-full border-2 border-darkGray px-6 py-4 mb-4'
               type='text'
-              placeholder='Subject'
+              placeholder={t('ContactUs.placeholder-subject')}
               value={subject}
               onChange={subjectOnChangeHandler}
             />
             <textarea
               className='w-full border-2 border-darkGray px-6 py-4 h-96 mb-4'
-              placeholder='Write your email message here...'
+              placeholder={t('ContactUs.placeholder-message')}
               cols={15}
               value={message}
               onChange={e => messageOnChangeHandler(e)}
@@ -42,7 +42,7 @@ const ContactUs = () => {
             <div className='flex justify-between'>
               <div className=''>
                 <a className='bg-blue text-white px-4 py-2' href={`mailto:0xblanc.io@proton.me?subject=${subject}&body=${message}`}>
-                  Send
+                  {t('ContactUs.button-send')}
                 </a>
               </div>
               <div className='flex'>

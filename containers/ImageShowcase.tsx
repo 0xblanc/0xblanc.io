@@ -14,20 +14,20 @@ const ImageShowcase = () => {
       <div className='flex flex-col-reverse md:flex-row mx-auto pt-16'>
         <div className='flex md:flex-col flex-1 pt-8 lg:pt-24 xl:pl-16 justify-evenly  md:justify-start'>
           <div className='flex flex-col mb-8 lg:mb-16 text-center sm:text-start'>
-            <p className='text-xl md:text-2xl lg:text-4xl text-gray'>From</p>
+            <p className='text-xl md:text-2xl lg:text-4xl text-gray'>{t('ImageShowcase.from')}</p>
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>Moonbirds #1555</p>
             <p className='text-lightGray text-sm lg:text-base'>
-              Source{' '}
+              {t('ImageShowcase.source')}{' '}
               <a className='underline' href='https://opensea.io/collection/proof-moonbirds'>
                 Opensea@Moonbirds
               </a>
             </p>
           </div>
           <div className='flex flex-col text-center sm:text-start'>
-            <p className='text-xl md:text-2xl lg:text-4xl text-gray'>To</p>
+            <p className='text-xl md:text-2xl lg:text-4xl text-gray'>{t('ImageShowcase.to')}</p>
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>AINightbirds MBAI#1555</p>
             <p className='text-lightGray text-sm lg:text-base'>
-              Source{' '}
+              {t('ImageShowcase.source')}{' '}
               <a className='underline' href='https://opensea.io/collection/ainightbirds'>
                 Opensea@AINightbirds
               </a>
