@@ -35,7 +35,32 @@
         "source": "Source"
     },
     "ProjectShowcase": {
-        "title": "PAST PROJECTS"
+        "title": "PAST PROJECTS",
+        "sentence1": {
+            "prefix": "Over",
+            "highlight": "One Million",
+            "suffix": "USD on sell"
+        },
+        "sentence2": {
+            "prefix": " ",
+            "highlight": "100",
+            "suffix": "ETH trade volume on OpenSea"
+        },
+        "sentence3": {
+            "prefix": "Collaborate with",
+            "highlight": "French graffiti artist DEZIO",
+            "suffix": " "
+        },
+        "sentence4": {
+            "prefix": " ",
+            "highlight": "Chef Nick Family",
+            "suffix": " x Hungry Sausages Lab"
+        },
+        "sentence5": {
+            "prefix": "Collaborated event with",
+            "highlight": "Grant Hyatt - CLASH",
+            "suffix": "!"
+        }
     },
     "ContactUs": {
         "title": "Contact Us",

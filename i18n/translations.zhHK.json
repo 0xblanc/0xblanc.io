@@ -3,15 +3,15 @@
         "locale": "zh-HK",
         "hreflang": "en",
         "title": "0xBlanc - 香港的Web3&區塊鏈解決方案供應商",
-        "description": "",
+        "description": "0xBlanc是由一群熱愛區塊鏈及Web3技術的年輕人所組成的，我們的目標是釋放區塊鏈的無限可能。我們以技術人員和設計師人才，為項目提供區塊鏈相關的諮詢和服務。如果您想開始一個NFT項目、將Web3技術整合至現有業務之中、開發自定義智能合約或需要傳統網站託管服務，那麼這裡就是正確的選擇。",
         "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft launching, nft generation, 區塊鏈, 以太坊"
     },
     "Hero": {
-        "title": "釋放區塊鏈的潛力"
+        "title": "釋放區塊鏈的無限可能"
     },
     "AboutUs": {
         "title": "關於我們",
-        "content": "asd"
+        "content": "0xBlanc是由一群熱愛區塊鏈及Web3技術的年輕人所組成的，我們的目標是釋放區塊鏈的無限可能。我們以技術人員和設計師人才，為項目提供區塊鏈相關的諮詢和服務。如果您想開始一個NFT項目、將Web3技術整合至現有業務之中、開發自定義智能合約或需要傳統網站託管服務，那麼這裡就是正確的選擇。"
     },
     "Services": {
         "title": "服務",
@@ -35,7 +35,32 @@
         "source": "來源"
     },
     "ProjectShowcase": {
-        "title": "過往項目"
+        "title": "過往項目",
+        "sentence1": {
+            "prefix": "過",
+            "highlight": "百萬",
+            "suffix": "美金銷售額"
+        },
+        "sentence2": {
+            "prefix": " ",
+            "highlight": "100",
+            "suffix": "以太幣Opensea成交額"
+        },
+        "sentence3": {
+            "prefix": "法國塗鴉藝術家",
+            "highlight": "DEZIO",
+            "suffix": " "
+        },
+        "sentence4": {
+            "prefix": " ",
+            "highlight": "鋒味同萌",
+            "suffix": " x 香腸星人研究所"
+        },
+        "sentence5": {
+            "prefix": "與君悅酒店合作舉辦",
+            "highlight": "CLASH",
+            "suffix": "!"
+        }
     },
     "ContactUs": {
         "title": "聯絡我們",

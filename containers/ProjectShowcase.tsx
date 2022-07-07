@@ -84,7 +84,7 @@ const ProjectShowcase = () => {
         </div>
         <div className='project-container flex flex-col relative justify-center items-center lg:my-80 lg:py-40'>
           <div className='flex flex-col italic text-xl lg:text-3xl text-center text-deepDarkBlue'>
-            <div className='relative'>
+            <div className='relative lg:w-[939px]'>
               <div className='hs-banner-desktop absolute hidden lg:block w-[700px] top-[-375px] left-[-12px]'>
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-banner_rbuv7x.webp'
@@ -94,10 +94,10 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                Over <span className='text-4xl lg:text-6xl font-bold text-blue'>One Million</span> USD on sell
+                {t('ProjectShowcase.sentence1.prefix')} <span className='text-4xl lg:text-6xl font-bold text-blue'>{t('ProjectShowcase.sentence1.highlight')}</span> {t('ProjectShowcase.sentence1.suffix')}
               </p>
             </div>
-            <div className='relative'>
+            <div className='relative lg:w-[939px]'>
               <div className='hs-clash absolute hidden lg:block w-[335px] top-[-306px] right-[-160px]'>
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-clash_g9a04i.webp'
@@ -108,12 +108,12 @@ const ProjectShowcase = () => {
               </div>
               <p>
                 <span className='text-4xl lg:text-6xl font-bold text-purple relative'>
-                  100 <span className='absolute -right-3 top-2 text-4xl'>+</span>
+                  {t('ProjectShowcase.sentence2.highlight')} <span className='absolute -right-3 top-2 text-4xl'>+</span>
                 </span>
-                &nbsp; ETH trade volume on OpenSea
+                &nbsp; {t('ProjectShowcase.sentence2.suffix')}
               </p>
             </div>
-            <div className='relative'>
+            <div className='relative lg:w-[939px]'>
               <div className='hs-nft absolute hidden lg:block w-[300px] top-[-112px] left-[-340px]'>
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758658/website/hs-nft_us4we2.webp'
@@ -123,10 +123,10 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                Collaborate with <span className='text-4xl lg:text-6xl font-bold text-blueLagoon'>French graffiti artist DEZIO</span>
+                {t('ProjectShowcase.sentence3.prefix')} <span className='text-4xl lg:text-6xl font-bold text-blueLagoon'>{t('ProjectShowcase.sentence3.highlight')}</span>
               </p>
             </div>
-            <div className='relative'>
+            <div className='relative lg:w-[939px]'>
               <div className='hs-nyc absolute hidden lg:block w-[350px] top-[-12px] right-[-390px]'>
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-nyc_dpewwp.webp'
@@ -136,10 +136,10 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                <span className='text-4xl lg:text-6xl font-bold text-redViolet'>Chef Nick Family</span> x Hungry Sausages Lab
+                <span className='text-4xl lg:text-6xl font-bold text-redViolet'>{t('ProjectShowcase.sentence4.highlight')}</span> {t('ProjectShowcase.sentence4.suffix')}
               </p>
             </div>
-            <div className='relative'>
+            <div className='relative lg:w-[939px]'>
               <div className='hs-hunger-desktop absolute hidden lg:block w-[320px] bottom-[-375px] right-[54px]'>
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758660/website/hs-hunger_xeyaxu.webp'
@@ -157,7 +157,7 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                Collaborated event with <span className='text-4xl lg:text-6xl font-bold text-orange'>Grant Hyatt - CLASH</span>!
+                {t('ProjectShowcase.sentence5.prefix')} <span className='text-4xl lg:text-6xl font-bold text-orange'>{t('ProjectShowcase.sentence5.highlight')}</span>{t('ProjectShowcase.sentence5.suffix')}
               </p>
             </div>
           </div>
