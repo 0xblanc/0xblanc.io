@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import CircledItem from '../components/home/service/CircledItem'
+import Title from '../components/shared/Title'
 import useWindowDimensions from '../hooks/useWindowDimensions'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
 
@@ -90,9 +91,30 @@ const Service = () => {
     return () => window.removeEventListener('scroll', onScroll)
   }, [scrollTop])
 
+  const backgroundStyle = (service: string) => {
+
+    if (service === 'serviceNft') {
+      return ' bg-gradient-to-tr from-serviceNftBlue to-serviceNftPurple'
+    } else if (service === 'serviceMeta') {
+      return ' bg-gradient-to-tr from-serviceMetaBlue to-serviceMetaLightBlue'
+    } else if (service === 'serviceIpfs') {
+      return ' bg-gradient-to-tr from-serviceIpfsPurple to-serviceIpfsBlue'
+    } else if (service === 'serviceMinting') {
+      return ' bg-gradient-to-tr from-serviceMintingPink to-serviceMintingPurple'
+    } else if (service === 'serviceSmartContract') {
+      return ' bg-gradient-to-tr from-serviceSmartContractPurple to-serviceSmartContractRed'
+    } else if (service === 'serviceSolana') {
+      return ' bg-gradient-to-tr from-serviceSolanaPurple via-serviceSolanaBlue to-serviceSolanaGreen'
+    } else if (service === 'serviceWeb3') {
+      return ' bg-gradient-to-tr from-serviceWeb3Red to-serviceWeb3Orange'
+    } else if (service === 'serviceWeb') {
+      return ' bg-gradient-to-tr from-serviceWebOrange to-serviceWebGreen'
+    }
+  }
+
   return (
-    <div id='service-we-provide' className='relative items-center h-[250rem]'>
-      <div className='h-screen flex overflow-hidden items-center justify-center sticky flex-col top-0'>
+    <div id='service-we-provide' className='relative items-center pt-20 md:py-0 md:h-[250rem]'>
+      <div className='h-screen hidden md:flex overflow-hidden items-center justify-center sticky flex-col top-0'>
         <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-40'>
           <div className='rotation-container h-4/6 aspect-square relative rounded-full'>
             {serviceList.map(({ icon, position, backgroundColor }, index) => (
@@ -116,6 +138,25 @@ const Service = () => {
               </h2>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='flex flex-col md:hidden'>
+        <div className='mb-6'>
+          <Title text={t('Services.ServiceWeProvide')} />
+        </div>
+        <div className='flex flex-wrap'>
+          {
+            serviceList.map(({ icon, position, backgroundColor }, index) => (
+              <div className='w-1/2 p-4 flex' key={index}>
+                <div className={'w-40 h-40 w-full flex flex-col flex rounded-full justify-center items-center' + backgroundStyle(backgroundColor)}>
+                  <div className='flex w-24 mb-2'>
+                    <img src={icon} alt='Icon' width={198} height={157} />
+                  </div>
+                  <p className='px-6 text-white text-center text-xs'>{t('Services.items')[index]}</p>
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
