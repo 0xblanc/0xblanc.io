@@ -147,7 +147,7 @@ const Service = () => {
         <div className='flex flex-wrap'>
           {
             serviceList.map(({ icon, position, backgroundColor }, index) => (
-              <div className='w-1/2 p-4 flex' key={index}>
+              <div className='w-1/2 p-4 flex justify-center' key={index}>
                 <div className={'w-40 h-40 w-full flex flex-col flex rounded-full justify-center items-center' + backgroundStyle(backgroundColor)}>
                   <div className='flex w-24 mb-2'>
                     <img src={icon} alt='Icon' width={198} height={157} />
