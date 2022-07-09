@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Script from 'next/script'
 
 import AboutUs from '../containers/AboutUs'
 import ContactUs from '../containers/ContactUs'
@@ -42,6 +43,20 @@ const Home: NextPage = () => {
 
         <meta name='googlebot' content='noindex,nofollow' />
       </Head>
+      <Script
+        id={'google-analytics-4'}
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8BNVK6Q1NB', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <DesktopFrame>
         <div className='flex flex-col'>
           <AboutUs />
