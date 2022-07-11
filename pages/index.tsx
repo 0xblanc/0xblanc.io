@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <meta name='keywords' content={t('meta.keywords')} />
 
         <meta property='og:title' content={t('meta.title')} />
-        <meta property='og:image' content='/assets/logo/text_logo_og_meta.png' />
+        <meta property="og:image" content="https://0xblanc.io/assets/logo/text_logo_og_meta.png" />
         <meta property='og:site_name' content='0xBlanc' />
         <meta
           property='og:description'
@@ -41,7 +41,12 @@ const Home: NextPage = () => {
         <meta property='og:url' content='https://0xblanc.io' />
         <meta property='og:locale' content={t('meta.locale')} />
 
-        <meta name='googlebot' content='noindex,nofollow' />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta property='twitter:domain' content='0xblanc.io' />
+        <meta property='twitter:url' content={t('meta.url')} />
+        <meta name='twitter:title' content={t('meta.title')} />
+        <meta name='twitter:description' content={t('meta.description')} />
+        <meta name='twitter:image' content='https://0xblanc.io/assets/logo/text_logo_og_meta.png' />
       </Head>
       <Script
         id={'google-analytics-4'}
