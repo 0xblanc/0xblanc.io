@@ -50,7 +50,7 @@ const Home: NextPage = () => {
       </Head>
       <DesktopFrame>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-8BNVK6Q1NB"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-233725778-1"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-8BNVK6Q1NB');
+          gtag('config', 'UA-233725778-1');
         `}
         </Script>
         <Script
