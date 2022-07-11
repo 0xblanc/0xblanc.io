@@ -48,21 +48,32 @@ const Home: NextPage = () => {
         <meta name='twitter:description' content={t('meta.description')} />
         <meta name='twitter:image' content='https://0xblanc.io/assets/logo/text_logo_og_meta.png' />
       </Head>
-      <Script
-        id={'google-analytics-4'}
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8BNVK6Q1NB', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
       <DesktopFrame>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8BNVK6Q1NB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-8BNVK6Q1NB');
+        `}
+        </Script>
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N7C9GGF');`
+          }}
+        >
+        </Script>
         <div className='flex flex-col'>
           <AboutUs />
           <Service />
