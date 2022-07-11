@@ -20,12 +20,12 @@ const Footer = () => {
               </Link>
             </div>
             <div className='flex items-center px-4 md:px-2 hover:scale-125 cursor-pointer'>
-              <Link href='https://instagram.com/0xblanc.io'>
+              <Link href='https://instagram.com/0xblanc.io' target='_blank'>
                 <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_white_gq2wrr.svg' alt='Instagram' width={24} height={24} />
               </Link>
             </div>
             <div className='flex items-center px-4 md:px-2 hover:scale-125 cursor-pointer'>
-              <Link href='https://t.me/oxblanc'>
+              <Link href='https://t.me/oxblanc' target='_blank'>
                 <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/telegram_white_zhib7w.svg' alt='Telegram' width={24} height={24} />
               </Link>
             </div>

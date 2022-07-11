@@ -53,7 +53,7 @@ const HeaderMain = () => {
             height={24}
           />
         </a>
-        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io'>
+        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io' target='_blank'>
           <img
             src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
             alt='Instagram'
@@ -61,7 +61,7 @@ const HeaderMain = () => {
             height={24}
           />
         </a>
-        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc'>
+        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc' target='_blank'>
           <img
             src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
             alt='Telegram'

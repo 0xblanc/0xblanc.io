@@ -18,7 +18,7 @@ const ImageShowcase = () => {
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>Moonbirds #1555</p>
             <p className='text-lightGray text-sm lg:text-base'>
               {t('ImageShowcase.source')}{' '}
-              <a className='underline' href='https://opensea.io/collection/proof-moonbirds'>
+              <a className='underline' href='https://opensea.io/collection/proof-moonbirds' target='_blank'>
                 Opensea@Moonbirds
               </a>
             </p>
@@ -28,7 +28,7 @@ const ImageShowcase = () => {
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>AINightbirds MBAI#1555</p>
             <p className='text-lightGray text-sm lg:text-base'>
               {t('ImageShowcase.source')}{' '}
-              <a className='underline' href='https://opensea.io/collection/ainightbirds'>
+              <a className='underline' href='https://opensea.io/collection/ainightbirds' target='_blank'>
                 Opensea@AINightbirds
               </a>
             </p>

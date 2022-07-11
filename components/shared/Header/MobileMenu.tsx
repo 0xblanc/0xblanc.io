@@ -75,7 +75,7 @@ const MobileMenu = (props: MobileMenuProps) => {
                 </Link>
               </div>
               <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <Link href='https://instagram.com/0xblanc.io'>
+                <Link href='https://instagram.com/0xblanc.io' target='_blank'>
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
                     alt='Instagram'
@@ -85,7 +85,7 @@ const MobileMenu = (props: MobileMenuProps) => {
                 </Link>
               </div>
               <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <Link href='https://t.me/oxblanc'>
+                <Link href='https://t.me/oxblanc' target='_blank'>
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
                     alt='Telegram'
