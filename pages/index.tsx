@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <meta name='keywords' content={t('meta.keywords')} />
 
         <meta property='og:title' content={t('meta.title')} />
-        <meta property='og:image' content='/assets/logo/text_logo.svg' />
+        <meta property='og:image' content='/assets/logo/text_logo_og_meta.png' />
         <meta property='og:site_name' content='0xBlanc' />
         <meta
           property='og:description'
