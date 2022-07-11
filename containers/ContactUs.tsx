@@ -46,7 +46,7 @@ const ContactUs = () => {
                 </a>
               </div>
               <div className='flex'>
-                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io' target='_blank'>
+                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
                     alt='Instagram'
@@ -54,10 +54,18 @@ const ContactUs = () => {
                     height={24}
                   />
                 </a>
-                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc' target='_blank'>
+                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
                     alt='Telegram'
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
+                  <img
+                    src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1657539386/website/media/linkedin_xopmyi.svg'
+                    alt='LinkedIn'
                     width={24}
                     height={24}
                   />

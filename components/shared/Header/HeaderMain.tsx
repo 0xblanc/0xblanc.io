@@ -1,5 +1,6 @@
 import HoverableLink from '../HoverableLink'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
+import React from 'react'
 
 const navItems = [
   {
@@ -65,6 +66,14 @@ const HeaderMain = () => {
           <img
             src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
             alt='Telegram'
+            width={24}
+            height={24}
+          />
+        </a>
+        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
+          <img
+            src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1657539386/website/media/linkedin_xopmyi.svg'
+            alt='LinkedIn'
             width={24}
             height={24}
           />

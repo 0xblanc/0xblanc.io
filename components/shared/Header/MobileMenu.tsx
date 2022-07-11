@@ -1,7 +1,7 @@
 import { XIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
+import { useTranslation, useLanguageQuery } from 'next-export-i18n'
 
 type MobileMenuProps = {
   menuOpen: boolean
@@ -65,34 +65,44 @@ const MobileMenu = (props: MobileMenuProps) => {
             </div>
             <div className='flex flex-row items-center justify-between mx-12'>
               <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <Link href='mailto:0xblanc.io@proton.me'>
+                <a href='mailto:0xblanc.io@proton.me'>
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/email_toxyaj.svg'
                     alt='Email'
                     width={24}
                     height={24}
                   />
-                </Link>
+                </a>
               </div>
               <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <Link href='https://instagram.com/0xblanc.io' target='_blank'>
+                <a href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
                     alt='Instagram'
                     width={24}
                     height={24}
                   />
-                </Link>
+                </a>
               </div>
               <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <Link href='https://t.me/oxblanc' target='_blank'>
+                <a href='https://t.me/oxblanc' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
                     alt='Telegram'
                     width={24}
                     height={24}
                   />
-                </Link>
+                </a>
+              </div>
+              <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
+                <a href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
+                  <img
+                    src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1657539386/website/media/linkedin_xopmyi.svg'
+                    alt='LinkedIn'
+                    width={24}
+                    height={24}
+                  />
+                </a>
               </div>
               <div className='flex flex-row space-x-3 items-center text-darkBlue font-bold text-lg'>
                 {query && query.lang === 'zh-HK' && <a className='flex items-center px-2 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io'>EN</a>}
