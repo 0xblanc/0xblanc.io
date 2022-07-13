@@ -16,9 +16,9 @@ const ImageShowcase = () => {
           <div className='flex flex-col mb-8 lg:mb-16 text-center sm:text-start'>
             <p className='text-xl md:text-2xl lg:text-4xl text-gray'>{t('ImageShowcase.from')}</p>
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>Moonbirds #1555</p>
-            <p className='text-lightGray text-sm lg:text-base'>
+            <p className='text-lightGray text-base lg:text-base'>
               {t('ImageShowcase.source')}{' '}
-              <a className='underline' href='https://opensea.io/collection/proof-moonbirds' target='_blank'>
+              <a className='underline' href='https://opensea.io/collection/proof-moonbirds' target='_blank' rel="noreferrer">
                 Opensea@Moonbirds
               </a>
             </p>
@@ -26,9 +26,9 @@ const ImageShowcase = () => {
           <div className='flex flex-col text-center sm:text-start'>
             <p className='text-xl md:text-2xl lg:text-4xl text-gray'>{t('ImageShowcase.to')}</p>
             <p className='text-xl md:text-2xl lg:text-4xl font-bold text-gray'>AINightbirds MBAI#1555</p>
-            <p className='text-lightGray text-sm lg:text-base'>
+            <p className='text-lightGray text-base lg:text-base'>
               {t('ImageShowcase.source')}{' '}
-              <a className='underline' href='https://opensea.io/collection/ainightbirds' target='_blank'>
+              <a className='underline' href='https://opensea.io/collection/ainightbirds' target='_blank' rel="noreferrer">
                 Opensea@AINightbirds
               </a>
             </p>

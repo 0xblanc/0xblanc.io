@@ -63,9 +63,9 @@ const MobileMenu = (props: MobileMenuProps) => {
                 )
               })}
             </div>
-            <div className='flex flex-row items-center justify-between mx-12'>
-              <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <a href='mailto:0xblanc.io@proton.me'>
+            <div className='flex flex-row items-center justify-center'>
+              <div className='flex items-center mx-1 hover:scale-125 cursor-pointer'>
+                <a className='p-3' href='mailto:0xblanc.io@proton.me'>
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/email_toxyaj.svg'
                     alt='Email'
@@ -74,8 +74,8 @@ const MobileMenu = (props: MobileMenuProps) => {
                   />
                 </a>
               </div>
-              <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <a href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
+              <div className='flex items-center mx-1 hover:scale-125 cursor-pointer'>
+                <a className='p-3' href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
                     alt='Instagram'
@@ -84,8 +84,8 @@ const MobileMenu = (props: MobileMenuProps) => {
                   />
                 </a>
               </div>
-              <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <a href='https://t.me/oxblanc' target='_blank' rel="noreferrer">
+              <div className='flex items-center mx-1 hover:scale-125 cursor-pointer'>
+                <a className='p-3' href='https://t.me/oxblanc' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
                     alt='Telegram'
@@ -94,8 +94,8 @@ const MobileMenu = (props: MobileMenuProps) => {
                   />
                 </a>
               </div>
-              <div className='flex items-center px-2 hover:scale-125 cursor-pointer'>
-                <a href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
+              <div className='flex items-center mx-1 hover:scale-125 cursor-pointer'>
+                <a className='p-3' href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1657539386/website/media/linkedin_xopmyi.svg'
                     alt='LinkedIn'
@@ -105,8 +105,8 @@ const MobileMenu = (props: MobileMenuProps) => {
                 </a>
               </div>
               <div className='flex flex-row space-x-3 items-center text-darkBlue font-bold text-lg'>
-                {query && query.lang === 'zh-HK' && <a className='flex items-center px-2 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io'>EN</a>}
-                {query && query.lang === 'en' && <a className='flex items-center px-2 py-6 hover:scale-125 cursor-pointer' href='https://0xblanc.io/zh-hk'>繁中</a>}
+                {query && query.lang === 'zh-HK' && <a className='flex items-center p-3 hover:scale-125 cursor-pointer' href='https://0xblanc.io'>EN</a>}
+                {query && query.lang === 'en' && <a className='flex items-center p-3 hover:scale-125 cursor-pointer' href='https://0xblanc.io/zh-hk'>繁中</a>}
               </div>
             </div>
           </div>

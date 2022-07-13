@@ -152,7 +152,7 @@ const Service = () => {
                   <div className='flex w-24 mb-2'>
                     <img src={icon} alt='Icon' width={198} height={157} />
                   </div>
-                  <p className='px-6 text-white text-center text-xs'>{t('Services.items')[index]}</p>
+                  <p className='px-6 text-white text-center text-base'>{t('Services.items')[index]}</p>
                 </div>
               </div>
             ))

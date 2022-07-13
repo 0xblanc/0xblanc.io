@@ -40,13 +40,13 @@ const ContactUs = () => {
               onChange={e => messageOnChangeHandler(e)}
             />
             <div className='flex justify-between'>
-              <div className=''>
+              <div className='flex items-center'>
                 <a className='bg-blue text-white px-4 py-2' href={`mailto:0xblanc.io@proton.me?subject=${subject}&body=${message}`}>
                   {t('ContactUs.button-send')}
                 </a>
               </div>
               <div className='flex'>
-                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
+                <a className='flex items-center mx-1 p-3 hover:scale-125 cursor-pointer' href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
                     alt='Instagram'
@@ -54,7 +54,7 @@ const ContactUs = () => {
                     height={24}
                   />
                 </a>
-                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc' target='_blank' rel="noreferrer">
+                <a className='flex items-center mx-1 p-3 hover:scale-125 cursor-pointer' href='https://t.me/oxblanc' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857867/website/media/telegram_ycwij6.svg'
                     alt='Telegram'
@@ -62,7 +62,7 @@ const ContactUs = () => {
                     height={24}
                   />
                 </a>
-                <a className='flex items-center px-2 hover:scale-125 cursor-pointer' href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
+                <a className='flex items-center mx-1 p-3 hover:scale-125 cursor-pointer' href='https://www.linkedin.com/company/0xblanc' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1657539386/website/media/linkedin_xopmyi.svg'
                     alt='LinkedIn'
