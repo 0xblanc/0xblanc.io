@@ -18,7 +18,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{t('meta.title')}</title>
-        <link rel='icon' href='/logo512.png' />
+        <link rel='icon' href='/favicon.ico' />
+        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='apple-touch-icon' href='/favicon.ico' />
+        <link rel='apple-touch-icon-precomposed' href='/favicon.ico' />
         <link rel='canonical' href='https://0xblanc.io' />
         <link rel='alternate' href='https://0xblanc.io' hrefLang='en' />
         <link rel='alternate' href='https://0xblanc.io/zh-hk' hrefLang='zh' />
