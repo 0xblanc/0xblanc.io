@@ -91,6 +91,10 @@ html, body, #root {
 		--shadow-filter: none;
 	}
 
+	.cube-top, .cube-front-left, .cube-bottom, .cube-front-right, .cube-back-left, .cube-back-right {
+		filter: hue-rotate(-120deg);
+	}
+
 	.cubes {
 		width: 10vmin;
 		height: 10vmin;
@@ -137,43 +141,43 @@ html, body, #root {
 
 		&[data-cube^="1"] {
 			top: calc(-10vmin - #{$gap});
-			--color-bg-top: #ebdfa0;
-			--color-bg-bottom: #e4d889;
-			--color-fl-top: #bcba4e;
-			--color-fl-bottom: #b2b043;
+			--color-bg-top: #A0EBE8;
+			--color-bg-bottom: #89E4E4;
+			--color-fl-top: #4EAFBC;
+			--color-fl-bottom: #43A5B2;
 		}
 		&[data-cube^="2"] {
-			--color-bg-top: #e4d889;
-			--color-bg-bottom: #e5df76;
-			--color-fl-top: #b2b043;
-			--color-fl-bottom: #9f9d3b;
+			--color-bg-top: #89E4E4;
+			--color-bg-bottom: #76DEE5;
+			--color-fl-top: #43A5B2;
+			--color-fl-bottom: #3D93A9;
 		}
 		&[data-cube^="3"] {
 			top: calc(10vmin + #{$gap});
-			--color-bg-top: #e5e376;
-			--color-bg-bottom: #d4cb63;
-			--color-fl-top: #9f9d3b;
-			--color-fl-bottom: #949237;
+			--color-bg-top: #76DEE5;
+			--color-bg-bottom: #63D3D4;
+			--color-fl-top: #3D93A9;
+			--color-fl-bottom: #398596;
 		}
 		&[data-cube^="11"],
 		&[data-cube^="21"],
 		&[data-cube^="31"]{
 			left: calc(-10vmin - #{$gap});
-			--color-fr-top: #5f5b2d;
-			--color-fr-bottom: #635c2d;
+			--color-fr-top: #427286;
+			--color-fr-bottom: #3b6781;
 		}
 		&[data-cube^="12"],
 		&[data-cube^="22"],
 		&[data-cube^="32"]{
-			--color-fr-top: #635f2d;
-			--color-fr-bottom: #62592a;
+			--color-fr-top: #3b6781;
+			--color-fr-bottom: #376b80;
 		}
 		&[data-cube^="13"],
 		&[data-cube^="23"],
 		&[data-cube^="33"]{
 			left: calc(10vmin + #{$gap});
-			--color-fr-top: #625d2a;
-			--color-fr-bottom: #67622a;
+			--color-fr-top: #376b80;
+			--color-fr-bottom: #366b83;
 		}
 
 		&[data-cube$="2"] {
@@ -250,7 +254,7 @@ html, body, #root {
 
 		&:before {
 			background-image:
-							linear-gradient(to bottom, #fffbcb,  transparent),
+							linear-gradient(to bottom, #CBFEFF,  transparent),
 							linear-gradient(to bottom, var(--color-bg-top), var(--color-bg-bottom));
 			background-size: 2px 100%, auto;
 			background-repeat: no-repeat;
@@ -264,7 +268,7 @@ html, body, #root {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #f4f3df;
+			background-color: #DFF4F0;
 			animation: cube-top-flash $duration infinite both;
 
 			@keyframes cube-top-flash {
@@ -365,7 +369,7 @@ html, body, #root {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #f4efdf;
+			background-color: #DFF4F0;
 			animation: cube-bottom-flash $duration infinite both;
 			will-change: transform;
 
@@ -401,7 +405,7 @@ html, body, #root {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #545321;
+			background-color: #214354;
 			opacity: 0.7;
 		}
 	}
