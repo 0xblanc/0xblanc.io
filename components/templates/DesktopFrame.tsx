@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Header from '../shared/Header/Header'
 import Footer from '../shared/Footer'
 import Hero from '../../containers/Hero'
+import Web2Hero from '../../containers/Web2Hero'
 import MobileMenu from '../shared/Header/MobileMenu'
+import { useRouter } from 'next/router'
 
 type DesktopFrameProps = {
   children: React.ReactNode
@@ -12,6 +14,7 @@ const DesktopFrame = (props: DesktopFrameProps) => {
   const { children } = props
 
   const [menuOpen, setMenuOpen] = useState(false)
+  const router = useRouter()
 
   const menuToggleHandler = () => {
     const body = document.body as any
@@ -27,7 +30,9 @@ const DesktopFrame = (props: DesktopFrameProps) => {
 
   return (
     <div className='h-full'>
-      <Hero />
+      {
+        router.pathname === '/web2' ? <Web2Hero /> : <Hero />
+      }
       <div className='main relative'>
         <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
         <div>{children}</div>
