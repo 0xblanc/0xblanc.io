@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
+import { useTranslation } from 'next-export-i18n'
 
 import Title from '../components/shared/Title'
 const ContactUs = () => {
   const { t } = useTranslation()
-  const [query] = useLanguageQuery()
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
 
@@ -50,6 +49,14 @@ const ContactUs = () => {
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_glwsd1.svg'
                     alt='Instagram'
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a className='flex items-center mx-1 p-3 hover:scale-125 cursor-pointer' href='https://wa.me/56376528' target='_blank' rel="noreferrer">
+                  <img
+                    src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1658842284/website/media/whatsapp_xqxtxc.svg'
+                    alt='Whatsapp'
                     width={24}
                     height={24}
                   />

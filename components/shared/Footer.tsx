@@ -1,6 +1,3 @@
-import Instagram from '@assets/media/instagram_white.svg'
-import Telegram from '@assets/media/telegram_white.svg'
-import Email from '@assets/media/email_white.svg'
 import Link from 'next/link'
 import {useTranslation} from "next-export-i18n";
 
@@ -22,6 +19,16 @@ const Footer = () => {
             <div className='flex items-center mx-1 p-3 md:px-2 hover:scale-125 cursor-pointer'>
               <a href='https://instagram.com/0xblanc.io' target='_blank' rel="noreferrer">
                 <img src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656857806/website/media/instagram_white_gq2wrr.svg' alt='Instagram' width={24} height={24} />
+              </a>
+            </div>
+            <div className='flex items-center mx-1 p-3 md:px-2 hover:scale-125 cursor-pointer'>
+              <a href='https://wa.me/56376528' target='_blank' rel="noreferrer">
+                <img
+                  src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1658842286/website/media/whatsapo_white_mqgijv.svg'
+                  alt='Whatsapp'
+                  width={24}
+                  height={24}
+                />
               </a>
             </div>
             <div className='flex items-center mx-1 p-3 md:px-2 hover:scale-125 cursor-pointer'>
