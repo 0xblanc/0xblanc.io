@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     colors: {
       white: '#FFFFFF',
+      black: '#000000',
       darkGray: '#A8A8A8',
       gray: '#525252',
       lightGray: '#B5B5B5',
@@ -43,6 +44,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: 'url(https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758496/website/background_hxlfos.webp)',
+        'web2-hero': 'url(https://wallpaperaccess.com/full/5143161.jpg)',
       },
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],
