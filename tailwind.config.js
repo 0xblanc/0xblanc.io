@@ -2,7 +2,6 @@
 
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './containers/**/*.{js,ts,jsx,tsx}'],
-
   theme: {
     colors: {
       white: '#FFFFFF',
@@ -52,6 +51,12 @@ module.exports = {
       },
       rotate: {
         135: '135deg',
+      },
+      screens: {
+        '3xl': '1792px',
+      },
+      fontSize: {
+        'ul': '10rem',
       },
     },
   },
