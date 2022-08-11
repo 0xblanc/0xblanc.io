@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../shared/Header/Header'
 import Footer from '../shared/Footer'
-import Hero from '../../containers/Hero'
-import Web2Hero from '../../containers/Web2Hero'
+import Hero from '../../containers/web3/Hero'
+import Web2Hero from '../../containers/web2/Web2Hero'
 import MobileMenu from '../shared/Header/MobileMenu'
 import { useRouter } from 'next/router'
 

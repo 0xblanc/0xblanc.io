@@ -2,7 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Script from 'next/script'
 
-import ContactUs from '../containers/ContactUs'
+import WeDesign from "../containers/web2/WeDesign";
+import ContactUs from '../containers/web3/ContactUs'
 import DesktopFrame from '../components/templates/DesktopFrame'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n'
 
@@ -74,6 +75,7 @@ const Web2: NextPage = () => {
         >
         </Script>
         <div className='flex flex-col'>
+          <WeDesign />
           <ContactUs />
         </div>
       </DesktopFrame>

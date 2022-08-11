@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-export-i18n'
 
-import Title from '../components/shared/Title'
+import Title from '../../components/shared/Title'
 const ContactUs = () => {
   const { t } = useTranslation()
   const [subject, setSubject] = useState('')

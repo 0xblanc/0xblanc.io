@@ -1,4 +1,4 @@
-import Title from '../components/shared/Title'
+import Title from '../../components/shared/Title'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
 
 const AboutUs = () => {

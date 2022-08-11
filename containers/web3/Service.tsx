@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import CircledItem from '../components/home/service/CircledItem'
-import Title from '../components/shared/Title'
-import useWindowDimensions from '../hooks/useWindowDimensions'
+import CircledItem from '../../components/home/service/CircledItem'
+import Title from '../../components/shared/Title'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
 
 const serviceList = [
