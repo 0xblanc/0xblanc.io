@@ -8,7 +8,7 @@ const Web2Hero = (props: any) => {
   return (
     <div id='web2-hero' className='h-screen min-h-full w-full bg-cover flex bg-web2-hero bg-center'>
       <div className='flex-1 flex flex-col bg-black bg-opacity-25 px-6 md:px-12 3xl:px-80'>
-        <div className='flex flex-col md:flex-row pb-0 md:pb-10 pt-20 md:pt-10 justify-between items-center'>
+        <div className='flex flex-col md:flex-row pb-0 md:pb-10 pt-40 md:pt-10 justify-between items-center'>
           <img
             className='mb-8 md:mb-0 w-80 md:w-auto'
             src='https://res.cloudinary.com/blanc-io/image/upload/v1656857424/website/text_logo_gold_no01vb.svg'
