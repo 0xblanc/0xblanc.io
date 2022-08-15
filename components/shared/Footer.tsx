@@ -22,7 +22,7 @@ const Footer = () => {
               </a>
             </div>
             <div className='flex items-center mx-1 p-3 md:px-2 hover:scale-125 cursor-pointer'>
-              <a href='https://wa.me/56376528' target='_blank' rel="noreferrer">
+              <a href='https://wa.me/85256376528' target='_blank' rel="noreferrer">
                 <img
                   src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1658842286/website/media/whatsapo_white_mqgijv.svg'
                   alt='Whatsapp'

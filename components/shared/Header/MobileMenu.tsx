@@ -85,7 +85,7 @@ const MobileMenu = (props: MobileMenuProps) => {
                 </a>
               </div>
               <div className='flex items-center mx-1 hover:scale-125 cursor-pointer'>
-                <a className='p-3' href='https://wa.me/56376528' target='_blank' rel="noreferrer">
+                <a className='p-3' href='https://wa.me/85256376528' target='_blank' rel="noreferrer">
                   <img
                     src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1658842284/website/media/whatsapp_xqxtxc.svg'
                     alt='Whatsapp'

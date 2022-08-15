@@ -62,7 +62,7 @@ const HeaderMain = () => {
             height={24}
           />
         </a>
-        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://wa.me/56376528' target='_blank' rel="noreferrer">
+        <a className='flex items-center px-4 py-6 hover:scale-125 cursor-pointer' href='https://wa.me/85256376528' target='_blank' rel="noreferrer">
           <img
             src='https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1658842284/website/media/whatsapp_xqxtxc.svg'
             alt='Whatsapp'
