@@ -7,6 +7,7 @@ import ContactUs from '../containers/web3/ContactUs'
 import DesktopFrame from '../components/templates/DesktopFrame'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n'
 import WeTech from "../containers/web2/WeTech";
+import Square from '../components/shared/Square'
 
 const Web2: NextPage = () => {
   const { t } = useTranslation()
@@ -75,9 +76,12 @@ const Web2: NextPage = () => {
           }}
         >
         </Script>
-        <div className='flex flex-col'>
+        <div className='flex flex-col overflow-hidden'>
+          <Square position={'right'} />
           <WeDesign />
+          <Square position={'left'} />
           <WeTech />
+          <Square position={'left'} />
           <ContactUs />
         </div>
       </DesktopFrame>

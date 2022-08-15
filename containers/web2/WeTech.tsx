@@ -1,4 +1,4 @@
-import Cube from '../../components/shared/Cube'
+import Square from '../../components/shared/Square'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
 import {useEffect} from "react";
 
@@ -51,11 +51,12 @@ const WeTech = (props: any) => {
   }
 
   return (
-    <div id='web2-we-tech' className='bg-dark overflow-hidden'>
+    <div id='web2-we-tech' className='bg-dark overflow-visible'>
       <div className='container mx-auto flex flex-col pt-40 pb-56 h-[1100px] items-center'>
         <div className='flex justify-center mb-4'>
           <h2 className='text-white text-8xl font-bold text-center'>Technical Services</h2>
         </div>
+        <Square position={'right'} />
         <div className='flex relative flex-1 w-full max-w-[1280px]'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square w-[780px] flex flex-wrap rotate-45'>
             {services.map((service, index) => {
