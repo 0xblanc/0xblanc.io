@@ -6,6 +6,7 @@ import WeDesign from "../containers/web2/WeDesign";
 import ContactUs from '../containers/web3/ContactUs'
 import DesktopFrame from '../components/templates/DesktopFrame'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n'
+import WeTech from "../containers/web2/WeTech";
 
 const Web2: NextPage = () => {
   const { t } = useTranslation()
@@ -76,6 +77,7 @@ const Web2: NextPage = () => {
         </Script>
         <div className='flex flex-col'>
           <WeDesign />
+          <WeTech />
           <ContactUs />
         </div>
       </DesktopFrame>
