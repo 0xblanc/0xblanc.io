@@ -59,6 +59,15 @@ html, body, #root {
 	width: 100%;
 }
 
+.reflection {
+  & > :last-child {
+    transform: rotatex(180deg) translatey(0px);
+    mask-image: linear-gradient(transparent 20%, white 200%);
+    -webkit-mask-image: linear-gradient(transparent 20%, white 200%);
+    background-image: unset;
+  }
+}
+
 .cube-container {
 	$duration: 4s;
 	$delays: ();
