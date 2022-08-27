@@ -37,7 +37,7 @@ const DesktopFrame = (props: DesktopFrameProps) => {
         <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
         <div>{children}</div>
       </div>
-      <Footer />
+      <Footer mode={router.pathname === '/web2' ? 'dark' : 'light'} />
       <MobileMenu menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
     </div>
   )
