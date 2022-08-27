@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 
 import AboutUs from '../containers/web3/AboutUs'
-import ContactUs from '../containers/web3/ContactUs'
+import ContactUs from '../containers/shared/ContactUs'
 import ProjectShowcase from '../containers/web3/ProjectShowcase'
 import ImageShowcase from '../containers/web3/ImageShowcase'
 import Service from '../containers/web3/Service'

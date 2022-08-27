@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 
 import WeDesign from "../containers/web2/WeDesign";
-import ContactUs from '../containers/web3/ContactUs'
+import ContactUs from '../containers/shared/ContactUs'
 import DesktopFrame from '../components/templates/DesktopFrame'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n'
 import WeTech from "../containers/web2/WeTech";
@@ -82,7 +82,7 @@ const Web2: NextPage = () => {
           <Square position={'left'} />
           <WeTech />
           <Square position={'left'} />
-          <ContactUs />
+          <ContactUs mode={'dark'} />
         </div>
       </DesktopFrame>
     </>
