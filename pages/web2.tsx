@@ -8,6 +8,7 @@ import DesktopFrame from '../components/templates/DesktopFrame'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n'
 import WeTech from "../containers/web2/WeTech";
 import Square from '../components/shared/Square'
+import FAQ from "../containers/web2/FAQ";
 
 const Web2: NextPage = () => {
   const { t } = useTranslation()
@@ -82,6 +83,8 @@ const Web2: NextPage = () => {
           <Square position={'left'} />
           <WeTech />
           <Square position={'left'} />
+          <FAQ />
+          <Square position={'right'} />
           <ContactUs mode={'dark'} />
         </div>
       </DesktopFrame>

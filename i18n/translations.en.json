@@ -78,5 +78,10 @@
     },
     "footer": {
         "find-us-on": "Find us on: "
+    },
+    "web2": {
+        "faq": {
+            "title": "FAQ"
+        }
     }
 }
