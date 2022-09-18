@@ -20,7 +20,7 @@ const WeDesign = (props: any) => {
       {/*    <img className='w-3/5' src="https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1011&q=80" alt="Image" />*/}
       {/*  </div>*/}
       {/*</div>*/}
-      <div className='px-20 py-40 w-full max-w-[1920px] mx-auto flex'>
+      <div className='px-36 py-32 w-full max-w-[1920px] mx-auto flex'>
         <div className='w-2/6 max-w-[500px]'>
           <div className='w-[317px] max-w-full custom-ratio bg-web2-design bg-cover relative'>
             <div className='bg-dark absolute bottom-[-80px] right-[-84px] h-[171px] w-[188px] rotate-[-44deg]'>
@@ -31,7 +31,7 @@ const WeDesign = (props: any) => {
           </div>
         </div>
         <div className='flex flex-col flex-1 justify-center pl-40'>
-          <h2 className='text-white text-7xl font-bold mb-3 w-fit pt-16'>{t('web2.we-design.title')}</h2>
+          <h2 className='text-white text-7xl font-bold mb-4 w-fit pt-16'>{t('web2.we-design.title')}</h2>
           <p className='text-white text-2xl'>
             {t('web2.we-design.content.pre')} <span className='text-gold uppercase'>{t('web2.we-design.content.highlight')}</span> {t('web2.we-design.content.post')}
           </p>
