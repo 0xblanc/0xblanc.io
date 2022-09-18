@@ -46,6 +46,7 @@ module.exports = {
       backgroundImage: {
         hero: 'url(https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758496/website/background_hxlfos.webp)',
         'web2-hero': 'url(https://res.cloudinary.com/blanc-io/image/upload/f_auto,q_auto/v1661579619/website/web2_background_iuf0s6.jpg)',
+        'web2-design': 'url(https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1011&q=80)'
       },
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],

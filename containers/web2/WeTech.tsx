@@ -29,7 +29,6 @@ const WeTech = (props: any) => {
           <h2 className='text-white text-8xl font-bold text-center'>{t('web2.we-tech.title')}</h2>
 
         </div>
-        <Square position={'right'} />
         <div className='flex relative flex-1 w-full max-w-[1280px]'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square w-[780px] flex flex-wrap rotate-45'>
             {services.map((service, index) => {

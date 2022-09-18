@@ -68,6 +68,10 @@ html, body, #root {
   }
 }
 
+.custom-ratio {
+  aspect-ratio: 317/450;
+}
+
 .cube-container {
 	$duration: 4s;
 	$delays: ();

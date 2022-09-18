@@ -34,7 +34,9 @@ const DesktopFrame = (props: DesktopFrameProps) => {
         router.pathname === '/web2' ? <Web2Hero /> : <Hero />
       }
       <div className='main relative'>
-        <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
+        {
+          router.pathname !== '/web2' && <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
+        }
         <div>{children}</div>
       </div>
       <Footer mode={router.pathname === '/web2' ? 'dark' : 'light'} />

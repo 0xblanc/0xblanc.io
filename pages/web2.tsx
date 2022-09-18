@@ -78,13 +78,9 @@ const Web2: NextPage = () => {
         >
         </Script>
         <div className='flex flex-col overflow-hidden'>
-          <Square position={'right'} />
           <WeDesign />
-          <Square position={'left'} />
           <WeTech />
-          <Square position={'left'} />
           <FAQ />
-          <Square position={'right'} />
           <ContactUs mode={'dark'} />
         </div>
       </DesktopFrame>
