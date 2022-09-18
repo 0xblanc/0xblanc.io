@@ -10,8 +10,10 @@ const WeDesign = (props: any) => {
       <div className='container mx-auto flex py-40 px-36'>
         <div className='w-1/2 flex justify-center flex-col relative items-center'>
           <div className='z-10'>
-            <h2 className='text-white text-8xl font-bold mb-3 w-fit'>UI/UX Design</h2>
-            <p className='text-white text-2xl'>Avoid implementing template designs. 0xBlanc offers you customized <span className='text-gold uppercase'>unique</span> design with delightful user experience.</p>
+            <h2 className='text-white text-8xl font-bold mb-3 w-fit'>{t('web2.we-design.title')}</h2>
+            <p className='text-white text-2xl'>
+              {t('web2.we-design.content.pre')} <span className='text-gold uppercase'>{t('web2.we-design.content.highlight')}</span> {t('web2.we-design.content.post')}
+            </p>
           </div>
           <div className='w-72 aspect-square border-2 border-gold absolute left-72 top-1/2 -translate-y-1/2 -translate-x-1/2 rotate-45 opacity-30'/>
         </div>

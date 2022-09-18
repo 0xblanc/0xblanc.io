@@ -1,48 +1,20 @@
 import Square from '../../components/shared/Square'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
-import {useEffect} from "react";
-
-const services = [
-  {
-    name: '',
-    description: '',
-  },
-  {
-    name: '',
-    description: '',
-  },
-  {
-    name: 'Landing Page',
-    description: 'Discuss with us to develop web pages that represent your company.',
-  },
-  {
-    name: '',
-    description: '',
-  },
-  {
-    name: 'DNS & Hosting',
-    description: 'Register a domain name and host your website on our cloud infrastructure.',
-  },
-  {
-    name: 'Free Quotation',
-    description: 'Contact us for a free quotation based on what you need within 24 hours!.',
-  },
-  {
-    name: 'SEO Audit',
-    description: 'Metadata, page, url optimization and keywords audit that enhance your website’s SEO.',
-  },
-  {
-    name: 'E-Commerce',
-    description: 'Launch your e-commerce website and sell your products online with product, customer managing & payment system.',
-  },
-  {
-    name: '',
-    description: '',
-  },
-]
+import { useEffect, useState } from 'react'
 
 const WeTech = (props: any) => {
   const { t } = useTranslation()
+
+  const [services, setServices] = useState([])
+
+  useEffect(() => {
+    const arr = [] as []
+    for (let i = 0; i < t('web2.we-tech.services').length; i++) {
+      // @ts-ignore
+      arr.push(t('web2.we-tech.services')[i])
+    }
+    setServices(arr)
+  }, [])
 
   const serviceHoverHandler = (index: number) => {
   }
@@ -54,7 +26,8 @@ const WeTech = (props: any) => {
     <div id='web2-we-tech' className='bg-dark overflow-visible'>
       <div className='container mx-auto flex flex-col pt-40 pb-56 h-[1100px] items-center'>
         <div className='flex justify-center mb-4'>
-          <h2 className='text-white text-8xl font-bold text-center'>Technical Services</h2>
+          <h2 className='text-white text-8xl font-bold text-center'>{t('web2.we-tech.title')}</h2>
+
         </div>
         <Square position={'right'} />
         <div className='flex relative flex-1 w-full max-w-[1280px]'>

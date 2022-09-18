@@ -16,14 +16,14 @@ const Web2Hero = (props: any) => {
             height={41}
           />
           <p className='text-white text-xl text-end mb-4'>
-            {t('Web2Hero.subtitle')}
+            {t('web2.hero.subtitle')}
           </p>
           <div className='reflection'>
             <h1 className='text-white text-4xl md:text-6xl'>
-              {t('Web2Hero.slogan')}
+              {t('web2.hero.slogan')}
             </h1>
             <h1 className='text-white text-4xl md:text-6xl'>
-              {t('Web2Hero.slogan')}
+              {t('web2.hero.slogan')}
             </h1>
           </div>
         </div>

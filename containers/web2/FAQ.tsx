@@ -34,6 +34,16 @@ const FAQ = (props: any) => {
   const { t } = useTranslation()
 
   const [expanded, setExpanded] = useState([])
+  const [faqs, setFaqs] = useState([])
+
+  useEffect(() => {
+    const arr = [] as []
+    for (let i = 0; i < t('web2.faq.faqs').length; i++) {
+      // @ts-ignore
+      arr.push(t('web2.faq.faqs')[i])
+    }
+    setFaqs(arr)
+  }, [])
 
   const expandHandler = (index: number) => {
     // @ts-ignore
@@ -49,7 +59,7 @@ const FAQ = (props: any) => {
     <div id='web2-faq' className='py-20 md:py-28 bg-dark'>
       <div className='container mx-auto flex w-full flex-col'>
         <div className={'container w-full mx-auto flex justify-center'}>
-          <Title text={'FAQ'} mode={'dark'} />
+          <Title text={t('web2.faq.title')} mode={'dark'} />
         </div>
         <ul className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 md:pb-12 max-w-[992px] mx-auto'>
           {faqs.map((faq, index) => (

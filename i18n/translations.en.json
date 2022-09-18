@@ -80,8 +80,83 @@
         "find-us-on": "Find us on: "
     },
     "web2": {
+        "hero": {
+            "subtitle": "Traditional Web2.0 Solutions",
+            "slogan": "We Build What's Next."
+        },
+        "we-design": {
+            "title": "UI/UX Design",
+            "content": {
+                "pre": "Avoid implementing template designs. 0xBlanc offers you customized ",
+                "highlight": "unique",
+                "post": "design with delightful user experience."
+            }
+        },
+        "we-tech": {
+            "title": "Technical Services",
+            "services": [
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "RWD",
+                    "description": "Responsive Web Design that works on all devices."
+                },
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "DNS & Hosting",
+                    "description": "Register a domain name and host your website on our cloud infrastructure."
+                },
+                {
+                    "name": "Free Quotation",
+                    "description": "Contact us for a free quotation based on what you need within 24 hours!."
+                },
+                {
+                    "name": "SEO Audit",
+                    "description": "Metadata, page, url optimization and keywords audit that enhance your website’s SEO."
+                },
+                {
+                    "name": "E-Commerce",
+                    "description": "Launch your e-commerce website and sell your products online with product, customer managing & payment system."
+                },
+                {
+                    "name": "",
+                    "description": ""
+                }
+            ]
+        },
         "faq": {
-            "title": "FAQ"
+            "title": "FAQ",
+            "faqs": [
+                {
+                    "question": "How to start a project?",
+                    "answer": "You can contact us with email or send us a direct message with instagram or telegram! Let’s discuss what you need and we with offer you a quotation within 24 hours!"
+                },
+                {
+                    "question": "What do I need to prepare for creating a website?",
+                    "answer": "Please provide us with your logo, color scheme, and content. But don’t worry if you don’t have any of these, we will discuss with you and try to make the best design for you!"
+                },
+                {
+                    "question": "Why choose 0xBlanc?",
+                    "answer": "0xBlanc provide you with a unique design with delightful user experience, good starter SEO implementation, and also include analytics tools to help you monitor your website! Our team will also provide you high-quality 1-on-1 support and consultation."
+                },
+                {
+                    "question": "When will my website be done?",
+                    "answer": "We generally take 2-3 weeks to complete a website. The entire website design process is starting from consultation, analyze your needs, confirm quotations to web design, testing and publish online. But if you need it done faster, we can discuss with you and try to meet your deadline!"
+                },
+                {
+                    "question": "How to make the payment?",
+                    "answer": "In most cases, 60% of the payment is required before the project starts. 20% is required before the UAT is delivered. The remaining 20% is required before deployment."
+                }
+            ]
         }
     }
 }
