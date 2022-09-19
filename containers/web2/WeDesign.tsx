@@ -25,7 +25,8 @@ const WeDesign = (props: any) => {
           <div className='w-[317px] max-w-full custom-ratio bg-web2-design bg-cover relative'>
             <div className='bg-dark absolute bottom-[-80px] right-[-84px] h-[171px] w-[188px] rotate-[-44deg]'>
               <div className='relative'>
-                <div className='h-1 w-[7000px] border-t-2 border-gold absolute top-0 left-1/2 -translate-x-1/2'></div>
+                {/*<div className='h-1 w-[7000px] border-t-2 border-gold absolute top-0 left-1/2 -translate-x-1/2'></div>*/}
+                <div className='h-[2px] w-[3000px] custom-gradient-revert absolute top-0 left-[-2170px]'></div>
               </div>
             </div>
           </div>

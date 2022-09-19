@@ -90,7 +90,7 @@ const FAQ = (props: any) => {
         <div className='aspect-square w-[300px] border-2 border-gold rotate-45 absolute right-[150px] top-[-10px]'>
           <div className='w-full h-full flex justify-center items-center relative -rotate-90'>
             <h2 className='text-6xl text-white rotate-45'>{t('web2.faq.title')}</h2>
-            <div className='bg-gold w-[1000px] h-[2px] absolute bottom-[-175px] left-1/2 -translate-x-1/2'></div>
+            <div className='custom-gradient w-[3000px] h-[2px] absolute bottom-[-175px] left-[-350px]'></div>
           </div>
         </div>
       </div>

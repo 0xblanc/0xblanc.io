@@ -72,6 +72,16 @@ html, body, #root {
   aspect-ratio: 317/450;
 }
 
+.custom-gradient {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(229,191,154,1) 42%, rgba(229,191,154,1) 100%);
+}
+
+.custom-gradient-revert {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(229,191,154,1) 0%, rgba(229,191,154,1) 85%, rgba(2,0,36,0) 100%);
+}
+
 .cube-container {
 	$duration: 4s;
 	$delays: ();
