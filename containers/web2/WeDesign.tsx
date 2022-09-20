@@ -33,12 +33,10 @@ const WeDesign = (props: any) => {
         </div>
         <div className='flex flex-col flex-1 justify-center md:pl-40 items-center md:items-start relative'>
           <h2 className='text-white text-4xl md:text-7xl font-bold mb-4 w-fit pt-16 z-10'>{t('web2.we-design.title')}</h2>
-          <p className='text-white text-lg md:text-2xl text-center z-10'>
+          <p className='text-white text-lg md:text-2xl text-center md:text-start z-10'>
             {t('web2.we-design.content.pre')} <span className='text-gold uppercase'>{t('web2.we-design.content.highlight')}</span> {t('web2.we-design.content.post')}
           </p>
-          <div className='w-[210px] aspect-square absolute left-1/2 top-[40px] -translate-x-1/2 border-gold border-2 rotate-45 opacity-30'>
-
-          </div>
+          <div className='block md:hidden w-[210px] aspect-square absolute left-1/2 top-[40px] -translate-x-1/2 border-gold border-2 rotate-45 opacity-30' />
         </div>
       </div>
     </div>
