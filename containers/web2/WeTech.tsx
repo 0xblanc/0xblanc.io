@@ -24,13 +24,12 @@ const WeTech = (props: any) => {
 
   return (
     <div id='web2-we-tech' className='bg-dark overflow-visible'>
-      <div className='container mx-auto flex flex-col pt-40 pb-56 h-[1100px] items-center'>
+      <div className='container mx-auto flex flex-col pt-28 h-[800px] items-center'>
         <div className='flex justify-center mb-4'>
-          <h2 className='text-white text-8xl font-bold text-center'>{t('web2.we-tech.title')}</h2>
-
+          <h2 className='text-white text-3xl md:text-7xl font-bold text-center'>{t('web2.we-tech.title')}</h2>
         </div>
-        <div className='flex relative flex-1 w-full max-w-[1280px]'>
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square w-[780px] flex flex-wrap rotate-45'>
+        <div className='hidden md:flex relative flex-1 w-full max-w-[1280px]'>
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[450px] aspect-square w-[780px] flex flex-wrap rotate-45 md:scale-75 lg:scale-100'>
             {services.map((service, index) => {
               return (
                 <div className='w-1/3 aspect-square flex justify-center items-center relative' key={index} onMouseEnter={() => serviceHoverHandler(index)} onMouseLeave={() => serviceHoverOutHandler(index)}>
