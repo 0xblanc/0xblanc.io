@@ -58,10 +58,10 @@ const FAQ = (props: any) => {
   return (
     <div id='web2-faq' className='py-20 md:py-28 bg-dark'>
       <div className='container mx-auto flex w-full flex-col relative'>
-        {/*<div className={'container w-full mx-auto flex justify-center'}>*/}
-        {/*  <Title text={t('web2.faq.title')} mode={'dark'} />*/}
-        {/*</div>*/}
-        <ul className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 md:pb-12 max-w-[700px] mx-auto -translate-x-60'>
+        <div className={'container w-full mx-auto flex md:hidden justify-center'}>
+          <Title text={t('web2.faq.title')} mode={'dark'} />
+        </div>
+        <ul className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 md:pb-12 max-w-[700px] mx-auto md:-translate-x-60'>
           {faqs.map((faq, index) => (
             <li key={index} className={`flex w-full py-5 border-gold flex-col cursor-pointer ${index < faqs.length - 1 ? 'border-b-2' :''}`} onClick={() => expandHandler(index)}>
               <div className='flex'>
@@ -79,15 +79,15 @@ const FAQ = (props: any) => {
                   <span className={`w-[17px] h-1 bg-gold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ${expanded.includes(index) ? 'rotate-0' : 'rotate-90'}`}></span>
                 </div>
               </div>
-              <div className={`flex items-center pl-[82px] transition-all duration-500 overflow-hidden ${expanded.includes(index) ? 'max-h-24' : 'max-h-0'}`}>
-                <p className='text-white text-lg'>
+              <div className={`flex items-center pl-[82px] transition-all duration-500 overflow-hidden mt-4 ${expanded.includes(index) ? 'max-h-64 md:max-h-24' : 'max-h-0'}`}>
+                <p className='text-white md:text-lg'>
                   {faq.answer}
                 </p>
               </div>
             </li>
           ))}
         </ul>
-        <div className='aspect-square w-[300px] border-2 border-gold rotate-45 absolute right-[100px] top-[-10px]'>
+        <div className='hidden md:block aspect-square w-[300px] border-2 border-gold rotate-45 absolute right-[100px] top-[-10px]'>
           <div className='w-full h-full flex justify-center items-center relative -rotate-90'>
             <h2 className='text-6xl text-white rotate-45'>{t('web2.faq.title')}</h2>
             <div className='custom-gradient w-[3000px] h-[2px] absolute bottom-[-175px] left-[-350px]'></div>
