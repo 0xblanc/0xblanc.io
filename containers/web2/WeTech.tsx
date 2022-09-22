@@ -68,7 +68,7 @@ const WeTech = (props: any) => {
                   service.name ? (
                     <div className='flex flex-col mb-24' key={index}>
                       <div className={`flex mb-8 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                        <div className={`w-fit border-gold flex items-center justify-center p-8 ${service.name.length > 5 ? borderControl(index) : 'aspect-square rounded-full border-[1px]'}`}>
+                        <div className={`w-fit border-gold flex items-center justify-center p-8 ${index > 0 ? borderControl(index) : 'aspect-square rounded-full border-[1px]'}`}>
                           <p className='text-2xl text-gold'>
                             {service.name}
                           </p>

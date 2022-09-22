@@ -79,7 +79,7 @@ const FAQ = (props: any) => {
                   <span className={`w-[17px] h-1 bg-gold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ${expanded.includes(index) ? 'rotate-0' : 'rotate-90'}`}></span>
                 </div>
               </div>
-              <div className={`flex items-center pl-[82px] transition-all duration-500 overflow-hidden mt-4 ${expanded.includes(index) ? 'max-h-64 md:max-h-24' : 'max-h-0'}`}>
+              <div className={`flex items-center md:pl-[82px] transition-all duration-500 overflow-hidden mt-4 ${expanded.includes(index) ? 'max-h-64 md:max-h-24' : 'max-h-0'}`}>
                 <p className='text-white md:text-lg'>
                   {faq.answer}
                 </p>
