@@ -86,6 +86,12 @@
         }
     },
     "web2": {
+        "meta": {
+            "url": "https://0xblanc.io/",
+            "title": "Hong Kong based Web3, Blockchain Solution Provider | 0xblanc",
+            "description": "0xBlanc provides web3 solution services, including decentralized applications (DApp), smart contracts, web3.0 integration, and NFT launching services. Contact us to get started on blockchain & web3.0 related projects, develop your custom website and boost your exposure with our search engine optimization (SEO) audit service!",
+            "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"
+        },
         "hero": {
             "subtitle": "Traditional Web2.0 Solutions",
             "slogan": "We Build What's Next."

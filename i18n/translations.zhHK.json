@@ -82,6 +82,12 @@
         }
     },
     "web2": {
+        "meta": {
+            "url": "https://0xblanc.io/zh-hk/",
+            "title": "香港的Web3&區塊鏈解決方案供應商 | 0xBlanc",
+            "description": "0xBlanc為您提供一站式Web3.0技術解決方案，即時開始NFT、智能合約開發，連動區塊鏈打造專屬您項目的網頁，再配合搜尋引擎優化（SEO），將貴品牌的DApp輕鬆呈現於客戶眼前。並以Web3.0專案提升品牌形象，搶佔去中心化應用程式先機。",
+            "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft launching, nft generation, 區塊鏈, 以太坊"
+        },
         "hero": {
             "subtitle": "Traditional Web2.0 Solutions",
             "slogan": "We Build What's Next."
