@@ -118,7 +118,7 @@ const Service = () => {
         <div className='h-full flex justify-center items-center -translate-x-60 sm:-translate-x-40'>
           <div className='rotation-container h-4/6 aspect-square relative rounded-full'>
             {serviceList.map(({ icon, position, backgroundColor }, index) => (
-              <CircledItem key={index} position={position} text={t('Services.items')[index]} icon={icon} backgroundColor={backgroundColor} />
+              <CircledItem key={index} position={position} text={t('web3.Services.items')[index]} icon={icon} backgroundColor={backgroundColor} />
             ))}
           </div>
         </div>
@@ -134,7 +134,7 @@ const Service = () => {
                 />
               </div>
               <h2 className='self-start uppercase text-darkBlue font-bold text-2xl sm:text-4xl md:text-7xl'>
-                {t('Services.ServiceWeProvide')}
+                {t('web3.Services.ServiceWeProvide')}
               </h2>
             </div>
           </div>
@@ -142,7 +142,7 @@ const Service = () => {
       </div>
       <div className='flex flex-col md:hidden'>
         <div className='mb-6'>
-          <Title text={t('Services.ServiceWeProvide')} />
+          <Title text={t('web3.Services.ServiceWeProvide')} />
         </div>
         <div className='flex flex-wrap'>
           {
@@ -152,7 +152,7 @@ const Service = () => {
                   <div className='flex w-24 mb-2'>
                     <img src={icon} alt='Icon' width={198} height={157} />
                   </div>
-                  <p className='px-6 text-white text-center text-base'>{t('Services.items')[index]}</p>
+                  <p className='px-6 text-white text-center text-base'>{t('web3.Services.items')[index]}</p>
                 </div>
               </div>
             ))

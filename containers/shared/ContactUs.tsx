@@ -28,19 +28,19 @@ const ContactUs = (props:ContactUsProps) => {
       <div className='container mx-auto w-full'>
         <div className='flex flex-col items-center'>
           <div className={'container w-full mx-auto flex justify-center'}>
-            <Title text={t('ContactUs.title')} mode={mode} />
+            <Title text={t('common.ContactUs.title')} mode={mode} />
           </div>
           <div className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 md:pb-12 max-w-[992px]'>
             <input
               className={`w-full border-2 px-6 py-4 mb-4 ${mode === 'dark' ? 'bg-dark border-gold' : 'bg-white border-darkGray'}`}
               type='text'
-              placeholder={t('ContactUs.placeholder-subject')}
+              placeholder={t('common.ContactUs.placeholder-subject')}
               value={subject}
               onChange={subjectOnChangeHandler}
             />
             <textarea
               className={`w-full border-2 px-6 py-4 h-96 mb-4 ${mode === 'dark' ? 'bg-dark border-gold' : 'bg-white border-darkGray'}`}
-              placeholder={t('ContactUs.placeholder-message')}
+              placeholder={t('common.ContactUs.placeholder-message')}
               cols={15}
               value={message}
               onChange={e => messageOnChangeHandler(e)}
@@ -48,7 +48,7 @@ const ContactUs = (props:ContactUsProps) => {
             <div className='flex justify-between'>
               <div className='flex items-center'>
                 <a className={`px-4 py-2 ${mode === 'dark' ? 'bg-gold text-dark font-bold' : 'bg-blue text-white'}`} href={`mailto:0xblanc.io@proton.me?subject=${subject}&body=${message}`}>
-                  {t('ContactUs.button-send')}
+                  {t('common.ContactUs.button-send')}
                 </a>
               </div>
               <div className='flex'>

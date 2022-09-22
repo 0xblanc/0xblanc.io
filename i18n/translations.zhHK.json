@@ -1,79 +1,85 @@
 {
-    "meta": {
-        "locale": "zh-HK",
-        "hreflang": "en",
-        "url": "https://0xblanc.io/zh-hk/",
-        "title": "香港的Web3&區塊鏈解決方案供應商 | 0xBlanc",
-        "description": "0xBlanc為您提供一站式Web3.0技術解決方案，即時開始NFT、智能合約開發，連動區塊鏈打造專屬您項目的網頁，再配合搜尋引擎優化（SEO），將貴品牌的DApp輕鬆呈現於客戶眼前。並以Web3.0專案提升品牌形象，搶佔去中心化應用程式先機。",
-        "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft launching, nft generation, 區塊鏈, 以太坊"
-    },
-    "Hero": {
-        "title": "釋放區塊鏈的無限可能"
-    },
-    "AboutUs": {
-        "title": "關於我們",
-        "content": "0xBlanc是由一群熱愛區塊鏈及Web3技術的年輕人所組成的，我們的目標是以技術人員和設計師人才，為項目提供區塊鏈相關的諮詢和服務。如果您想開始NFT項目開發、DApp開發、自定義智能合約開發、將Web3技術整合至現有業務之中或需要傳統網站託管服務，那麼這裡就是正確的選擇。"
-    },
-    "Services": {
-        "title": "服務",
-        "ServiceWeProvide": "我們提供的服務",
-        "items": [
-            "NFT生成",
-            "元數據自定義",
-            "IPFS數據上傳",
-            "NFT鑄造網站",
-            "EVM智能合約服務",
-            "Solana鏈技術服務",
-            "Web3整合服務",
-            "傳統網站服務"
-        ]
-    },
-    "ImageShowcase": {
-        "WantSomethingSpecial": "更多想要的東西？",
-        "AIImageProcessedNftGeneration": "AI圖片合成 + NFT生成器",
-        "from": "從",
-        "to": "到",
-        "source": "來源"
-    },
-    "ProjectShowcase": {
-        "title": "過往項目",
-        "sentence1": {
-            "prefix": "過",
-            "highlight": "百萬",
-            "suffix": "美金銷售額"
-        },
-        "sentence2": {
-            "prefix": " ",
-            "highlight": "100",
-            "suffix": "以太幣Opensea成交額"
-        },
-        "sentence3": {
-            "prefix": "法國塗鴉藝術家",
-            "highlight": "DEZIO",
-            "suffix": " "
-        },
-        "sentence4": {
-            "prefix": " ",
-            "highlight": "鋒味同萌",
-            "suffix": " x 香腸星人研究所"
-        },
-        "sentence5": {
-            "prefix": "與君悅酒店合作舉辦",
-            "highlight": "CLASH",
-            "suffix": "!"
-        }
-    },
-    "ContactUs": {
-        "title": "聯絡我們",
-        "placeholder-subject": "主題",
-        "placeholder-message": "在這裡寫下你的信息...",
-        "button-send": "發送"
-    },
-    "FAQ": {
-        "title": "常見問題"
-    },
     "footer": {
         "find-us-on": "尋找我們： "
+    },
+    "common": {
+        "meta": {
+            "locale": "zh-HK",
+            "hreflang": "en"
+        },
+        "ContactUs": {
+            "title": "聯絡我們",
+            "placeholder-subject": "主題",
+            "placeholder-message": "在這裡寫下你的信息...",
+            "button-send": "發送"
+        }
+    },
+    "web3": {
+        "meta": {
+            "url": "https://0xblanc.io/zh-hk/",
+            "title": "香港的Web3&區塊鏈解決方案供應商 | 0xBlanc",
+            "description": "0xBlanc為您提供一站式Web3.0技術解決方案，即時開始NFT、智能合約開發，連動區塊鏈打造專屬您項目的網頁，再配合搜尋引擎優化（SEO），將貴品牌的DApp輕鬆呈現於客戶眼前。並以Web3.0專案提升品牌形象，搶佔去中心化應用程式先機。",
+            "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft launching, nft generation, 區塊鏈, 以太坊"
+        },
+        "Hero": {
+            "title": "釋放區塊鏈的無限可能"
+        },
+        "AboutUs": {
+            "title": "關於我們",
+            "content": "0xBlanc是由一群熱愛區塊鏈及Web3技術的年輕人所組成的，我們的目標是以技術人員和設計師人才，為項目提供區塊鏈相關的諮詢和服務。如果您想開始NFT項目開發、DApp開發、自定義智能合約開發、將Web3技術整合至現有業務之中或需要傳統網站託管服務，那麼這裡就是正確的選擇。"
+        },
+        "Services": {
+            "title": "服務",
+            "ServiceWeProvide": "我們提供的服務",
+            "items": [
+                "NFT生成",
+                "元數據自定義",
+                "IPFS數據上傳",
+                "NFT鑄造網站",
+                "EVM智能合約服務",
+                "Solana鏈技術服務",
+                "Web3整合服務",
+                "傳統網站服務"
+            ]
+        },
+        "ImageShowcase": {
+            "WantSomethingSpecial": "更多想要的東西？",
+            "AIImageProcessedNftGeneration": "AI圖片合成 + NFT生成器",
+            "from": "從",
+            "to": "到",
+            "source": "來源"
+        },
+        "ProjectShowcase": {
+            "title": "過往項目",
+            "sentence1": {
+                "prefix": "過",
+                "highlight": "百萬",
+                "suffix": "美金銷售額"
+            },
+            "sentence2": {
+                "prefix": " ",
+                "highlight": "100",
+                "suffix": "以太幣Opensea成交額"
+            },
+            "sentence3": {
+                "prefix": "法國塗鴉藝術家",
+                "highlight": "DEZIO",
+                "suffix": " "
+            },
+            "sentence4": {
+                "prefix": " ",
+                "highlight": "鋒味同萌",
+                "suffix": " x 香腸星人研究所"
+            },
+            "sentence5": {
+                "prefix": "與君悅酒店合作舉辦",
+                "highlight": "CLASH",
+                "suffix": "!"
+            }
+        },
+        "FAQ": {
+            "title": "常見問題"
+        }
     },
     "web2": {
         "hero": {

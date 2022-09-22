@@ -1,83 +1,89 @@
 {
-    "meta": {
-        "locale": "en",
-        "hreflang": "zh-HK",
-        "url": "https://0xblanc.io/",
-        "title": "Hong Kong based Web3, Blockchain Solution Provider | 0xblanc",
-        "description": "0xBlanc provides web3 solution services, including decentralized applications (DApp), smart contracts, web3.0 integration, and NFT launching services. Contact us to get started on blockchain & web3.0 related projects, develop your custom website and boost your exposure with our search engine optimization (SEO) audit service!",
-        "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"
-    },
-    "Web2Hero": {
-        "subtitle": "Traditional Web2.0 Solutions",
-        "slogan": "We Build What's Next."
-    },
-    "Hero": {
-        "title": "Unleash the potentiality with Blockchain."
-    },
-    "AboutUs": {
-        "title": "About Us",
-        "content": "0xBlanc was founded by a group of young blood passionate about web3 and blockchain technologies. We brought the talents of technicians and designers to provide blockchain-related consultations and services for projects. If you want to launch an NFT project, integrate web3 into an existing business, develop custom logic smart contracts or even host traditional websites, this is the right place to be. Please don't hesitate and feel free to contact us!"
-    },
-    "Services": {
-        "title": "Services",
-        "ServiceWeProvide": "Service We Provide",
-        "items": [
-            "NFT generic propagation",
-            "Custom metadata",
-            "IPFS data upload",
-            "Minting website",
-            "EVM Smart Contract",
-            "Solana related service",
-            "Web3 integration",
-            "Traditional web service"
-        ]
-    },
-    "ImageShowcase": {
-        "WantSomethingSpecial": "Want something special?",
-        "AIImageProcessedNftGeneration": "AI image processed NFT generation",
-        "from": "From",
-        "to": "To",
-        "source": "Source"
-    },
-    "ProjectShowcase": {
-        "title": "Past Project",
-        "sentence1": {
-            "prefix": "Over",
-            "highlight": "One Million",
-            "suffix": "USD on sell"
-        },
-        "sentence2": {
-            "prefix": " ",
-            "highlight": "100",
-            "suffix": "ETH trade volume on OpenSea"
-        },
-        "sentence3": {
-            "prefix": "Collaborate with",
-            "highlight": "French graffiti artist DEZIO",
-            "suffix": " "
-        },
-        "sentence4": {
-            "prefix": " ",
-            "highlight": "Chef Nick Family",
-            "suffix": " x Hungry Sausages Lab"
-        },
-        "sentence5": {
-            "prefix": "Collaborated event with",
-            "highlight": "Grant Hyatt - CLASH",
-            "suffix": "!"
-        }
-    },
-    "ContactUs": {
-        "title": "Contact Us",
-        "placeholder-subject": "Subject",
-        "placeholder-message": "Write your message here...",
-        "button-send": "Send"
-    },
-    "FAQ": {
-        "title": "FAQ"
-    },
     "footer": {
         "find-us-on": "Find us on: "
+    },
+    "common": {
+        "meta": {
+            "locale": "en",
+            "hreflang": "zh-HK"
+        },
+        "ContactUs": {
+            "title": "Contact Us",
+            "placeholder-subject": "Subject",
+            "placeholder-message": "Write your message here...",
+            "button-send": "Send"
+        }
+    },
+    "web3": {
+        "meta": {
+            "url": "https://0xblanc.io/",
+            "title": "Hong Kong based Web3, Blockchain Solution Provider | 0xblanc",
+            "description": "0xBlanc provides web3 solution services, including decentralized applications (DApp), smart contracts, web3.0 integration, and NFT launching services. Contact us to get started on blockchain & web3.0 related projects, develop your custom website and boost your exposure with our search engine optimization (SEO) audit service!",
+            "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"
+        },
+        "Web2Hero": {
+            "subtitle": "Traditional Web2.0 Solutions",
+            "slogan": "We Build What's Next."
+        },
+        "Hero": {
+            "title": "Unleash the potentiality with Blockchain."
+        },
+        "AboutUs": {
+            "title": "About Us",
+            "content": "0xBlanc was founded by a group of young blood passionate about web3 and blockchain technologies. We brought the talents of technicians and designers to provide blockchain-related consultations and services for projects. If you want to launch an NFT project, integrate web3 into an existing business, develop custom logic smart contracts or even host traditional websites, this is the right place to be. Please don't hesitate and feel free to contact us!"
+        },
+        "Services": {
+            "title": "Services",
+            "ServiceWeProvide": "Service We Provide",
+            "items": [
+                "NFT generic propagation",
+                "Custom metadata",
+                "IPFS data upload",
+                "Minting website",
+                "EVM Smart Contract",
+                "Solana related service",
+                "Web3 integration",
+                "Traditional web service"
+            ]
+        },
+        "ImageShowcase": {
+            "WantSomethingSpecial": "Want something special?",
+            "AIImageProcessedNftGeneration": "AI image processed NFT generation",
+            "from": "From",
+            "to": "To",
+            "source": "Source"
+        },
+        "ProjectShowcase": {
+            "title": "Past Project",
+            "sentence1": {
+                "prefix": "Over",
+                "highlight": "One Million",
+                "suffix": "USD on sell"
+            },
+            "sentence2": {
+                "prefix": " ",
+                "highlight": "100",
+                "suffix": "ETH trade volume on OpenSea"
+            },
+            "sentence3": {
+                "prefix": "Collaborate with",
+                "highlight": "French graffiti artist DEZIO",
+                "suffix": " "
+            },
+            "sentence4": {
+                "prefix": " ",
+                "highlight": "Chef Nick Family",
+                "suffix": " x Hungry Sausages Lab"
+            },
+            "sentence5": {
+                "prefix": "Collaborated event with",
+                "highlight": "Grant Hyatt - CLASH",
+                "suffix": "!"
+            }
+        },
+        "FAQ": {
+            "title": "FAQ"
+        }
     },
     "web2": {
         "hero": {

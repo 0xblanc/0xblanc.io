@@ -18,22 +18,22 @@ const Hero = (props: any) => {
               height={82}
             />
           </div>
-          <h1 className='text-gold text-4xl font-bold text-center lg:text-start'>{t('Hero.title')}</h1>
+          <h1 className='text-gold text-4xl font-bold text-center lg:text-start'>{t('web3.Hero.title')}</h1>
         </div>
         <div className='flex flex-col pb-4 md:pb-0 px-5 sm:px-0 lg:flex-row items-center'>
-          <HoverableLink text={t('AboutUs.title')} href={'#about-us'} />
+          <HoverableLink text={t('web3.AboutUs.title')} href={'#about-us'} />
           <div className='hidden lg:flex items-center w-[1px]'>
             <span className='w-full bg-white h-4' />
           </div>
-          <HoverableLink text={t('Services.title')} href={'#service-we-provide'} />
+          <HoverableLink text={t('web3.Services.title')} href={'#service-we-provide'} />
           <div className='hidden lg:flex items-center w-[1px]'>
             <span className='w-full bg-white h-4' />
           </div>
-          <HoverableLink text={t('ProjectShowcase.title')} href={'#past-projects'} />
+          <HoverableLink text={t('web3.ProjectShowcase.title')} href={'#past-projects'} />
           <div className='hidden lg:flex items-center w-[1px]'>
             <span className='w-full bg-white h-4' />
           </div>
-          <HoverableLink text={t('ContactUs.title')} href={'#contact-us'} />
+          <HoverableLink text={t('common.ContactUs.title')} href={'#contact-us'} />
         </div>
       </div>
     </div>

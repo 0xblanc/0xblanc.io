@@ -19,7 +19,6 @@ const DesktopFrame = (props: DesktopFrameProps) => {
 
   const menuToggleHandler = () => {
     const body = document.body as any
-    console.log(body)
     if (menuOpen) {
       body.classList.remove('overflow-hidden')
     } else {
@@ -43,9 +42,9 @@ const DesktopFrame = (props: DesktopFrameProps) => {
       <MobileMenu menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
       {
         router.pathname === '/web2' ? (
-          <DiscoverBox mode={'dark'} text={'Discover Web3.0 Services'} link={'/'} />
+          <DiscoverBox mode={'dark'} text={'Discover Web3.0 Services'} link={'/'} forceHide={menuOpen} />
         ) : (
-          <DiscoverBox mode={'light'} text={'Discover Web2.0 Services'} link={'/web2'} />
+          <DiscoverBox mode={'light'} text={'Discover Web2.0 Services'} link={'/web2'} forceHide={menuOpen} />
         )
       }
     </div>

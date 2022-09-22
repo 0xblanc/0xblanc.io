@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('meta.title')}</title>
+        <title>{t('web3.meta.title')}</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='apple-touch-icon' href='/favicon.ico' />
@@ -29,11 +29,11 @@ const Home: NextPage = () => {
         <link rel="alternate" href="https://0xblanc.io" hrefLang="x-default"/>
         <meta
           name='description'
-          content={t('meta.description')}
+          content={t('web3.meta.description')}
         />
-        <meta name='keywords' content={t('meta.keywords')} />
+        <meta name='keywords' content={t('web3.meta.keywords')} />
 
-        <meta property='og:title' content={t('meta.title')} />
+        <meta property='og:title' content={t('web3.meta.title')} />
         <meta property="og:image" content="https://0xblanc.io/assets/logo/text_logo_og_meta.png" />
         <meta property='og:site_name' content='0xBlanc' />
         <meta
@@ -42,13 +42,13 @@ const Home: NextPage = () => {
         />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://0xblanc.io' />
-        <meta property='og:locale' content={t('meta.locale')} />
+        <meta property='og:locale' content={t('common.meta.locale')} />
 
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='twitter:domain' content='0xblanc.io' />
-        <meta property='twitter:url' content={t('meta.url')} />
-        <meta name='twitter:title' content={t('meta.title')} />
-        <meta name='twitter:description' content={t('meta.description')} />
+        <meta property='twitter:url' content={t('web3.meta.url')} />
+        <meta name='twitter:title' content={t('web3.meta.title')} />
+        <meta name='twitter:description' content={t('web3.meta.description')} />
         <meta name='twitter:image' content='https://0xblanc.io/assets/logo/text_logo_og_meta.png' />
       </Head>
       <DesktopFrame>

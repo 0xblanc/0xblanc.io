@@ -4,19 +4,19 @@ import React from 'react'
 
 const navItems = [
   {
-    text: 'AboutUs.title',
+    text: 'web3.AboutUs.title',
     href: '#about-us',
   },
   {
-    text: 'Services.title',
+    text: 'web3.Services.title',
     href: '#service-we-provide',
   },
   {
-    text: 'ProjectShowcase.title',
+    text: 'web3.ProjectShowcase.title',
     href: '#past-projects',
   },
   {
-    text: 'ContactUs.title',
+    text: 'common.ContactUs.title',
     href: '#contact-us',
   },
 ]

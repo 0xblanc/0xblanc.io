@@ -9,10 +9,10 @@ const AboutUs = () => {
     <div id='about-us' className='bg-aliceBlue py-28 block'>
       <div className='flex flex-col items-center'>
         <div className='container w-full mx-auto flex justify-center'>
-          <Title text={t('AboutUs.title')} />
+          <Title text={t('web3.AboutUs.title')} />
         </div>
         <div className='flex justify-center w-full py-6 md:py-24'>
-          <p className='text-darkBlue text-lg text-center w-2/3'>{t('AboutUs.content')}</p>
+          <p className='text-darkBlue text-lg text-center w-2/3'>{t('web3.AboutUs.content')}</p>
         </div>
       </div>
     </div>
