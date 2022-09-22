@@ -100,27 +100,27 @@
                     "description": ""
                 },
                 {
-                    "name": "Landing Page",
-                    "description": "Discuss with us to develop web pages that represent your company."
+                    "name": "登陸頁面",
+                    "description": "和我們商討並開發一個屬於你公司的網站。"
                 },
                 {
                     "name": "",
                     "description": ""
                 },
                 {
-                    "name": "DNS & Hosting",
+                    "name": "網域名稱系統 & 託管",
                     "description": "Register a domain name and host your website on our cloud infrastructure."
                 },
                 {
-                    "name": "Free Quotation",
+                    "name": "免費報價",
                     "description": "Contact us for a free quotation based on what you need within 24 hours!."
                 },
                 {
-                    "name": "SEO Audit",
+                    "name": "SEO分析",
                     "description": "Metadata, page, url optimization and keywords audit that enhance your website’s SEO."
                 },
                 {
-                    "name": "E-Commerce",
+                    "name": "電子商貿網站",
                     "description": "Launch your e-commerce website and sell your products online with product, customer managing & payment system."
                 },
                 {
@@ -133,24 +133,24 @@
             "title": "常見問題",
             "faqs": [
                 {
-                    "question": "How to start a project?",
-                    "answer": "You can contact us with email or send us a direct message with instagram or telegram! Let’s discuss what you need and we with offer you a quotation within 24 hours!"
+                    "question": "如何開始新的専案？",
+                    "answer": "您可以用電子郵件或從Telegram/Instagram訊息聯絡我們，我們會有專人和你聯絡討論並在24小時內報價。"
                 },
                 {
-                    "question": "What do I need to prepare for creating a website?",
-                    "answer": "Please provide us with your logo, color scheme, and content. But don’t worry if you don’t have any of these, we will discuss with you and try to make the best design for you!"
+                    "question": "我需要準備什麼？",
+                    "answer": "請提供你所需要的標誌，配色方案以及內容。如果你沒有預定的設計也不需擔心，我們會在和你討論後提供最好的設計給你們選擇。"
                 },
                 {
-                    "question": "Why choose 0xBlanc?",
-                    "answer": "0xBlanc provide you with a unique design with delightful user experience, good starter SEO implementation, and also include analytics tools to help you monitor your website! Our team will also provide you high-quality 1-on-1 support and consultation."
+                    "question": "為什麼要選擇0xBlanc？",
+                    "answer": "0xBlanc能為你提供獨特的設計以及良好的用戶體驗，提供SEO服務，並可以在您的網站中加入分析工具，助你觀察數據！我們的團隊會提供高質素的一對一支援和諮詢。"
                 },
                 {
-                    "question": "When will my website be done?",
-                    "answer": "We generally take 2-3 weeks to complete a website. The entire website design process is starting from consultation, analyze your needs, confirm quotations to web design, testing and publish online. But if you need it done faster, we can discuss with you and try to meet your deadline!"
+                    "question": "網站會於什麼時候完成？",
+                    "answer": "我們通常會在兩三個星期內完成一個網站。整個網站設計過程會由諮詢開始，然後分析您需要的需求，再確定網站的報價，最後在測試完成後就會在網上推出。但如果你有急切的要求，我們可以討論並助你趕上進度！"
                 },
                 {
-                    "question": "How to make the payment?",
-                    "answer": "In most cases, 60% of the payment is required before the project starts. 20% is required before the UAT is delivered. The remaining 20% is required before deployment."
+                    "question": "如何付款？",
+                    "answer": "在大多數情況，總數的60%會在項目開始前支持，總數的20%會在UAT前支付，剩餘的20%即會在部署前支付。"
                 }
             ]
         }
