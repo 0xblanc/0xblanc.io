@@ -81,15 +81,15 @@
             "slogan": "We Build What's Next."
         },
         "we-design": {
-            "title": "UI/UX Design",
+            "title": "UI/UX 設計",
             "content": {
-                "pre": "Avoid implementing template designs. 0xBlanc offers you customized ",
-                "highlight": "unique",
-                "post": "design with delightful user experience."
+                "pre": "避免使用重複的模板設計，0xBlanc為您提供",
+                "highlight": "獨一無二",
+                "post": "的設計及優質的用戶體驗，建立品牌形象，搶佔市場先機。"
             }
         },
         "we-tech": {
-            "title": "",
+            "title": "技術方案",
             "services": [
                 {
                     "name": "",
@@ -109,19 +109,19 @@
                 },
                 {
                     "name": "網域名稱系統 & 託管",
-                    "description": "Register a domain name and host your website on our cloud infrastructure."
+                    "description": "簡易域名註冊，提供安全的網站託管服務。"
                 },
                 {
                     "name": "免費報價",
-                    "description": "Contact us for a free quotation based on what you need within 24 hours!."
+                    "description": "我們提供24小時免費的報價，讓您可以清楚了解到您的項目所需的費用。"
                 },
                 {
                     "name": "SEO分析",
-                    "description": "Metadata, page, url optimization and keywords audit that enhance your website’s SEO."
+                    "description": "我們提供關鍵字詞、網址內容、網頁可訪問性及網頁速度SEO分析，讓您的網站可以在搜索引擎中排名更高。"
                 },
                 {
                     "name": "電子商貿網站",
-                    "description": "Launch your e-commerce website and sell your products online with product, customer managing & payment system."
+                    "description": "建立您的電子商務網站，並以方便快捷的商品管理系統、客戶管理系統、送貨服務管理和支付系統在線銷售您的產品。"
                 },
                 {
                     "name": "",
