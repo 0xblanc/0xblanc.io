@@ -22,9 +22,21 @@ const WeTech = (props: any) => {
   const serviceHoverOutHandler = (index: number) => {
   }
 
+  const borderControl = (index: number) => {
+    if (index === 1) {
+      return 'border-r-[1px]'
+    } else if (index === 2) {
+      return 'border-t-[1px]'
+    } else if (index === 3) {
+      return 'border-b-[1px]'
+    } else {
+      return 'border-l-[1px]'
+    }
+  }
+
   return (
     <div id='web2-we-tech' className='bg-dark overflow-visible'>
-      <div className='container mx-auto flex flex-col pt-28 h-[800px] items-center'>
+      <div className='container mx-auto flex flex-col pt-28 md:h-[800px] items-center'>
         <div className='flex justify-center mb-4'>
           <h2 className='text-white text-3xl md:text-7xl font-bold text-center'>{t('web2.we-tech.title')}</h2>
         </div>
@@ -47,6 +59,34 @@ const WeTech = (props: any) => {
               )
             })}
           </div>
+        </div>
+        <div className='flex flex-col md:hidden px-8 py-10 w-full'>
+          {services.filter(service => service.name).map((service, index) => {
+            return (
+              <>
+                {
+                  service.name ? (
+                    <div className='flex flex-col mb-24' key={index}>
+                      <div className={`flex mb-8 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                        <div className={`w-fit border-gold flex items-center justify-center p-8 ${service.name.length > 5 ? borderControl(index) : 'aspect-square rounded-full border-[1px]'}`}>
+                          <p className='text-2xl text-gold'>
+                            {service.name}
+                          </p>
+                        </div>
+                      </div>
+                      <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                        <p className={`w-full text-lg text-white ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  ) : (
+                    <></>
+                  )
+                }
+              </>
+            )
+          })}
         </div>
       </div>
     </div>
