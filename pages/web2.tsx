@@ -22,11 +22,11 @@ const Web2: NextPage = () => {
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='apple-touch-icon' href='/favicon.ico' />
         <link rel='apple-touch-icon-precomposed' href='/favicon.ico' />
-        <link rel='canonical' href='https://0xblanc.io' />
-        <link rel='alternate' href='https://0xblanc.io' hrefLang='en' />
-        <link rel='alternate' href='https://0xblanc.io/zh-hk' hrefLang='zh' />
-        <link rel='alternate' href='https://0xblanc.io/zh-hk' hrefLang='zh-HK' />
-        <link rel="alternate" href="https://0xblanc.io" hrefLang="x-default"/>
+        <link rel='canonical' href='https://0xblanc.io/web2' />
+        <link rel='alternate' href='https://0xblanc.io/web2' hrefLang='en' />
+        <link rel='alternate' href='https://0xblanc.io/zh-hk/web2' hrefLang='zh' />
+        <link rel='alternate' href='https://0xblanc.io/zh-hk/web2' hrefLang='zh-HK' />
+        <link rel="alternate" href="https://0xblanc.io/web2" hrefLang="x-default"/>
         <meta
           name='description'
           content={t('web2.meta.description')}
@@ -41,7 +41,7 @@ const Web2: NextPage = () => {
           content={t('web2.meta.description')}
         />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://0xblanc.io' />
+        <meta property='og:url' content={t('web2.meta.url')} />
         <meta property='og:locale' content={t('common.meta.locale')} />
 
         <meta name='twitter:card' content='summary_large_image' />

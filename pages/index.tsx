@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           content={t('meta.description')}
         />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://0xblanc.io' />
+        <meta property='og:url' content={t('web3.meta.url')} />
         <meta property='og:locale' content={t('common.meta.locale')} />
 
         <meta name='twitter:card' content='summary_large_image' />
