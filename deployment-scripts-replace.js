@@ -1,5 +1,7 @@
 const fs = require('fs');
 
+const pages = ['index', 'web2']
+
 const rxs = [
   /\/_next\/static\/chunks\/polyfills-(.*?).js/,
   /\/_next\/static\/chunks\/framework-(.*?).js/,
@@ -11,7 +13,7 @@ const rxs = [
   /\/_next\/static\/css\/(.*?).css/,
 ]
 
-const getHtml = source => fs.readFileSync(`./${source}/index.html`, 'utf8').toString();
+const getHtml = (source, target) => fs.readFileSync(`./${source}/${target}.html`, 'utf8').toString();
 
 const getDirCode = source => {
   const directories = fs.readdirSync(`${source}/_next/static`, {withFileTypes: true})
@@ -31,8 +33,8 @@ const getfiles = (source, suffix) => {
   return directories
 }
 
-const getScripts = source => {
-  const html = fs.readFileSync(`./${source}/index.html`, 'utf8');
+const getScripts = (source, target) => {
+  const html = fs.readFileSync(`./${source}/${target}.html`, 'utf8');
   return rxs.map(rx => html.match(rx)[1])
 }
 
@@ -46,22 +48,24 @@ const renameFiles = (source, files) => {
   }
 }
 
-let html = getHtml('out');
-const newScripts = getScripts('out')
+for (let page of pages) {
 
-for (let i = 0; i < newScripts.length; i++) {
-  html = html.replaceAll(newScripts[i], `${newScripts[i]}-zh`)
+  let html = getHtml('out', page);
+  const newScripts = getScripts('out', page)
+
+  for (let i = 0; i < newScripts.length; i++) {
+    html = html.replaceAll(newScripts[i], `${newScripts[i]}-zh`)
+  }
+
+  const chunkScripts = getfiles('out', '/chunks')
+  const pagesScripts = getfiles('out', '/chunks/pages')
+  const cssScripts = getfiles('out', '/css')
+
+  renameFiles('out/_next/static/chunks/', chunkScripts)
+  renameFiles('out/_next/static/chunks/pages/', pagesScripts)
+  renameFiles('out/_next/static/css/', cssScripts)
+
+
+
+  fs.writeFileSync(`./out/${page}.html`, html)
 }
-
-const chunkScripts = getfiles('out', '/chunks')
-const pagesScripts = getfiles('out', '/chunks/pages')
-const cssScripts = getfiles('out', '/css')
-
-renameFiles('out/_next/static/chunks/', chunkScripts)
-renameFiles('out/_next/static/chunks/pages/', pagesScripts)
-renameFiles('out/_next/static/css/', cssScripts)
-
-
-
-fs.writeFileSync(`./out/index.html`, html)
-

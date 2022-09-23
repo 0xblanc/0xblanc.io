@@ -1,5 +1,4 @@
-import Cube from '../../components/shared/Cube'
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
+import { useTranslation } from 'next-export-i18n'
 import { useEffect, useState } from 'react'
 import Title from '../../components/shared/Title'
 

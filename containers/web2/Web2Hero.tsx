@@ -1,6 +1,4 @@
-import Cube from '../../components/shared/Cube'
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
-import {useEffect} from "react";
+import { useTranslation } from 'next-export-i18n'
 
 const Web2Hero = (props: any) => {
   const { t } = useTranslation()
