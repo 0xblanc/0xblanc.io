@@ -1,78 +1,182 @@
 {
-    "meta": {
-        "locale": "en",
-        "hreflang": "zh-HK",
-        "url": "https://0xblanc.io/",
-        "title": "Hong Kong based Web3, Blockchain Solution Provider | 0xblanc",
-        "description": "0xBlanc provides web3 solution services, including decentralized applications (DApp), smart contracts, web3.0 integration, and NFT launching services. Contact us to get started on blockchain & web3.0 related projects, develop your custom website and boost your exposure with our search engine optimization (SEO) audit service!",
-        "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"
-    },
-    "Hero": {
-        "title": "Unleash the potentiality with Blockchain."
-    },
-    "AboutUs": {
-        "title": "About Us",
-        "content": "0xBlanc was founded by a group of young blood passionate about web3 and blockchain technologies. We brought the talents of technicians and designers to provide blockchain-related consultations and services for projects. If you want to launch an NFT project, integrate web3 into an existing business, develop custom logic smart contracts or even host traditional websites, this is the right place to be. Please don't hesitate and feel free to contact us!"
-    },
-    "Services": {
-        "title": "Services",
-        "ServiceWeProvide": "Service We Provide",
-        "items": [
-            "NFT generic propagation",
-            "Custom metadata",
-            "IPFS data upload",
-            "Minting website",
-            "EVM Smart Contract",
-            "Solana related service",
-            "Web3 integration",
-            "Traditional web service"
-        ]
-    },
-    "ImageShowcase": {
-        "WantSomethingSpecial": "Want something special?",
-        "AIImageProcessedNftGeneration": "AI image processed NFT generation",
-        "from": "From",
-        "to": "To",
-        "source": "Source"
-    },
-    "ProjectShowcase": {
-        "title": "Past Project",
-        "sentence1": {
-            "prefix": "Over",
-            "highlight": "One Million",
-            "suffix": "USD on sell"
-        },
-        "sentence2": {
-            "prefix": " ",
-            "highlight": "100",
-            "suffix": "ETH trade volume on OpenSea"
-        },
-        "sentence3": {
-            "prefix": "Collaborate with",
-            "highlight": "French graffiti artist DEZIO",
-            "suffix": " "
-        },
-        "sentence4": {
-            "prefix": " ",
-            "highlight": "Chef Nick Family",
-            "suffix": " x Hungry Sausages Lab"
-        },
-        "sentence5": {
-            "prefix": "Collaborated event with",
-            "highlight": "Grant Hyatt - CLASH",
-            "suffix": "!"
-        }
-    },
-    "ContactUs": {
-        "title": "Contact Us",
-        "placeholder-subject": "Subject",
-        "placeholder-message": "Write your message here...",
-        "button-send": "Send"
-    },
-    "FAQ": {
-        "title": "FAQ"
-    },
     "footer": {
         "find-us-on": "Find us on: "
+    },
+    "common": {
+        "meta": {
+            "locale": "en",
+            "hreflang": "zh-HK"
+        },
+        "ContactUs": {
+            "title": "Contact Us",
+            "placeholder-subject": "Subject",
+            "placeholder-message": "Write your message here...",
+            "button-send": "Send"
+        }
+    },
+    "web3": {
+        "meta": {
+            "url": "https://0xblanc.io/",
+            "title": "Hong Kong based Web3, Blockchain Solution Provider | 0xBlanc",
+            "description": "0xBlanc provides web3 solution services, including decentralized applications (DApp), smart contracts, web3.0 integration, and NFT launching services. Contact us to get started on blockchain & web3.0 related projects, develop your custom website and boost your exposure with our search engine optimization (SEO) audit service!",
+            "keywords": "web3, blockchain, solana, ethereum, nft, technical service, minting site, website hosting, nft hosting, nft generation"
+        },
+        "Web2Hero": {
+            "subtitle": "Traditional Web2.0 Solutions",
+            "slogan": "We Build What's Next."
+        },
+        "Hero": {
+            "title": "Unleash the potentiality with Blockchain."
+        },
+        "AboutUs": {
+            "title": "About Us",
+            "content": "0xBlanc was founded by a group of young blood passionate about web3 and blockchain technologies. We brought the talents of technicians and designers to provide blockchain-related consultations and services for projects. If you want to launch an NFT project, integrate web3 into an existing business, develop custom logic smart contracts or even host traditional websites, this is the right place to be. Please don't hesitate and feel free to contact us!"
+        },
+        "Services": {
+            "title": "Services",
+            "ServiceWeProvide": "Service We Provide",
+            "items": [
+                "NFT generic propagation",
+                "Custom metadata",
+                "IPFS data upload",
+                "Minting website",
+                "EVM Smart Contract",
+                "Solana related service",
+                "Web3 integration",
+                "Traditional web service"
+            ]
+        },
+        "ImageShowcase": {
+            "WantSomethingSpecial": "Want something special?",
+            "AIImageProcessedNftGeneration": "AI image processed NFT generation",
+            "from": "From",
+            "to": "To",
+            "source": "Source"
+        },
+        "ProjectShowcase": {
+            "title": "Past Project",
+            "sentence1": {
+                "prefix": "Over",
+                "highlight": "One Million",
+                "suffix": "USD on sell"
+            },
+            "sentence2": {
+                "prefix": " ",
+                "highlight": "100",
+                "suffix": "ETH trade volume on OpenSea"
+            },
+            "sentence3": {
+                "prefix": "Collaborate with",
+                "highlight": "French graffiti artist DEZIO",
+                "suffix": " "
+            },
+            "sentence4": {
+                "prefix": " ",
+                "highlight": "Chef Nick Family",
+                "suffix": " x Hungry Sausages Lab"
+            },
+            "sentence5": {
+                "prefix": "Collaborated event with",
+                "highlight": "Grant Hyatt - CLASH",
+                "suffix": "!"
+            }
+        },
+        "FAQ": {
+            "title": "FAQ"
+        },
+        "discover-more": {
+            "text": "Discover Web2.0 Services",
+            "link": "https://0xblanc.io/web2"
+        }
+    },
+    "web2": {
+        "meta": {
+            "url": "https://0xblanc.io/web2",
+            "title": "Hong Kong based Web Solution Provider | 0xBlanc",
+            "description": "0xBlanc provides web2 solution services with free quotation. Contact us to get started on developing your custom responsive UI and delightful UX website with or without E-commerce product system, Content Management System, payment gateway and boost your exposure with our search engine optimization (SEO) audit service!",
+            "keywords": "web hosting, website, 0xblanc, IT solution, web solution, web design, UIUX design"
+        },
+        "hero": {
+            "subtitle": "Traditional Web2.0 Solutions",
+            "slogan": "We Build What's Next."
+        },
+        "we-design": {
+            "title": "UI/UX Design",
+            "content": {
+                "pre": "Avoid implementing template designs. 0xBlanc offers you customized ",
+                "highlight": "unique",
+                "post": "design with delightful user experience."
+            }
+        },
+        "we-tech": {
+            "title": "Technical Services",
+            "services": [
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "RWD",
+                    "description": "Responsive Web Design that works on all devices."
+                },
+                {
+                    "name": "",
+                    "description": ""
+                },
+                {
+                    "name": "DNS & Hosting",
+                    "description": "Register a domain name and host your website on our cloud infrastructure."
+                },
+                {
+                    "name": "Free Quotation",
+                    "description": "Contact us for a free quotation based on what you need within 24 hours!."
+                },
+                {
+                    "name": "SEO Audit",
+                    "description": "Metadata, page, url optimization and keywords audit that enhance your website’s SEO."
+                },
+                {
+                    "name": "E-Commerce",
+                    "description": "Launch your e-commerce website and sell your products online with product, customer managing & payment system."
+                },
+                {
+                    "name": "",
+                    "description": ""
+                }
+            ]
+        },
+        "faq": {
+            "title": "FAQ",
+            "faqs": [
+                {
+                    "question": "How to start a project?",
+                    "answer": "You can contact us with email or send us a direct message with instagram or telegram! Let’s discuss what you need and we with offer you a quotation within 24 hours!"
+                },
+                {
+                    "question": "What do I need to prepare for creating a website?",
+                    "answer": "Please provide us with your logo, color scheme, and content. But don’t worry if you don’t have any of these, we will discuss with you and try to make the best design for you!"
+                },
+                {
+                    "question": "Why choose 0xBlanc?",
+                    "answer": "0xBlanc provide you with a unique design with delightful user experience, good starter SEO implementation, and also include analytics tools to help you monitor your website! Our team will also provide you high-quality 1-on-1 support and consultation."
+                },
+                {
+                    "question": "When will my website be done?",
+                    "answer": "We generally take 2-3 weeks to complete a website. The entire website design process is starting from consultation, analyze your needs, confirm quotations to web design, testing and publish online. But if you need it done faster, we can discuss with you and try to meet your deadline!"
+                },
+                {
+                    "question": "How to make the payment?",
+                    "answer": "In most cases, 60% of the payment is required before the project starts. 20% is required before the UAT is delivered. The remaining 20% is required before deployment."
+                }
+            ]
+        },
+        "discover-more": {
+            "text": "Discover Web3.0 Services",
+            "link": "https://0xblanc.io"
+        }
     }
 }

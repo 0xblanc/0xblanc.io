@@ -2,11 +2,13 @@
 
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './containers/**/*.{js,ts,jsx,tsx}'],
-
   theme: {
     colors: {
       white: '#FFFFFF',
+      black: '#000000',
+      dark: '#252226',
       darkGray: '#A8A8A8',
+      lightDark: '#49434A',
       gray: '#525252',
       lightGray: '#B5B5B5',
       aliceBlue: '#E7F2FF',
@@ -43,12 +45,22 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: 'url(https://res.cloudinary.com/blanc-io/image/upload/q_auto/v1656758496/website/background_hxlfos.webp)',
+        'web2-hero': 'url(https://res.cloudinary.com/blanc-io/image/upload/f_auto,q_auto/v1661579619/website/web2_background_iuf0s6.jpg)',
+        'web2-design': 'url(https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1011&q=80)',
+        'arrow-gold': 'url(https://res.cloudinary.com/blanc-io/image/upload/f_auto,q_auto/v1663755868/website/arrow-gold_zkl2cy.svg)',
+        'arrow-blue': 'url(https://res.cloudinary.com/blanc-io/image/upload/f_auto,q_auto/v1663755868/website/arrow-blue_rj2dlz.svg)',
       },
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],
       },
       rotate: {
         135: '135deg',
+      },
+      screens: {
+        '3xl': '1792px',
+      },
+      fontSize: {
+        'ul': '10rem',
       },
     },
   },

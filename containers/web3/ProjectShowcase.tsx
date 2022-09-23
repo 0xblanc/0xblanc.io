@@ -1,4 +1,4 @@
-import Title from '../components/shared/Title'
+import Title from '../../components/shared/Title'
 
 import HSBanner from '@assets/home/past-projects/hs-banner.png'
 import HSClash from '@assets/home/past-projects/hs-clash.png'
@@ -6,7 +6,7 @@ import HSHunger from '@assets/home/past-projects/hs-hunger.png'
 import HSWanted from '@assets/home/past-projects/hs-wanted.png'
 
 import { useEffect, useState } from 'react'
-import useWindowDimensions from '../hooks/useWindowDimensions'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n'
 
 const ProjectShowcase = () => {
@@ -71,7 +71,7 @@ const ProjectShowcase = () => {
     <div id='past-projects' className='relative items-center bg-aliceBlue py-28 overflow-hidden'>
       <div className='w-full flex justify-center flex-col h-5/6'>
         <div className='container w-full mx-auto flex justify-center'>
-          <Title text={t('ProjectShowcase.title')} />
+          <Title text={t('web3.ProjectShowcase.title')} />
         </div>
         <div className='flex lg:hidden justify-center mt-20 my-10'>
           <img
@@ -94,7 +94,7 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                {t('ProjectShowcase.sentence1.prefix')} <span className='text-4xl lg:text-6xl font-bold text-blue'>{t('ProjectShowcase.sentence1.highlight')}</span> {t('ProjectShowcase.sentence1.suffix')}
+                {t('web3.ProjectShowcase.sentence1.prefix')} <span className='text-4xl lg:text-6xl font-bold text-blue'>{t('web3.ProjectShowcase.sentence1.highlight')}</span> {t('web3.ProjectShowcase.sentence1.suffix')}
               </p>
             </div>
             <div className='relative lg:w-[939px]'>
@@ -108,9 +108,9 @@ const ProjectShowcase = () => {
               </div>
               <p>
                 <span className='text-4xl lg:text-6xl font-bold text-purple relative'>
-                  {t('ProjectShowcase.sentence2.highlight')} <span className='absolute -right-3 top-2 text-4xl'>+</span>
+                  {t('web3.ProjectShowcase.sentence2.highlight')} <span className='absolute -right-3 top-2 text-4xl'>+</span>
                 </span>
-                &nbsp; {t('ProjectShowcase.sentence2.suffix')}
+                &nbsp; {t('web3.ProjectShowcase.sentence2.suffix')}
               </p>
             </div>
             <div className='relative lg:w-[939px]'>
@@ -123,7 +123,7 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                {t('ProjectShowcase.sentence3.prefix')} <span className='text-4xl lg:text-6xl font-bold text-blueLagoon'>{t('ProjectShowcase.sentence3.highlight')}</span>
+                {t('web3.ProjectShowcase.sentence3.prefix')} <span className='text-4xl lg:text-6xl font-bold text-blueLagoon'>{t('web3.ProjectShowcase.sentence3.highlight')}</span>
               </p>
             </div>
             <div className='relative lg:w-[939px]'>
@@ -136,7 +136,7 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                <span className='text-4xl lg:text-6xl font-bold text-redViolet'>{t('ProjectShowcase.sentence4.highlight')}</span> {t('ProjectShowcase.sentence4.suffix')}
+                <span className='text-4xl lg:text-6xl font-bold text-redViolet'>{t('web3.ProjectShowcase.sentence4.highlight')}</span> {t('web3.ProjectShowcase.sentence4.suffix')}
               </p>
             </div>
             <div className='relative lg:w-[939px]'>
@@ -157,7 +157,7 @@ const ProjectShowcase = () => {
                 />
               </div>
               <p>
-                {t('ProjectShowcase.sentence5.prefix')} <span className='text-4xl lg:text-6xl font-bold text-orange'>{t('ProjectShowcase.sentence5.highlight')}</span>{t('ProjectShowcase.sentence5.suffix')}
+                {t('web3.ProjectShowcase.sentence5.prefix')} <span className='text-4xl lg:text-6xl font-bold text-orange'>{t('web3.ProjectShowcase.sentence5.highlight')}</span>{t('web3.ProjectShowcase.sentence5.suffix')}
               </p>
             </div>
           </div>
