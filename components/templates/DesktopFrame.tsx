@@ -6,6 +6,7 @@ import Web2Hero from '../../containers/web2/Web2Hero'
 import MobileMenu from '../shared/Header/MobileMenu'
 import { useRouter } from 'next/router'
 import DiscoverBox from "../shared/DiscoverBox";
+import { useTranslation } from 'next-export-i18n'
 
 type DesktopFrameProps = {
   children: React.ReactNode
@@ -16,6 +17,7 @@ const DesktopFrame = (props: DesktopFrameProps) => {
 
   const [menuOpen, setMenuOpen] = useState(false)
   const router = useRouter()
+  const { t } = useTranslation()
 
   const menuToggleHandler = () => {
     const body = document.body as any
@@ -42,9 +44,9 @@ const DesktopFrame = (props: DesktopFrameProps) => {
       <MobileMenu menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
       {
         router.pathname === '/web2' ? (
-          <DiscoverBox mode={'dark'} text={'Discover Web3.0 Services'} link={'/'} forceHide={menuOpen} />
+          <DiscoverBox mode={'dark'} text={t('web2.discover-more.text')} link={t('web2.discover-more.link')} forceHide={menuOpen} />
         ) : (
-          <DiscoverBox mode={'light'} text={'Discover Web2.0 Services'} link={'/web2'} forceHide={menuOpen} />
+          <DiscoverBox mode={'light'} text={t('web3.discover-more.text')} link={t('web3.discover-more.link')} forceHide={menuOpen} />
         )
       }
     </div>

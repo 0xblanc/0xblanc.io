@@ -79,6 +79,10 @@
         },
         "FAQ": {
             "title": "常見問題"
+        },
+        "discover-more": {
+            "text": "探索Web2.0技術方案",
+            "link": "https://0xblanc.io/zh-hk/web2"
         }
     },
     "web2": {
@@ -165,6 +169,10 @@
                     "answer": "在大多數情況，總數的60%會在項目開始前支持，總數的20%會在UAT前支付，剩餘的20%即會在部署前支付。"
                 }
             ]
+        },
+        "discover-more": {
+            "text": "探索Web3.0技術方案",
+            "link": "https://0xblanc.io/zh-hk"
         }
     }
 }

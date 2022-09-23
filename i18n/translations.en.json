@@ -83,6 +83,10 @@
         },
         "FAQ": {
             "title": "FAQ"
+        },
+        "discover-more": {
+            "text": "Discover Web2.0 Services",
+            "link": "https://0xblanc.io/web2"
         }
     },
     "web2": {
@@ -169,6 +173,10 @@
                     "answer": "In most cases, 60% of the payment is required before the project starts. 20% is required before the UAT is delivered. The remaining 20% is required before deployment."
                 }
             ]
+        },
+        "discover-more": {
+            "text": "Discover Web3.0 Services",
+            "link": "https://0xblanc.io"
         }
     }
 }
