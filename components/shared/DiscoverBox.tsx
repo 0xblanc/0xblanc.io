@@ -58,7 +58,7 @@ const DiscoverBox = (props: DiscoverBoxProps) => {
           //   </p>
           //   <AnimatedArrow mode={mode} />
           // </a>
-          <div className={`arrow-hover-area clip-group fixed w-[365px] h-20 rounded-2xl overflow-hidden ${stage} ${mode === 'dark' ? 'right-8' : 'left-8'}`}>
+          <div className={`arrow-hover-area clip-group fixed w-[365px] h-20 rounded-2xl overflow-hidden transition-all duration-500 ${stage} ${mode === 'dark' ? 'translate-x-1/2 md:translate-x-0 right-1/2 md:right-8' : '-translate-x-1/2 md:translate-x-0 left-1/2 md:left-8'}`}>
             <div className='relative'>
               <a href={link} className={`z-20 flex px-8 items-center shadow-md backdrop-blur-md transition-all duration-500 absolute left-0 top-0 w-full h-20 clip-left ${mode === 'dark' ? 'bg-white/80' : 'bg-lightDark/90'}`}>
                 <p className={`mr-4 text-lg md:text-xl font-bold ${mode === 'dark' ? 'text-blue' : 'text-gold'}`}>
