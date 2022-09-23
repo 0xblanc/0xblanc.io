@@ -56,7 +56,6 @@ const renameFiles = (source, files) => {
 }
 
 for (let page of pages) {
-
   let html = getHtml('out', page);
   const newScripts = getScripts('out', page)
 
@@ -64,15 +63,13 @@ for (let page of pages) {
     html = html.replaceAll(newScripts[i], `${newScripts[i]}-zh`)
   }
 
-  const chunkScripts = getfiles('out', '/chunks')
-  const pagesScripts = getfiles('out', '/chunks/pages')
-  const cssScripts = getfiles('out', '/css')
-
-  renameFiles('out/_next/static/chunks/', chunkScripts)
-  renameFiles('out/_next/static/chunks/pages/', pagesScripts)
-  renameFiles('out/_next/static/css/', cssScripts)
-
-
-
   fs.writeFileSync(`./out/${page}.html`, html)
 }
+
+const chunkScripts = getfiles('out', '/chunks')
+const pagesScripts = getfiles('out', '/chunks/pages')
+const cssScripts = getfiles('out', '/css')
+
+renameFiles('out/_next/static/chunks/', chunkScripts)
+renameFiles('out/_next/static/chunks/pages/', pagesScripts)
+renameFiles('out/_next/static/css/', cssScripts)
