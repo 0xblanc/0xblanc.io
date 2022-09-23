@@ -8,6 +8,8 @@ const pageRx = {
 }
 
 const rxs = [
+  /\/_next\/static\/chunks\/587-(.*?).js/,
+  /\/_next\/static\/chunks\/840-(.*?).js/,
   /\/_next\/static\/chunks\/polyfills-(.*?).js/,
   /\/_next\/static\/chunks\/framework-(.*?).js/,
   /\/_next\/static\/chunks\/main-(.*?).js/,
