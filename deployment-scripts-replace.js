@@ -2,13 +2,17 @@ const fs = require('fs');
 
 const pages = ['index', 'web2']
 
+const pageRx = {
+  index: /\/_next\/static\/chunks\/pages\/index-(.*?).js/,
+  web2: /\/_next\/static\/chunks\/pages\/web2-(.*?).js/,
+}
+
 const rxs = [
   /\/_next\/static\/chunks\/polyfills-(.*?).js/,
   /\/_next\/static\/chunks\/framework-(.*?).js/,
   /\/_next\/static\/chunks\/main-(.*?).js/,
   /\/_next\/static\/chunks\/polyfills-(.*?).js/,
   /\/_next\/static\/chunks\/webpack-(.*?).js/,
-  /\/_next\/static\/chunks\/pages\/index-(.*?).js/,
   /\/_next\/static\/chunks\/pages\/_app-(.*?).js/,
   /\/_next\/static\/css\/(.*?).css/,
 ]
@@ -35,7 +39,10 @@ const getfiles = (source, suffix) => {
 
 const getScripts = (source, target) => {
   const html = fs.readFileSync(`./${source}/${target}.html`, 'utf8');
-  return rxs.map(rx => html.match(rx)[1])
+
+  const appendedRxs = [...rxs, ...[pageRx[target]]]
+
+  return appendedRxs.map(rx => html.match(rx)[1])
 }
 
 const renameFiles = (source, files) => {

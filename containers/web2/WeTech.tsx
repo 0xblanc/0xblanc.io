@@ -42,7 +42,7 @@ const WeTech = (props: any) => {
         </div>
         <div className='hidden md:flex relative flex-1 w-full max-w-[1280px]'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[450px] aspect-square w-[780px] flex flex-wrap rotate-45 md:scale-75 lg:scale-100'>
-            {services.map((service, index) => {
+            {services.map((service:any, index:number) => {
               return (
                 <div className='w-1/3 aspect-square flex justify-center items-center relative' key={index} onMouseEnter={() => serviceHoverHandler(index)} onMouseLeave={() => serviceHoverOutHandler(index)}>
                   <div className={`absolute flex justify-center overflow-hidden items-center group w-[230px] aspect-square top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 service-container-${index} transition-all duration-500 z-0 ${service.name ? ' border-2 border-gold border-opacity-30 bg-dark hover:w-[400px] hover:z-10' : ''}`}>
@@ -61,7 +61,7 @@ const WeTech = (props: any) => {
           </div>
         </div>
         <div className='flex flex-col md:hidden px-8 py-10 w-full'>
-          {services.filter(service => service.name).map((service, index) => {
+          {services.filter((service:any) => service.name).map((service:any, index:number) => {
             return (
               <>
                 {

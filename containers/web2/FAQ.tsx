@@ -32,7 +32,7 @@ const faqs = [
 const FAQ = (props: any) => {
   const { t } = useTranslation()
 
-  const [expanded, setExpanded] = useState([])
+  const [expanded, setExpanded] = useState(Array<number>)
   const [faqs, setFaqs] = useState([])
 
   useEffect(() => {
@@ -61,7 +61,7 @@ const FAQ = (props: any) => {
           <Title text={t('web2.faq.title')} mode={'dark'} />
         </div>
         <ul className='flex flex-col justify-center px-4 md:px-0 w-full pt-7 md:pb-12 xl:max-w-[700px] mx-auto xl:-translate-x-60'>
-          {faqs.map((faq, index) => (
+          {faqs.map((faq:any, index:number) => (
             <li key={index} className={`flex w-full py-5 border-gold flex-col cursor-pointer ${index < faqs.length - 1 ? 'border-b-2' :''}`} onClick={() => expandHandler(index)}>
               <div className='flex'>
                 <div className='h-[70px] aspect-square flex justify-center items-center relative'>
