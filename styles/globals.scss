@@ -82,6 +82,29 @@ html, body, #root {
   background: linear-gradient(90deg, rgba(229,191,154,1) 0%, rgba(229,191,154,1) 85%, rgba(2,0,36,0) 100%);
 }
 
+// linear animated clip
+.clip-group {
+	.clip-left {
+		clip-path: inset(0 100% 0 0);
+		transition: all;
+		transition-duration: 1s;
+	}
+	.clip-right {
+		clip-path: inset(0 0 0 0);
+		transition: all;
+		transition-duration: 1s;
+	}
+
+	&:hover {
+		.clip-left {
+			clip-path: inset(0 0 0 0);
+		}
+		.clip-right {
+			clip-path: inset(0 0 0 100%);
+		}
+	}
+}
+
 // Animated Arrow
 .center-con {
 
