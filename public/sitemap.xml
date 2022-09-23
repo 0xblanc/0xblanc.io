@@ -4,14 +4,26 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://0xblanc.io/</loc>
-        <lastmod>2022-07-07T13:30:00.000Z</lastmod>
+        <lastmod>2022-09-23T13:30:00.000Z</lastmod>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="cn" href="https://0xblanc.io/zh-hk/"/>
     </url>
     <url>
         <loc>https://0xblanc.io/zh-hk/</loc>
-        <lastmod>2022-07-07T13:30:00.000Z</lastmod>
+        <lastmod>2022-09-23T13:30:00.000Z</lastmod>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="cn" href="https://0xblanc.io/"/>
+    </url>
+    <url>
+        <loc>https://0xblanc.io/web2/</loc>
+        <lastmod>2022-09-23T13:30:00.000Z</lastmod>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="cn" href="https://0xblanc.io/zh-hk/web2/"/>
+    </url>
+    <url>
+        <loc>https://0xblanc.io/zh-hk/web2/</loc>
+        <lastmod>2022-09-23T13:30:00.000Z</lastmod>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="cn" href="https://0xblanc.io/web2/"/>
     </url>
 </urlset>
