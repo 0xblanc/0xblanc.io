@@ -5,7 +5,7 @@ const i18n = {
         'zh-HK': zhHK,
         en,
     },
-    defaultLang: 'en',
+    defaultLang: 'zh-HK',
     useBrowserDefault: false,
 }
 
