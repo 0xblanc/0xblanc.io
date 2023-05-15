@@ -1,7 +1,7 @@
 const args = process.argv.slice(2)
 const fs = require('fs')
 
-const pages = ['index', 'web2']
+const pages = ['index', 'web3']
 
 const getHtml = (source, target) => fs.readFileSync(`./${source}/${target}.html`, 'utf8').toString();
 

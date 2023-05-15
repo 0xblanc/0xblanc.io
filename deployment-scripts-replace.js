@@ -1,10 +1,10 @@
 const fs = require('fs');
 
-const pages = ['index', 'web2']
+const pages = ['index', 'web3']
 
 const pageRx = {
   index: /\/_next\/static\/chunks\/pages\/index-(.*?).js/,
-  web2: /\/_next\/static\/chunks\/pages\/web2-(.*?).js/,
+  web3: /\/_next\/static\/chunks\/pages\/web3-(.*?).js/,
 }
 
 const rxs = [

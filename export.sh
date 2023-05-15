@@ -12,7 +12,7 @@ node deployment-scripts-replace.js
 node deployment-add-lang-tag.js zh-hk
 mkdir ./docs/zh-hk
 cp ./out/index.html ./docs/zh-hk/index.html
-cp ./out/web2.html ./docs/zh-hk/web2.html
+cp ./out/web3.html ./docs/zh-hk/web3.html
 cp -rn ./out/_next/* ./docs/_next
 cp ./i18n/index.js.bak ./i18n/index.js
 rm -rf ./out

@@ -32,21 +32,21 @@ const DesktopFrame = (props: DesktopFrameProps) => {
   return (
     <div className='h-full'>
       {
-        router.pathname === '/web2' ? <Web2Hero /> : <Hero />
+        router.pathname === '/web3' ? <Hero /> : <Web2Hero />
       }
       <div className='main relative'>
         {
-          router.pathname !== '/web2' && <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
+          router.pathname === '/web3' && <Header menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
         }
         <div>{children}</div>
       </div>
-      <Footer mode={router.pathname === '/web2' ? 'dark' : 'light'} />
+      <Footer mode={router.pathname === '/web3' ? 'light' : 'dark'} />
       <MobileMenu menuOpen={menuOpen} menuToggleHandler={menuToggleHandler} />
       {
-        router.pathname === '/web2' ? (
-          <DiscoverBox mode={'dark'} text={t('web2.discover-more.text')} link={t('web2.discover-more.link')} forceHide={menuOpen} />
-        ) : (
+        router.pathname === '/web3' ? (
           <DiscoverBox mode={'light'} text={t('web3.discover-more.text')} link={t('web3.discover-more.link')} forceHide={menuOpen} />
+        ) : (
+          <DiscoverBox mode={'dark'} text={t('web2.discover-more.text')} link={t('web2.discover-more.link')} forceHide={menuOpen} />
         )
       }
     </div>
